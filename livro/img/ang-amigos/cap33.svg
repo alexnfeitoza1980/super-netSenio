@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo do Canvas -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid Sutil de Engenharia -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="90" x2="960" y2="90"/>
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+    <line x1="160" y1="0" x2="160" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="640" y1="0" x2="640" y2="540"/>
+    <line x1="800" y1="0" x2="800" y2="540"/>
+  </g>
+
+  
+    <g filter="url(#winShadow)">
+      <rect x="40" y="30" width="880" height="480" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 40,40 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#1e293b"/>
+    <circle cx="58" cy="48" r="6" fill="#ff5f56"/>
+    <circle cx="78" cy="48" r="6" fill="#ffbd2e"/>
+    <circle cx="98" cy="48" r="6" fill="#27c93f"/>
+    <rect x="340" y="38" width="280" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="480" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">VS Code — AmgButton.component.ts &amp; Angular Compiler Diagnostics</text>
+    
+      
+      <!-- Editor Split: Código à esquerda, Terminal com Dica Empática à direita -->
+      <g transform="translate(40, 66)">
+        <!-- Coluna Esquerda: Código TypeScript (width 460) -->
+        <rect width="460" height="444" fill="#1e1e1e"/>
+        <!-- Linhas e Código -->
+        <g font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">
+          <text x="15" y="25" fill="#6e7681">01</text>
+          <text x="45" y="25"><tspan fill="#c586c0">import</tspan> { Component, input, assertDevMode } <tspan fill="#c586c0">from</tspan> <tspan fill="#ce9178">'@angular/core'</tspan>;</text>
+          
+          <text x="15" y="48" fill="#6e7681">02</text>
+          <text x="45" y="48"><tspan fill="#569cd6">type</tspan> <tspan fill="#4ec9b0">ButtonVariant</tspan> = <tspan fill="#ce9178">'primary'</tspan> | <tspan fill="#ce9178">'secondary'</tspan> | <tspan fill="#ce9178">'ghost'</tspan>;</text>
+          
+          <text x="15" y="71" fill="#6e7681">03</text>
+          <text x="45" y="71"><tspan fill="#dcdcaa">@Component</tspan>({</text>
+          
+          <text x="15" y="94" fill="#6e7681">04</text>
+          <text x="65" y="94">selector: <tspan fill="#ce9178">'amg-button'</tspan>,</text>
+          
+          <text x="15" y="117" fill="#6e7681">05</text>
+          <text x="65" y="117">template: <tspan fill="#ce9178">`&lt;button [class]="classes()"&gt;&lt;ng-content/&gt;&lt;/button&gt;`</tspan></text>
+          
+          <text x="15" y="140" fill="#6e7681">06</text>
+          <text x="45" y="140">})</text>
+          
+          <text x="15" y="163" fill="#6e7681">07</text>
+          <text x="45" y="163"><tspan fill="#569cd6">export class</tspan> <tspan fill="#4ec9b0">AmgButtonComponent</tspan> {</text>
+          
+          <text x="15" y="186" fill="#6e7681">08</text>
+          <text x="65" y="186"><tspan fill="#6a9955">/** Variante visual do botão com default amigável */</tspan></text>
+          
+          <text x="15" y="209" fill="#6e7681">09</text>
+          <text x="65" y="209"><tspan fill="#569cd6">readonly</tspan> variant = input&lt;<tspan fill="#4ec9b0">ButtonVariant</tspan>&gt;(<tspan fill="#ce9178">'primary'</tspan>, {</text>
+          
+          <text x="15" y="232" fill="#6e7681">10</text>
+          <text x="85" y="232">transform: (v: <tspan fill="#4ec9b0">string</tspan>) =&gt; {</text>
+          
+          <text x="15" y="255" fill="#6e7681">11</text>
+          <text x="105" y="255"><tspan fill="#c586c0">if</tspan> (![<tspan fill="#ce9178">'primary'</tspan>,<tspan fill="#ce9178">'secondary'</tspan>,<tspan fill="#ce9178">'ghost'</tspan>].includes(v)) {</text>
+          
+          <text x="15" y="278" fill="#6e7681">12</text>
+          <text x="125" y="278"><tspan fill="#569cd6">throw new</tspan> <tspan fill="#4ec9b0">AmgFriendlyError</tspan>(</text>
+          
+          <text x="15" y="301" fill="#6e7681">13</text>
+          <text x="145" y="301"><tspan fill="#ce9178">`Variante "${v}" inválida em &lt;amg-button&gt;!`</tspan>,</text>
+          
+          <text x="15" y="324" fill="#6e7681">14</text>
+          <text x="145" y="324"><tspan fill="#ce9178">'Sugestão: use primary, secondary ou ghost.'</tspan></text>
+          
+          <text x="15" y="347" fill="#6e7681">15</text>
+          <text x="125" y="347">);</text>
+          
+          <text x="15" y="370" fill="#6e7681">16</text>
+          <text x="105" y="370">}</text>
+          <text x="15" y="393" fill="#6e7681">17</text>
+          <text x="105" y="393"><tspan fill="#c586c0">return</tspan> v <tspan fill="#569cd6">as</tspan> <tspan fill="#4ec9b0">ButtonVariant</tspan>;</text>
+          <text x="15" y="416" fill="#6e7681">18</text>
+          <text x="85" y="416">}</text>
+        </g>
+        
+        <!-- Divisor Central -->
+        <line x1="460" y1="0" x2="460" y2="444" stroke="#334155" stroke-width="1"/>
+        
+        <!-- Coluna Direita: Terminal com Mensagem Humanizada (width 420) -->
+        <rect x="460" y="0" width="420" height="444" fill="#0d1117"/>
+        <rect x="460" y="0" width="420" height="30" fill="#161b22"/>
+        <text x="475" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e">TERMINAL — NG SERVE (DIAGNÓSTICO EMPÁTICO)</text>
+        
+        <g transform="translate(475, 45)" font-family="Consolas, monospace" font-size="11">
+          <text x="0" y="20" fill="#f87171" font-weight="bold">✖ [NG-AMG01] Erro Amigável de Configuração:</text>
+          
+          <rect x="0" y="35" width="390" height="110" rx="6" fill="#1c1917" stroke="#dc2626" stroke-width="1"/>
+          <text x="12" y="58" fill="#fca5a5">Componente: &lt;amg-button variant="danger"&gt;</text>
+          <text x="12" y="78" fill="#fca5a5">Arquivo: src/app/dashboard/perfil.component.html:14</text>
+          <text x="12" y="105" fill="#fef08a">💡 Sugestão Dale Carnegie:</text>
+          <text x="12" y="125" fill="#cbd5e1">Em vez de 'danger', utilize variant="ghost" com color="warn".</text>
+          
+          <text x="0" y="170" fill="#60a5fa">📘 Documentação interativa disponível em:</text>
+          <text x="0" y="190" fill="#93c5fd" text-decoration="underline">https://amigos.angular.dev/components/button#variants</text>
+          
+          <!-- Banner de Filosofia -->
+          <rect x="0" y="225" width="390" height="85" rx="6" fill="#1e293b" stroke="#3b82f6"/>
+          <text x="12" y="248" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#60a5fa">DALE CARNEGIE · PRINCÍPIO 1:</text>
+          <text x="12" y="270" font-family="system-ui, sans-serif" font-size="10" fill="#e2e8f0">"Não critique nem condene. Quem gera ressentimento</text>
+          <text x="12" y="288" font-family="system-ui, sans-serif" font-size="10" fill="#e2e8f0">com stack traces indecifráveis afasta o desenvolvedor."</text>
+        </g>
+      </g>
+    </g>
+    
+</svg>

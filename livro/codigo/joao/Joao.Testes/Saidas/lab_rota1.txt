@@ -1,0 +1,5 @@
+  [Informacao] 16:31:09 > rota jordao → betania: rota pronta {dias=3, reaproveitadas=0}
+2 trecho(s), cerca de 3 dia(s) (valores ilustrativos):
+  • Além do Jordão: onde João batizava e deu testemunho (Jo 1)
+  • Jerusalém: o templo, Nicodemos, o cego de nascença (Jo 2 a 5, 7 a 9)
+  • Betânia: a casa de Marta, Maria e Lázaro (Jo 11)

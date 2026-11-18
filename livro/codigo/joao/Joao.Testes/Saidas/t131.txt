@@ -1,0 +1,6 @@
+Começa: Morto, ataduras: 3
+Chamado: Vivo, livre? False
+Desatou: atadura nas mãos (faltam 2)
+Desatou: atadura nos pés (faltam 1)
+Desatou: lenço no rosto (faltam 0)
+Livre? True

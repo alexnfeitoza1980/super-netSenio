@@ -1,0 +1,39 @@
+/* Design Tokens e Estilos Globais da Aplicação CNV */
+:root {
+  --cor-fundo: #fffaf5;
+  --cor-superficie: #ffffff;
+  --cor-superficie-2: #fdf4eb;
+  --cor-primaria: #d96b27;
+  --cor-primaria-hover: #b45309;
+  --cor-acento: #f59e0b;
+  --cor-esmeralda: #10b981;
+  --cor-linha: #f5dfd0;
+  --cor-tinta: #2a1508;
+  --cor-tinta-suave: #6c3c1e;
+  --fonte-padrao: "Segoe UI Variable Display", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-padrao);
+  background-color: var(--cor-fundo);
+  color: var(--cor-tinta);
+  background-image: radial-gradient(900px 320px at 85% -90px, rgba(245, 158, 11, 0.12), transparent 70%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+

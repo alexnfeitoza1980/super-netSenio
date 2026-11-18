@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo do Canvas -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid Sutil de Engenharia -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="90" x2="960" y2="90"/>
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+    <line x1="160" y1="0" x2="160" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="640" y1="0" x2="640" y2="540"/>
+    <line x1="800" y1="0" x2="800" y2="540"/>
+  </g>
+
+  
+    <g filter="url(#winShadow)">
+      <rect x="40" y="30" width="880" height="480" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 40,40 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#1e293b"/>
+    <circle cx="58" cy="48" r="6" fill="#ff5f56"/>
+    <circle cx="78" cy="48" r="6" fill="#ffbd2e"/>
+    <circle cx="98" cy="48" r="6" fill="#27c93f"/>
+    <rect x="340" y="38" width="280" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="480" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">Git Diff — O Nome de uma Pessoa é o Som Mais Doce</text>
+    
+      
+      <g transform="translate(60, 80)">
+        <rect width="800" height="390" rx="8" fill="#0d1117" stroke="#30363d"/>
+        <rect width="800" height="36" rx="8" fill="#161b22"/>
+        <text x="20" y="23" font-family="Consolas, monospace" font-size="12" fill="#8b949e">diff --git a/src/app/modal.component.html b/src/app/modal.component.html</text>
+        
+        <g transform="translate(20, 55)" font-family="Consolas, monospace" font-size="12">
+          <!-- Linhas Removidas (Vermelhas - código hostil) -->
+          <rect x="0" y="0" width="760" height="24" fill="rgba(248,81,73,0.15)"/>
+          <text x="10" y="17" fill="#f85149">- &lt;custom-dlg [v1]="show" (act)="onEvent($event)" [typ]="3"&gt;</text>
+          
+          <rect x="0" y="28" width="760" height="24" fill="rgba(248,81,73,0.15)"/>
+          <text x="10" y="45" fill="#f85149">-   &lt;div class="box-hdr"&gt;{ ttl }&lt;/div&gt;</text>
+          
+          <rect x="0" y="56" width="760" height="24" fill="rgba(248,81,73,0.15)"/>
+          <text x="10" y="73" fill="#f85149">- &lt;/custom-dlg&gt;</text>
+          
+          <!-- Linhas Adicionadas (Verdes - código amigável e expressivo) -->
+          <rect x="0" y="100" width="760" height="24" fill="rgba(63,185,80,0.15)"/>
+          <text x="10" y="117" fill="#3fb950">+ &lt;amg-dialog [(isOpen)]="dialogoAberto" (closed)="aoFechar($event)"&gt;</text>
+          
+          <rect x="0" y="128" width="760" height="24" fill="rgba(63,185,80,0.15)"/>
+          <text x="10" y="145" fill="#3fb950">+   &lt;h2 amgDialogTitle&gt;Confirmar Envio do Elogio&lt;/h2&gt;</text>
+          
+          <rect x="0" y="156" width="760" height="24" fill="rgba(63,185,80,0.15)"/>
+          <text x="10" y="173" fill="#3fb950">+   &lt;p amgDialogDescription&gt;Sua mensagem chegará com delicadeza ao destinatário.&lt;/p&gt;</text>
+          
+          <rect x="0" y="184" width="760" height="24" fill="rgba(63,185,80,0.15)"/>
+          <text x="10" y="201" fill="#3fb950">+ &lt;/amg-dialog&gt;</text>
+        </g>
+        
+        <!-- Explicação Arquitetural na Base -->
+        <g transform="translate(20, 290)">
+          <rect width="760" height="80" rx="6" fill="#161b22" stroke="#30363d"/>
+          <text x="15" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#58a6ff">POR QUE A NOMENCLATURA DEFINE A ADOÇÃO:</text>
+          <text x="15" y="46" font-family="system-ui, sans-serif" font-size="11" fill="#c9d1d9">1. Seletores semânticos informam o papel no template antes mesmo de abrir o arquivo .ts.</text>
+          <text x="15" y="64" font-family="system-ui, sans-serif" font-size="11" fill="#c9d1d9">2. O padrão two-way binding [(isOpen)] substitui duplas desnecessárias de [isOpen] / (isOpenChange).</text>
+        </g>
+      </g>
+    </g>
+    
+</svg>

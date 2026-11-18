@@ -1,0 +1,41 @@
+/* Variáveis globais do Design System Amigos UI */
+:root {
+  --amg-primary: #2563eb;
+  --amg-primary-hover: #1d4ed8;
+  --amg-primary-soft: #eff6ff;
+  --amg-surface: #ffffff;
+  --amg-surface-subtle: #f8fafc;
+  --amg-border: #cbd5e1;
+  --amg-text-main: #0f172a;
+  --amg-text-muted: #64748b;
+  --amg-font: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --amg-mono: 'JetBrains Mono', Consolas, monospace;
+  --amg-radius: 8px;
+  --amg-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] {
+  --amg-primary: #3b82f6;
+  --amg-primary-hover: #60a5fa;
+  --amg-primary-soft: #1e293b;
+  --amg-surface: #0f172a;
+  --amg-surface-subtle: #1e293b;
+  --amg-border: #334155;
+  --amg-text-main: #f8fafc;
+  --amg-text-muted: #94a3b8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--amg-font);
+  background-color: var(--amg-surface-subtle);
+  color: var(--amg-text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+

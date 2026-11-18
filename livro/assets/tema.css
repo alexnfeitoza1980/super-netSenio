@@ -1,0 +1,21 @@
+/* Tema do livro «Super .NET Sênior» (gerado por build.py a partir de livro.json) */
+:root {
+  --bg: #f5fafc; --surface: #ffffff; --surface-2: #e9f2f6;
+  --ink: #10222b; --ink-2: #3d5560; --ink-3: #6f8791; --line: #d3e3ea;
+  --primary: #0f6b8a; --primary-ink: #ffffff; --primary-soft: #dff1f7; --accent: #f2a900;
+  --code-bg: #0e1a21; --code-bar: #172b36;
+  --font-display: "Trebuchet MS", "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+}
+:root[data-theme="dark"] { --bg:hsl(200 26% 8%);--surface:hsl(200 22% 11%);--surface-2:hsl(200 20% 14%);--ink:hsl(200 20% 93%);--ink-2:hsl(200 14% 76%);--ink-3:hsl(200 10% 58%);--line:hsl(200 18% 21%);--primary:#6cceef;--primary-ink:#0f1f24;--primary-soft:#22434f;--accent:#ffba1c;--code-bg:#060c0f;--code-bar:#162833;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35) }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:hsl(200 26% 8%);--surface:hsl(200 22% 11%);--surface-2:hsl(200 20% 14%);--ink:hsl(200 20% 93%);--ink-2:hsl(200 14% 76%);--ink-3:hsl(200 10% 58%);--line:hsl(200 18% 21%);--primary:#6cceef;--primary-ink:#0f1f24;--primary-soft:#22434f;--accent:#ffba1c;--code-bg:#060c0f;--code-bar:#162833;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35) } }
+
+body { background-color: var(--bg); background-image: radial-gradient(900px 320px at 88% -90px, rgba(242,169,0,0.12), transparent 70%); background-repeat: no-repeat; }
+h1, h2, h3, .sec-title, .hero h1, .cover h1 { font-family: var(--font-display); }
+
+.cover { background: radial-gradient(1100px 380px at 90% -10%, rgba(242,169,0,0.38), transparent 60%), linear-gradient(135deg, #0b2530, #0f6b8a 58%, #1a8fb0); }
+.cover::after { content: "SN"; }
+.cover .btn.light { color: #0b2530; }
+.cover h1 { max-width: 22ch; }
+.brand-mark { background: linear-gradient(135deg, #0f6b8a, #1a8fb0); color: #fff; }
+.hero { background: linear-gradient(135deg, hsl(var(--hue) 58% 36%), hsl(calc(var(--hue) + 14) 62% 24%)); }
+.progress-bar { background: linear-gradient(90deg, #0f6b8a, #f2a900); }

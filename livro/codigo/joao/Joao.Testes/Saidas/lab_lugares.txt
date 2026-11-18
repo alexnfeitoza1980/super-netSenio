@@ -1,0 +1,8 @@
+jordao     Além do Jordão
+cana       Caná da Galileia
+cafarnaum  Cafarnaum
+mar        Mar da Galileia
+samaria    Sicar, em Samaria
+jerusalem  Jerusalém
+betania    Betânia
+efraim     Éfraim

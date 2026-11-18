@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BuildingBlocks\SuperNetSenior.BuildingBlocks\SuperNetSenior.BuildingBlocks.csproj" />
+  </ItemGroup>
+
+</Project>

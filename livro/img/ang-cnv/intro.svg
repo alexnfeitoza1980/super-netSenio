@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#d96b27" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140803"/>
+      <stop offset="60%" stop-color="#2d1307"/>
+      <stop offset="100%" stop-color="#180a04"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#13141f"/>
+    </linearGradient>
+    <linearGradient id="browserGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fffaf5"/>
+    </linearGradient>
+    <linearGradient id="orangeBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#d96b27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo de Studio da Ilustração -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid tático refinado -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.03">
+    <line x1="0" y1="0" x2="0" y2="540"/><line x1="80" y1="0" x2="80" y2="540"/><line x1="160" y1="0" x2="160" y2="540"/><line x1="240" y1="0" x2="240" y2="540"/><line x1="320" y1="0" x2="320" y2="540"/><line x1="400" y1="0" x2="400" y2="540"/><line x1="480" y1="0" x2="480" y2="540"/><line x1="560" y1="0" x2="560" y2="540"/><line x1="640" y1="0" x2="640" y2="540"/><line x1="720" y1="0" x2="720" y2="540"/><line x1="800" y1="0" x2="800" y2="540"/><line x1="880" y1="0" x2="880" y2="540"/><line x1="960" y1="0" x2="960" y2="540"/>
+    <line x1="0" y1="0" x2="960" y2="0"/><line x1="0" y1="60" x2="960" y2="60"/><line x1="0" y1="120" x2="960" y2="120"/><line x1="0" y1="180" x2="960" y2="180"/><line x1="0" y1="240" x2="960" y2="240"/><line x1="0" y1="300" x2="960" y2="300"/><line x1="0" y1="360" x2="960" y2="360"/><line x1="0" y1="420" x2="960" y2="420"/><line x1="0" y1="480" x2="960" y2="480"/><line x1="0" y1="540" x2="960" y2="540"/>
+  </g>
+
+  <!-- Halo de luz quente -->
+  <circle cx="480" cy="270" r="320" fill="#f59e0b" opacity="0.06" filter="blur(60px)"/>
+
+  
+  <!-- Janela Principal de Aplicação Real -->
+  <g transform="translate(40, 25)" filter="url(#winShadow)">
+    <rect width="880" height="490" rx="12" fill="#1e1e2e"/>
+    
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 0,10 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#181825"/>
+    <circle cx="18" cy="18" r="6" fill="#ff5f56"/>
+    <circle cx="38" cy="18" r="6" fill="#ffbd2e"/>
+    <circle cx="58" cy="18" r="6" fill="#27c93f"/>
+    <rect x="310" y="8" width="260" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="440" y="22" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">compassivo.dev/arquitetura-cnv — Angular 17+ &amp; CNV</text>
+    
+    
+    <!-- Topbar da Aplicação -->
+    <rect x="0" y="36" width="880" height="48" fill="#252538" stroke="#313244" stroke-width="1"/>
+    <circle cx="36" cy="60" r="14" fill="#d96b27"/>
+    <text x="36" y="65" font-family="system-ui" font-weight="900" font-size="14" fill="#fff" text-anchor="middle">♥</text>
+    <text x="62" y="65" font-family="system-ui" font-weight="700" font-size="15" fill="#cdd6f4">Arquitetura CNV no Angular</text>
+    
+    <rect x="680" y="48" width="180" height="26" rx="13" fill="#313244"/>
+    <circle cx="695" cy="61" r="5" fill="#a6e3a1"/>
+    <text x="708" y="65" font-family="system-ui" font-size="11" fill="#a6adc8">Signals • Zoneless Ready</text>
+
+    <!-- Os 4 Pilares Como Módulos Reais de Software -->
+    <!-- 1. Observação -->
+    <g transform="translate(24, 104)">
+      <rect width="198" height="360" rx="10" fill="#181825" stroke="#f59e0b" stroke-width="1.5"/>
+      <rect width="198" height="40" rx="10" fill="rgba(245, 158, 11, 0.15)"/>
+      <text x="16" y="25" font-family="system-ui" font-size="18">👁️</text>
+      <text x="44" y="25" font-family="system-ui" font-weight="700" font-size="13" fill="#f9e2af">1. OBSERVAÇÃO</text>
+      
+      <text x="16" y="60" font-family="system-ui" font-size="11" fill="#a6adc8">Fato objetivo sem julgamento</text>
+      
+      <!-- Mini Mockup de Código -->
+      <rect x="12" y="78" width="174" height="96" rx="6" fill="#11111b" stroke="#313244" stroke-width="1"/>
+      <text x="20" y="98" font-family="monospace" font-size="10" fill="#89b4fa">readonly</text>
+      <text x="74" y="98" font-family="monospace" font-size="10" fill="#cdd6f4">dados =</text>
+      <text x="20" y="116" font-family="monospace" font-size="10" fill="#f9e2af">signal.asReadonly();</text>
+      <text x="20" y="142" font-family="monospace" font-size="9" fill="#a6e3a1">// Estado puro e imutável</text>
+      <text x="20" y="158" font-family="monospace" font-size="9" fill="#6c7086">// Sem efeitos laterais</text>
+
+      <!-- Vantagens Reais -->
+      <g transform="translate(14, 192)" font-family="system-ui" font-size="10" fill="#bac2de">
+        <text y="0">• Telemetria factual neutra</text>
+        <text y="22">• Glitch-free push/pull</text>
+        <text y="44">• Eliminação de getters impuros</text>
+        <text y="66">• Rastreamento granular</text>
+      </g>
+      <rect x="14" y="280" width="170" height="66" rx="6" fill="rgba(245, 158, 11, 0.08)" stroke="#f59e0b" stroke-width="0.75"/>
+      <text x="24" y="302" font-family="system-ui" font-size="10" font-weight="bold" fill="#f9e2af">Citação Marshall:</text>
+      <text x="24" y="322" font-family="system-ui" font-size="9" fill="#cdd6f4">"Observar sem avaliar é a</text>
+      <text x="24" y="336" font-family="system-ui" font-size="9" fill="#cdd6f4">mais alta inteligência."</text>
+    </g>
+
+    <!-- 2. Sentimento -->
+    <g transform="translate(236, 104)">
+      <rect width="198" height="360" rx="10" fill="#181825" stroke="#f38ba8" stroke-width="1.5"/>
+      <rect width="198" height="40" rx="10" fill="rgba(243, 139, 168, 0.15)"/>
+      <text x="16" y="25" font-family="system-ui" font-size="18">💓</text>
+      <text x="44" y="25" font-family="system-ui" font-weight="700" font-size="13" fill="#f38ba8">2. SENTIMENTO</text>
+      
+      <text x="16" y="60" font-family="system-ui" font-size="11" fill="#a6adc8">Estados de UI sem mentiras</text>
+      
+      <rect x="12" y="78" width="174" height="96" rx="6" fill="#11111b" stroke="#313244" stroke-width="1"/>
+      <text x="20" y="98" font-family="monospace" font-size="10" fill="#f38ba8">@switch</text>
+      <text x="70" y="98" font-family="monospace" font-size="10" fill="#cdd6f4">(estado().status) &#123;</text>
+      <text x="26" y="116" font-family="monospace" font-size="10" fill="#cba6f7">@case</text>
+      <text x="64" y="116" font-family="monospace" font-size="10" fill="#a6e3a1">('loading')</text>
+      <text x="26" y="134" font-family="monospace" font-size="10" fill="#cba6f7">@case</text>
+      <text x="64" y="134" font-family="monospace" font-size="10" fill="#a6e3a1">('success')</text>
+      <text x="26" y="152" font-family="monospace" font-size="10" fill="#cba6f7">@case</text>
+      <text x="64" y="152" font-family="monospace" font-size="10" fill="#f38ba8">('error')</text>
+
+      <g transform="translate(14, 192)" font-family="system-ui" font-size="10" fill="#bac2de">
+        <text y="0">• Discriminated Unions TS</text>
+        <text y="22">• Fim do limbo de telas brancas</text>
+        <text y="44">• Skeleton screens empáticos</text>
+        <text y="66">• Feedback de progresso real</text>
+      </g>
+      <rect x="14" y="280" width="170" height="66" rx="6" fill="rgba(243, 139, 168, 0.08)" stroke="#f38ba8" stroke-width="0.75"/>
+      <text x="24" y="302" font-family="system-ui" font-size="10" font-weight="bold" fill="#f38ba8">Citação Marshall:</text>
+      <text x="24" y="322" font-family="system-ui" font-size="9" fill="#cdd6f4">"Diferenciar o que sentimos</text>
+      <text x="24" y="336" font-family="system-ui" font-size="9" fill="#cdd6f4">do que pensamos do outro."</text>
+    </g>
+
+    <!-- 3. Necessidade -->
+    <g transform="translate(448, 104)">
+      <rect width="198" height="360" rx="10" fill="#181825" stroke="#a6e3a1" stroke-width="1.5"/>
+      <rect width="198" height="40" rx="10" fill="rgba(166, 227, 161, 0.15)"/>
+      <text x="16" y="25" font-family="system-ui" font-size="18">🌱</text>
+      <text x="44" y="25" font-family="system-ui" font-weight="700" font-size="13" fill="#a6e3a1">3. NECESSIDADE</text>
+      
+      <text x="16" y="60" font-family="system-ui" font-size="11" fill="#a6adc8">Acessibilidade e Resiliência</text>
+      
+      <rect x="12" y="78" width="174" height="96" rx="6" fill="#11111b" stroke="#313244" stroke-width="1"/>
+      <text x="20" y="98" font-family="monospace" font-size="10" fill="#a6e3a1">LiveAnnouncer</text>
+      <text x="20" y="116" font-family="monospace" font-size="10" fill="#89b4fa">cdkTrapFocus</text>
+      <text x="20" y="134" font-family="monospace" font-size="10" fill="#cdd6f4">aria-live="polite"</text>
+      <text x="20" y="154" font-family="monospace" font-size="9" fill="#fab387">// Respeito a neurodiversidade</text>
+
+      <g transform="translate(14, 192)" font-family="system-ui" font-size="10" fill="#bac2de">
+        <text y="0">• CDK A11y universal</text>
+        <text y="22">• Navegação por teclado</text>
+        <text y="44">• Leitores de tela acolhidos</text>
+        <text y="66">• ErrorHandler Global</text>
+      </g>
+      <rect x="14" y="280" width="170" height="66" rx="6" fill="rgba(166, 227, 161, 0.08)" stroke="#a6e3a1" stroke-width="0.75"/>
+      <text x="24" y="302" font-family="system-ui" font-size="10" font-weight="bold" fill="#a6e3a1">Citação Marshall:</text>
+      <text x="24" y="322" font-family="system-ui" font-size="9" fill="#cdd6f4">"Por trás de todo ataque há</text>
+      <text x="24" y="336" font-family="system-ui" font-size="9" fill="#cdd6f4">uma necessidade sufocada."</text>
+    </g>
+
+    <!-- 4. Pedido -->
+    <g transform="translate(660, 104)">
+      <rect width="198" height="360" rx="10" fill="#181825" stroke="#89b4fa" stroke-width="1.5"/>
+      <rect width="198" height="40" rx="10" fill="rgba(137, 180, 250, 0.15)"/>
+      <text x="16" y="25" font-family="system-ui" font-size="18">🤝</text>
+      <text x="44" y="25" font-family="system-ui" font-weight="700" font-size="13" fill="#89b4fa">4. PEDIDO</text>
+      
+      <text x="16" y="60" font-family="system-ui" font-size="11" fill="#a6adc8">Ação concreta, sem exigência</text>
+      
+      <rect x="12" y="78" width="174" height="96" rx="6" fill="#11111b" stroke="#313244" stroke-width="1"/>
+      <text x="20" y="98" font-family="monospace" font-size="10" fill="#cba6f7">interface</text>
+      <text x="82" y="98" font-family="monospace" font-size="10" fill="#89b4fa">DTO &#123;</text>
+      <text x="26" y="116" font-family="monospace" font-size="10" fill="#cdd6f4">acao: string;</text>
+      <text x="26" y="134" font-family="monospace" font-size="10" fill="#cdd6f4">prazo: Date;</text>
+      <text x="20" y="152" font-family="monospace" font-size="10" fill="#89b4fa">&#125;</text>
+      <text x="40" y="152" font-family="monospace" font-size="9" fill="#6c7086">// Sem tipo `any`</text>
+
+      <g transform="translate(14, 192)" font-family="system-ui" font-size="10" fill="#bac2de">
+        <text y="0">• DTOs explícitos e tipados</text>
+        <text y="22">• input() &amp; output() puros</text>
+        <text y="44">• CTAs afirmativos na interface</text>
+        <text y="66">• Respeito ao 'Não' na API</text>
+      </g>
+      <rect x="14" y="280" width="170" height="66" rx="6" fill="rgba(137, 180, 250, 0.08)" stroke="#89b4fa" stroke-width="0.75"/>
+      <text x="24" y="302" font-family="system-ui" font-size="10" font-weight="bold" fill="#89b4fa">Citação Marshall:</text>
+      <text x="24" y="322" font-family="system-ui" font-size="9" fill="#cdd6f4">"Peça ações positivas: o que</text>
+      <text x="24" y="336" font-family="system-ui" font-size="9" fill="#cdd6f4">deseja, não o que proíbe."</text>
+    </g>
+  </g>
+
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0008"/>
+      <stop offset="50%" stop-color="#9b1230"/>
+      <stop offset="100%" stop-color="#3a0414"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd54f"/>
+      <stop offset="100%" stop-color="#f5b800"/>
+    </linearGradient>
+    <linearGradient id="angGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#dd1b44"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Fundo com gradiente suave -->
+  <rect width="800" height="420" fill="url(#bg)"/>
+  
+  <!-- Grid tático de fundo -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.05">
+    <line x1="100" y1="0" x2="100" y2="420"/>
+    <line x1="200" y1="0" x2="200" y2="420"/>
+    <line x1="300" y1="0" x2="300" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="420"/>
+    <line x1="500" y1="0" x2="500" y2="420"/>
+    <line x1="600" y1="0" x2="600" y2="420"/>
+    <line x1="700" y1="0" x2="700" y2="420"/>
+    <line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="320" x2="800" y2="320"/>
+  </g>
+
+  <!-- Conteúdo Central -->
+  
+        <g transform="translate(400,175) scale(1.35)" filter="url(#shadow)">
+      <polygon points="0,-75 65,-40 50,55 0,85 -50,55 -65,-40" fill="url(#angGrad)"/>
+      <polygon points="0,-75 0,85 50,55 65,-40" fill="#b81033"/>
+      <polygon points="0,-50 35,40 20,40 12,20 -12,20 -20,40 -35,40" fill="#ffffff"/>
+      <polygon points="0,-25 8,8 -8,8" fill="#1a0008"/>
+    </g>
+        <circle cx="400" cy="175" r="140" fill="none" stroke="#f5b800" stroke-width="2" stroke-dasharray="6 6" opacity="0.6"/>
+        <circle cx="400" cy="175" r="155" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+        <text x="400" y="60" font-family="'Segoe UI',sans-serif" font-size="28" font-weight="900" fill="#fff" text-anchor="middle" letter-spacing="0.1em">DOMINE O FRAMEWORK</text>
+        
+
+  <!-- Rodapé com títulos -->
+  <rect x="0" y="360" width="800" height="60" fill="#0c0004" opacity="0.6"/>
+  <text x="40" y="396" font-family="'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="800" fill="#ffffff" letter-spacing="0.02em">ANTIMEDO EM ANGULAR</text>
+  <text x="760" y="396" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600" fill="#ff6b35" text-anchor="end" letter-spacing="0.05em">A INVENCIBILIDADE DO DESENVOLVEDOR</text>
+</svg>

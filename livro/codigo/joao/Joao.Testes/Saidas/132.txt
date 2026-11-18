@@ -1,0 +1,4 @@
+tarefa: Lavar os pés dos discípulos
+leituras que chegaram ao serviço de verdade: 3
+[Informacao] 09:00:00 > obter 1: encontrada
+[Informacao] 09:00:00 > obter 1: encontrada

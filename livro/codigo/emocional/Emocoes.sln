@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emocoes.Core", "Emocoes.Core\Emocoes.Core.csproj", "{FA6A1950-1947-4DBD-9AC2-2EAA80DCB214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emocoes.Console", "Emocoes.Console\Emocoes.Console.csproj", "{41DCEB7C-627B-4E4C-8E1F-AB4C8EB0574D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emocoes.Testes", "Emocoes.Testes\Emocoes.Testes.csproj", "{E17383D9-4A5C-4D0F-B98A-EDB7A455849F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA6A1950-1947-4DBD-9AC2-2EAA80DCB214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6A1950-1947-4DBD-9AC2-2EAA80DCB214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6A1950-1947-4DBD-9AC2-2EAA80DCB214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6A1950-1947-4DBD-9AC2-2EAA80DCB214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41DCEB7C-627B-4E4C-8E1F-AB4C8EB0574D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41DCEB7C-627B-4E4C-8E1F-AB4C8EB0574D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41DCEB7C-627B-4E4C-8E1F-AB4C8EB0574D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41DCEB7C-627B-4E4C-8E1F-AB4C8EB0574D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E17383D9-4A5C-4D0F-B98A-EDB7A455849F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E17383D9-4A5C-4D0F-B98A-EDB7A455849F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E17383D9-4A5C-4D0F-B98A-EDB7A455849F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E17383D9-4A5C-4D0F-B98A-EDB7A455849F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3 @@
+Segue a voz do pastor? True
+Segue a voz de um estranho? False
+Segue um estranho que repete a voz? True

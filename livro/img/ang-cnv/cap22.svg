@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#d96b27" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140803"/>
+      <stop offset="60%" stop-color="#2d1307"/>
+      <stop offset="100%" stop-color="#180a04"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#13141f"/>
+    </linearGradient>
+    <linearGradient id="browserGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fffaf5"/>
+    </linearGradient>
+    <linearGradient id="orangeBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#d96b27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo de Studio da Ilustração -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid tático refinado -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.03">
+    <line x1="0" y1="0" x2="0" y2="540"/><line x1="80" y1="0" x2="80" y2="540"/><line x1="160" y1="0" x2="160" y2="540"/><line x1="240" y1="0" x2="240" y2="540"/><line x1="320" y1="0" x2="320" y2="540"/><line x1="400" y1="0" x2="400" y2="540"/><line x1="480" y1="0" x2="480" y2="540"/><line x1="560" y1="0" x2="560" y2="540"/><line x1="640" y1="0" x2="640" y2="540"/><line x1="720" y1="0" x2="720" y2="540"/><line x1="800" y1="0" x2="800" y2="540"/><line x1="880" y1="0" x2="880" y2="540"/><line x1="960" y1="0" x2="960" y2="540"/>
+    <line x1="0" y1="0" x2="960" y2="0"/><line x1="0" y1="60" x2="960" y2="60"/><line x1="0" y1="120" x2="960" y2="120"/><line x1="0" y1="180" x2="960" y2="180"/><line x1="0" y1="240" x2="960" y2="240"/><line x1="0" y1="300" x2="960" y2="300"/><line x1="0" y1="360" x2="960" y2="360"/><line x1="0" y1="420" x2="960" y2="420"/><line x1="0" y1="480" x2="960" y2="480"/><line x1="0" y1="540" x2="960" y2="540"/>
+  </g>
+
+  <!-- Halo de luz quente -->
+  <circle cx="480" cy="270" r="320" fill="#f59e0b" opacity="0.06" filter="blur(60px)"/>
+
+  
+  <!-- Chrome DevTools inspecionando Signals em tempo real -->
+  <g transform="translate(40, 30)" filter="url(#winShadow)">
+    <rect width="880" height="480" rx="10" fill="#202124"/>
+    
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 0,10 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#292a2d"/>
+    <circle cx="18" cy="18" r="6" fill="#ff5f56"/>
+    <circle cx="38" cy="18" r="6" fill="#ffbd2e"/>
+    <circle cx="58" cy="18" r="6" fill="#27c93f"/>
+    <rect x="310" y="8" width="260" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="440" y="22" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">Chrome DevTools — Angular Signals Dependency Graph</text>
+    
+
+    <!-- Abas do DevTools -->
+    <g transform="translate(0, 36)">
+      <rect width="880" height="34" fill="#292a2d"/>
+      <text x="24" y="22" font-family="system-ui" font-size="11" fill="#9aa0a6">Elements</text>
+      <text x="96" y="22" font-family="system-ui" font-size="11" fill="#9aa0a6">Console</text>
+      <text x="160" y="22" font-family="system-ui" font-size="11" fill="#9aa0a6">Network</text>
+      <!-- Aba Ativa: Angular -->
+      <rect x="220" y="0" width="80" height="34" fill="#202124" stroke="#d96b27" stroke-width="2"/>
+      <text x="238" y="22" font-family="system-ui" font-weight="bold" font-size="11" fill="#d96b27">Angular</text>
+      <text x="320" y="22" font-family="system-ui" font-size="11" fill="#9aa0a6">Application</text>
+    </g>
+
+    <!-- Painel de Inspecção de Signals (Reatividade Pura) -->
+    <g transform="translate(24, 90)">
+      <text x="0" y="16" font-family="system-ui" font-weight="bold" font-size="14" fill="#ffffff">Grafo de Reatividade Granular (Push/Pull Glitch-Free)</text>
+      <text x="0" y="36" font-family="system-ui" font-size="11" fill="#9aa0a6">Observação neutra de dados: o produtor emite fatos puros; consumidores derivam sem efeitos colaterais.</text>
+
+      <!-- 1. Nó Produtor (WritableSignal) -->
+      <g transform="translate(20, 60)">
+        <rect width="220" height="130" rx="8" fill="#181825" stroke="#f59e0b" stroke-width="2"/>
+        <rect width="220" height="28" rx="8" fill="rgba(245, 158, 11, 0.2)"/>
+        <text x="16" y="19" font-family="system-ui" font-weight="bold" font-size="11" fill="#f9e2af">PRODUTOR: WritableSignal</text>
+        <text x="16" y="52" font-family="monospace" font-size="11" fill="#89dceb">_historico = signal([...])</text>
+        <text x="16" y="76" font-family="system-ui" font-size="10" fill="#a6adc8">• Fato objetivo gravado</text>
+        <text x="16" y="96" font-family="system-ui" font-size="10" fill="#a6adc8">• Privado ao serviço</text>
+        <text x="16" y="116" font-family="system-ui" font-size="9" fill="#f9e2af">Estado físico sem interpretação</text>
+      </g>
+
+      <!-- Conectores com setas -->
+      <path d="M 240, 125 L 320, 125" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4"/>
+      <rect x="252" y="110" width="56" height="18" rx="4" fill="#11111b" stroke="#f59e0b" stroke-width="1"/>
+      <text x="280" y="122" font-family="system-ui" font-size="8" fill="#f9e2af" text-anchor="middle">NOTIFICA</text>
+
+      <!-- 2. Nó Intermediário (asReadonly) -->
+      <g transform="translate(320, 60)">
+        <rect width="220" height="130" rx="8" fill="#181825" stroke="#10b981" stroke-width="2"/>
+        <rect width="220" height="28" rx="8" fill="rgba(16, 185, 129, 0.2)"/>
+        <text x="16" y="19" font-family="system-ui" font-weight="bold" font-size="11" fill="#a6e3a1">VISÃO: Signal.asReadonly()</text>
+        <text x="16" y="52" font-family="monospace" font-size="11" fill="#a6e3a1">historico = _h.asReadonly()</text>
+        <text x="16" y="76" font-family="system-ui" font-size="10" fill="#a6adc8">• Proibido mutar de fora</text>
+        <text x="16" y="96" font-family="system-ui" font-size="10" fill="#a6adc8">• Imutabilidade garantida</text>
+        <text x="16" y="116" font-family="system-ui" font-size="9" fill="#a6e3a1">Proteção contra julgamentos</text>
+      </g>
+
+      <path d="M 540, 125 L 610, 125" stroke="#10b981" stroke-width="2"/>
+
+      <!-- 3. Nó Consumidor (computed) -->
+      <g transform="translate(610, 60)">
+        <rect width="220" height="130" rx="8" fill="#181825" stroke="#89b4fa" stroke-width="2"/>
+        <rect width="220" height="28" rx="8" fill="rgba(137, 180, 250, 0.2)"/>
+        <text x="16" y="19" font-family="system-ui" font-weight="bold" font-size="11" fill="#89b4fa">DERIVAÇÃO: computed()</text>
+        <text x="16" y="52" font-family="monospace" font-size="11" fill="#89dceb">media = computed(() =&gt; ...)</text>
+        <text x="16" y="76" font-family="system-ui" font-size="10" fill="#a6adc8">• Função 100% Pura</text>
+        <text x="16" y="96" font-family="system-ui" font-size="10" fill="#a6adc8">• Lazy &amp; Memoized</text>
+        <text x="16" y="116" font-family="system-ui" font-size="9" fill="#89b4fa">Sem efeitos colaterais impuros</text>
+      </g>
+
+      <!-- Painel Inferior: Console do DevTools mostrando erro prevenido -->
+      <g transform="translate(20, 215)">
+        <rect width="810" height="145" rx="6" fill="#11111b" stroke="#313244" stroke-width="1"/>
+        <text x="16" y="24" font-family="monospace" font-size="11" fill="#9aa0a6">Console / Diagnóstico em Tempo de Compilação:</text>
+        
+        <g font-family="monospace" font-size="10">
+          <text x="16" y="50" fill="#ef4444">❌ TS2540: Cannot assign to 'historico' because it is a read-only property.</text>
+          <text x="36" y="70" fill="#6c7086">componente.historico.set([...]); // Tentativa violenta de mutar o estado alheio!</text>
+          <text x="16" y="100" fill="#10b981">✓ O compilador do Angular protegeu a soberania do componente detentor do estado.</text>
+          <text x="16" y="122" fill="#f59e0b">✓ A observação permaneceu factual e neutra, respeitando a separação ensinada por Marshall Rosenberg.</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+</svg>

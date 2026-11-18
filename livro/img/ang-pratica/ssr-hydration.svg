@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 390" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Ciclo de SSR e hydration</title>
+  <desc id="descricao">O servidor entrega HTML inicial e dados compatíveis; o navegador carrega Angular e hidrata o conteúdo já exibido.</desc>
+  <defs><marker id="seta" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#ee6c4d"/></marker></defs>
+  <rect width="1000" height="390" rx="28" fill="#f6f9fc"/>
+  <g font-family="system-ui,sans-serif" text-anchor="middle">
+    <rect x="70" y="95" width="240" height="175" rx="22" fill="#142536"/>
+    <text x="190" y="150" fill="white" font-size="21" font-weight="700">Servidor</text>
+    <text x="190" y="188" fill="#dbe7f2" font-size="15">renderiza HTML</text>
+    <text x="190" y="216" fill="#dbe7f2" font-size="15">estado inicial coerente</text>
+    <rect x="380" y="95" width="240" height="175" rx="22" fill="#3d5a80"/>
+    <text x="500" y="150" fill="white" font-size="21" font-weight="700">HTML entregue</text>
+    <text x="500" y="188" fill="#e6eef7" font-size="15">conteúdo visível cedo</text>
+    <text x="500" y="216" fill="#e6eef7" font-size="15">IDs e dados estáveis</text>
+    <rect x="690" y="95" width="240" height="175" rx="22" fill="#386641"/>
+    <text x="810" y="150" fill="white" font-size="21" font-weight="700">Browser</text>
+    <text x="810" y="188" fill="#e5f1e4" font-size="15">Angular hidrata</text>
+    <text x="810" y="216" fill="#e5f1e4" font-size="15">eventos e navegação</text>
+    <path d="M316 180h56m198 0h110" stroke="#ee6c4d" stroke-width="5" marker-end="url(#seta)"/>
+    <text x="500" y="330" fill="#45596c" font-size="16">Estado inicial incompatível causa diferenças de hydration</text>
+  </g>
+</svg>

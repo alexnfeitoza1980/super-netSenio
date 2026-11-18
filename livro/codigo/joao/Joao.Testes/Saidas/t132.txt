@@ -1,0 +1,9 @@
+Jesus (Mestre e Senhor) (o mesmo nome, antes e depois da toalha):
+  - está à mesa
+  - levanta-se da ceia
+  - tira as roupas
+  - envolve-se com uma toalha
+  - põe água em uma bacia
+  - lava os pés dos discípulos
+  - limpa-os com a toalha
+Pedro lava os pés dos discípulos? True

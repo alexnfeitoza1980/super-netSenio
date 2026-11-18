@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo do Canvas -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid Sutil de Engenharia -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="90" x2="960" y2="90"/>
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+    <line x1="160" y1="0" x2="160" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="640" y1="0" x2="640" y2="540"/>
+    <line x1="800" y1="0" x2="800" y2="540"/>
+  </g>
+
+  
+    <g filter="url(#winShadow)">
+      <rect x="40" y="30" width="880" height="480" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 40,40 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#1e293b"/>
+    <circle cx="58" cy="48" r="6" fill="#ff5f56"/>
+    <circle cx="78" cy="48" r="6" fill="#ffbd2e"/>
+    <circle cx="98" cy="48" r="6" fill="#27c93f"/>
+    <rect x="340" y="38" width="280" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="480" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">Arquitetura — Monólito com 30 Inputs vs. Composição Elegante</text>
+    
+      
+      <g transform="translate(60, 80)">
+        <!-- Lado Esquerdo: O Componente Hostil (30 inputs) -->
+        <rect width="380" height="400" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+        <rect width="380" height="40" rx="8" fill="#450a0a"/>
+        <text x="20" y="25" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#f87171">❌ O COMPONENTE MONOLÍTICO (EGOCÊNTRICO)</text>
+        
+        <g transform="translate(20, 60)" font-family="Consolas, monospace" font-size="10" fill="#94a3b8">
+          <text x="0" y="15" fill="#fca5a5">&lt;mega-tabela</text>
+          <text x="15" y="35">[dados]="itens()"</text>
+          <text x="15" y="55">[temPaginacao]="true"</text>
+          <text x="15" y="75">[tamanhoPagina]="10"</text>
+          <text x="15" y="95">[mostraExportar]="false"</text>
+          <text x="15" y="115">[corCabecalho]="'blue'"</text>
+          <text x="15" y="135">[temOrdenacao]="true"</text>
+          <text x="15" y="155">[colunaDefault]="'nome'"</text>
+          <text x="15" y="175">[iconeCustomizado]="'lupa'"</text>
+          <text x="15" y="195">[textoCarregando]="'Aguarde...'"</text>
+          <text x="15" y="215">[permitirFiltroData]="false"</text>
+          <text x="15" y="235">... + 20 inputs rígidos</text>
+          <text x="0" y="260" fill="#fca5a5">/&gt;</text>
+          
+          <rect x="0" y="280" width="340" height="50" rx="4" fill="#020617"/>
+          <text x="10" y="300" font-family="system-ui, sans-serif" font-size="10" fill="#ef4444">⚠️ Quebra a cada mudança de layout.</text>
+          <text x="10" y="318" font-family="system-ui, sans-serif" font-size="10" fill="#ef4444">Zero flexibilidade para customizar células.</text>
+        </g>
+        
+        <!-- Lado Direito: Composição Amigável (Dale Carnegie) -->
+        <g transform="translate(420, 0)">
+          <rect width="400" height="400" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+          <rect width="400" height="40" rx="8" fill="#064e3b"/>
+          <text x="20" y="25" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#34d399">✔ COMPOSIÇÃO COM DIRETIVAS (AMIGOS UI)</text>
+          
+          <g transform="translate(20, 60)" font-family="Consolas, monospace" font-size="10" fill="#d1fae5">
+            <text x="0" y="15" fill="#6ee7b7">&lt;amg-table [items]="itens()"&gt;</text>
+            <text x="15" y="35">&lt;ng-container amgColumn="nome"&gt;</text>
+            <text x="30" y="55">&lt;th *amgHeader&gt;Colaborador&lt;/th&gt;</text>
+            <text x="30" y="75">&lt;td *amgCell="let user"&gt;</text>
+            <text x="45" y="95">&lt;amg-avatar [src]="user.foto"/&gt;</text>
+            <text x="45" y="115">{ user.nome }</text>
+            <text x="30" y="135">&lt;/td&gt;</text>
+            <text x="15" y="155">&lt;/ng-container&gt;</text>
+            <text x="0" y="180" fill="#6ee7b7">&lt;/amg-table&gt;</text>
+            
+            <rect x="0" y="210" width="360" height="115" rx="4" fill="#020617"/>
+            <text x="12" y="235" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#34d399">PENSANDO NO QUE O OUTRO QUER:</text>
+            <text x="12" y="255" font-family="system-ui, sans-serif" font-size="10" fill="#cbd5e1">1. O consumidor decide o HTML das células.</text>
+            <text x="12" y="275" font-family="system-ui, sans-serif" font-size="10" fill="#cbd5e1">2. Tipagem inferida automaticamente com Generics.</text>
+            <text x="12" y="295" font-family="system-ui, sans-serif" font-size="10" fill="#cbd5e1">3. Acessibilidade nativa sem esforço adicional.</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    
+</svg>

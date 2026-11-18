@@ -1,0 +1,6 @@
+a voz começa assim: QW5hfGN1aWRhZG9yYXwx...
+voz reconhecida: Permitido
+política exige perfil admin: SemPermissao
+voz de um estranho: Estranho
+texto qualquer: Malformado
+31 minutos depois: Expirado

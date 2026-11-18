@@ -1,0 +1,6 @@
+servidos: 2, 2, 2, 2, 2 (total 10)
+sobras: 18 porções, juntadas em 3 cestos
+  cesto 1: 6 porções
+  cesto 2: 6 porções
+  cesto 3: 6 porções
+nada se perdeu? True

@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Núcleo compartilhado: sem dependência de EF, ASP.NET ou qualquer framework de infraestrutura. -->
+
+</Project>

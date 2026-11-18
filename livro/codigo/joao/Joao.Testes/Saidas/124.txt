@@ -1,0 +1,4 @@
+[Informacao] 09:00:00 > entrega do relatório: revisão iniciada {revisor=Lia}
+[Aviso] 09:00:00 > entrega do relatório > testes: 2 testes lentos {segundos=14}
+[Erro] 09:00:00 > entrega do relatório: publicação recusada {motivo=falta aprovação}
+3 linhas escritas; a de nível Detalhe não acendeu

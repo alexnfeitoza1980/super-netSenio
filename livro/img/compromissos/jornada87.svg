@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d"><title id="t">O novo sonho vira uma jornada executável</title><desc id="d">Escolher e perguntar: Uma decisão consciente. Agir e rever: Um caderno, quatro práticas</desc><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#faf5e8"/><stop offset="1" stop-color="#dcefe8"/></linearGradient></defs><rect width="800" height="380" rx="24" fill="url(#bg)"/>
+    <g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle"><text x="400" y="39" fill="#31564c" font-size="15" letter-spacing="3">CADERNO DOS QUATRO COMPROMISSOS</text>
+    <rect x="26" y="65" width="342" height="280" rx="22" fill="#fffaf3" stroke="#d8bfa2"/><rect x="432" y="65" width="342" height="280" rx="22" fill="#f4fffa" stroke="#71aa97"/>
+    <text x="197" y="101" font-size="20" font-weight="700" fill="#90552f">Escolher e perguntar</text><text x="603" y="101" font-size="20" font-weight="700" fill="#12665a">Agir e rever</text>
+    <path d="M380 203h36m-11-10 11 10-11 10" stroke="#b78336" stroke-width="4" fill="none"/>
+    <circle cx="101" cy="173" r="24" fill="#be8463"/><path d="M77 168q-3-42 37-26l13 22-13-8-13-5-14 16" fill="#303c3a"/><path d="M64 257q1-57 37-57t38 57" fill="#cf794b"/>
+    <rect x="141" y="145" width="207" height="108" rx="15" fill="#f3e5d3"/><path d="m142 202-18 13 18-2" fill="#f3e5d3"/>
+    <circle cx="505" cy="173" r="24" fill="#be8463"/><path d="M481 168q-3-42 37-26l13 22-13-8-13-5-14 16" fill="#303c3a"/><path d="M468 257q1-57 37-57t38 57" fill="#178372"/>
+    <rect x="550" y="137" width="200" height="120" rx="8" fill="#fff" stroke="#81b7a3"/><path d="M564 162h171M564 184h171M564 206h171M564 228h171" stroke="#e1eee8"/>
+    <text x="197" y="282" font-size="16" fill="#704d37">Uma decisão consciente</text><text x="603" y="282" font-size="16" fill="#155b50">Um caderno, quatro práticas</text>
+    <text x="197" y="321" font-size="13" fill="#866b51">Perceber o ponto de partida</text><text x="603" y="321" font-size="13" fill="#326657">Escolher • registrar • experimentar</text></g></svg>

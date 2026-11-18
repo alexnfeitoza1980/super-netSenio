@@ -1,0 +1,27 @@
+/* Estilos globais do Diário de Atenção (o app do livro). Cada componente cuida do próprio visual. */
+:root {
+  color-scheme: light dark;
+  --fundo: light-dark(#fbf7f9, #14101a);
+  --superficie: light-dark(#ffffff, #1e1826);
+  --tinta: light-dark(#25131c, #f1e9ee);
+  --tinta-2: light-dark(#5a4450, #c9b8c2);
+  --linha: light-dark(#eddde5, #352a3c);
+  --primaria: light-dark(#c2185b, #f06292);
+  --suave: light-dark(#fde7ef, #3a1a2a);
+  --bom: light-dark(#2e7d32, #81c784);
+  --ruim: light-dark(#c62828, #ef9a9a);
+  font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  line-height: 1.55;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--tinta); }
+a { color: var(--primaria); }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; padding: .5em 1em; border-radius: 10px; border: 1px solid var(--linha); background: var(--superficie); color: var(--tinta); }
+button.primario { background: var(--primaria); border-color: var(--primaria); color: #fff; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+input, select, textarea { padding: .5em .7em; border-radius: 10px; border: 1px solid var(--linha); background: var(--superficie); color: var(--tinta); }
+:focus-visible { outline: 3px solid color-mix(in srgb, var(--primaria) 60%, transparent); outline-offset: 2px; }
+.erro { color: var(--ruim); }
+.visualmente-oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

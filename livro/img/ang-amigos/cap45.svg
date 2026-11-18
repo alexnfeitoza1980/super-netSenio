@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo do Canvas -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid Sutil de Engenharia -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="90" x2="960" y2="90"/>
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+    <line x1="160" y1="0" x2="160" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="640" y1="0" x2="640" y2="540"/>
+    <line x1="800" y1="0" x2="800" y2="540"/>
+  </g>
+
+  
+    <g filter="url(#winShadow)">
+      <rect x="40" y="30" width="880" height="480" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 40,40 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#1e293b"/>
+    <circle cx="58" cy="48" r="6" fill="#ff5f56"/>
+    <circle cx="78" cy="48" r="6" fill="#ffbd2e"/>
+    <circle cx="98" cy="48" r="6" fill="#27c93f"/>
+    <rect x="340" y="38" width="280" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="480" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">Chrome DevTools — Ciclo de Vida do @defer (Prefetch on Idle)</text>
+    
+      
+      <g transform="translate(60, 80)">
+        <rect width="800" height="390" rx="8" fill="#0f172a" stroke="#334155"/>
+        
+        <!-- Timeline das 3 Fases do @defer -->
+        <g transform="translate(30, 30)">
+          <text x="0" y="15" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#f8fafc">FASES DO CONTROLE DE FLUXO @DEFER:</text>
+          
+          <!-- Bloco 1: @placeholder -->
+          <g transform="translate(0, 40)">
+            <rect width="220" height="150" rx="6" fill="#1e293b" stroke="#64748b"/>
+            <text x="15" y="25" font-family="Consolas, monospace" font-size="11" font-weight="bold" fill="#94a3b8">@placeholder (minimum 300ms)</text>
+            <rect x="15" y="45" width="190" height="20" rx="4" fill="#334155"/>
+            <rect x="15" y="75" width="130" height="14" rx="4" fill="#334155"/>
+            <rect x="15" y="98" width="160" height="14" rx="4" fill="#334155"/>
+            <text x="15" y="135" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">Skeleton sem salto visual (CLS 0)</text>
+          </g>
+          
+          <!-- Bloco 2: @loading -->
+          <g transform="translate(250, 40)">
+            <rect width="220" height="150" rx="6" fill="#1e293b" stroke="#f59e0b"/>
+            <text x="15" y="25" font-family="Consolas, monospace" font-size="11" font-weight="bold" fill="#fbbf24">@loading (after 100ms)</text>
+            <circle cx="110" cy="75" r="18" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="10 5"/>
+            <text x="110" y="115" font-family="system-ui, sans-serif" font-size="10" fill="#fbbf24" text-anchor="middle">Carregando chunk...</text>
+            <text x="15" y="135" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Evita flicker em conexões rápidas</text>
+          </g>
+          
+          <!-- Bloco 3: Conteúdo Principal Renderizado -->
+          <g transform="translate(500, 40)">
+            <rect width="240" height="150" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="15" y="25" font-family="Consolas, monospace" font-size="11" font-weight="bold" fill="#34d399">@defer (on viewport)</text>
+            <rect x="15" y="45" width="210" height="70" rx="4" fill="#020617"/>
+            <text x="25" y="70" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Gráfico de Conexões</text>
+            <text x="25" y="90" font-family="system-ui, sans-serif" font-size="10" fill="#4ade80">Carregado dinamicamente em 18ms</text>
+            <text x="15" y="135" font-family="system-ui, sans-serif" font-size="10" fill="#10b981">Zero bytes no bundle inicial!</text>
+          </g>
+        </g>
+        
+        <!-- Rodapé Filosófico -->
+        <g transform="translate(30, 250)">
+          <rect width="740" height="100" rx="6" fill="#020617" stroke="#334155"/>
+          <text x="20" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f59e0b">DALE CARNEGIE · CAPÍTULO 13: "UM PINGO DE MEL APANHA MAIS MOSCAS QUE UM GALÃO DE FEL"</text>
+          <text x="20" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">O controle de fluxo @defer do Angular 17+ é pura cortesia técnica com o usuário móvel.</text>
+          <text x="20" y="72" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">Em vez de despejar um bundle gigantesco de 5 MB de uma só vez, entregamos apenas o que ele vê no momento, antecipando o resto gentilmente quando o navegador estiver ocioso (prefetch on idle).</text>
+        </g>
+      </g>
+    </g>
+    
+</svg>

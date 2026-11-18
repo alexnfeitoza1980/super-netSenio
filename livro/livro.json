@@ -1,0 +1,25 @@
+{
+  "id": "super-netsenior",
+  "titulo": "Super .NET Sênior",
+  "legenda": "o livro único",
+  "marca": "SN",
+  "kicker": "Livro único · C#, arquitetura .NET e Angular",
+  "tituloHome": "Do C# à arquitetura de microsserviços, em um só livro",
+  "resumo": "Todos os livros e aulas dos projetos de estudo reunidos: C# do zero, projeto ágil e SOLID, hábitos e mentalidade em C#, arquitetura de microsserviços .NET, laboratórios práticos e Angular.",
+  "blurb": "<p>Este livro reúne <strong>tudo o que estava espalhado</strong> em sete projetos de estudo: os livros de <strong>C#</strong>, o guia de <strong>arquitetura de microsserviços .NET</strong>, as aulas práticas de <strong>Outbox, Saga, Circuit Breaker e Pix</strong>, os livros de <strong>Angular</strong> e o código que acompanha cada um. Um sumário, uma busca, um glossário, um conjunto de cartões de revisão e um progresso de leitura para tudo.</p>",
+  "matiz": 200,
+  "display": "\"Trebuchet MS\", \"Segoe UI Variable Display\", \"Segoe UI\", system-ui, sans-serif",
+  "paleta": {
+    "primary": "#0f6b8a",
+    "soft": "#dff1f7",
+    "accent": "#f2a900",
+    "bg": "#f5fafc",
+    "surface2": "#e9f2f6",
+    "line": "#d3e3ea",
+    "ink": "#10222b",
+    "ink2": "#3d5560",
+    "ink3": "#6f8791",
+    "codigo": "#0e1a21",
+    "capa": ["#0b2530", "#0f6b8a", "#1a8fb0"]
+  }
+}

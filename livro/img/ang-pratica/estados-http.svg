@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 410" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Estados de uma consulta HTTP</title>
+  <desc id="descricao">Uma consulta pode carregar, concluir com resultados, concluir vazia ou falhar com possibilidade de tentar de novo.</desc>
+  <defs><marker id="seta" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#ee6c4d"/></marker></defs>
+  <rect width="1000" height="410" rx="28" fill="#f6f9fc"/>
+  <g font-family="system-ui,sans-serif" text-anchor="middle">
+    <rect x="375" y="30" width="250" height="70" rx="18" fill="#142536"/><text x="500" y="74" fill="white" font-size="20" font-weight="700">Solicitação</text>
+    <rect x="375" y="150" width="250" height="70" rx="18" fill="#3d5a80"/><text x="500" y="194" fill="white" font-size="20" font-weight="700">Carregando</text>
+    <rect x="50" y="290" width="200" height="70" rx="18" fill="#386641"/><text x="150" y="333" fill="white" font-size="18">Sucesso · livros</text>
+    <rect x="275" y="290" width="200" height="70" rx="18" fill="#6d597a"/><text x="375" y="333" fill="white" font-size="18">Sucesso · vazio</text>
+    <rect x="525" y="290" width="200" height="70" rx="18" fill="#bc6c25"/><text x="625" y="333" fill="white" font-size="18">Falha · tentar</text>
+    <rect x="750" y="290" width="200" height="70" rx="18" fill="#3d5a80"/><text x="850" y="333" fill="white" font-size="18">Cancelada</text>
+    <path d="M500 105v38m-15 80c-100 30-210 50-300 62m315-60c-50 30-75 45-105 62m130-62c45 27 70 42 100 62m-100-63c125 18 215 36 310 63" fill="none" stroke="#ee6c4d" stroke-width="4" marker-end="url(#seta)"/>
+  </g>
+</svg>

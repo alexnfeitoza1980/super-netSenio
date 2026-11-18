@@ -1,0 +1,5 @@
+André recebeu 3
+Filipe recebeu 4
+Tomé recebeu 2
+Sobraram e foram recolhidos: 3
+Nada se perdeu? True

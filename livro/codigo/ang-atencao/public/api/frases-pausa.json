@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "texto": "Uma coisa de cada vez.",
+    "tema": "pausa"
+  },
+  {
+    "id": 2,
+    "texto": "Antes do próximo commit, uma respiração.",
+    "tema": "pausa"
+  },
+  {
+    "id": 3,
+    "texto": "Parar também é parte do trabalho.",
+    "tema": "pausa"
+  }
+]

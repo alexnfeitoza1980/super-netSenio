@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo do Canvas -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid Sutil de Engenharia -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="90" x2="960" y2="90"/>
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+    <line x1="160" y1="0" x2="160" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="640" y1="0" x2="640" y2="540"/>
+    <line x1="800" y1="0" x2="800" y2="540"/>
+  </g>
+
+  
+    <g filter="url(#winShadow)">
+      <rect x="40" y="30" width="880" height="480" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 40,40 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#1e293b"/>
+    <circle cx="58" cy="48" r="6" fill="#ff5f56"/>
+    <circle cx="78" cy="48" r="6" fill="#ffbd2e"/>
+    <circle cx="98" cy="48" r="6" fill="#27c93f"/>
+    <rect x="340" y="38" width="280" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="480" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">Browser — CDK Virtual Scroll (10.000 nós) &amp; Drag and Drop Fluido</text>
+    
+      
+      <g transform="translate(60, 80)">
+        <!-- Painel de Performance: 10.000 itens, mas apenas 7 no DOM -->
+        <rect width="450" height="390" rx="8" fill="#1e1e1e" stroke="#333333"/>
+        <rect width="450" height="32" rx="8" fill="#2d2d2d"/>
+        <text x="15" y="21" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#38bdf8">&lt;cdk-virtual-scroll-viewport itemSize="48"&gt;</text>
+        
+        <g transform="translate(15, 45)" font-family="Consolas, monospace" font-size="11">
+          <!-- 6 Itens visíveis renderizados -->
+          <rect y="0" width="420" height="40" rx="4" fill="#252526" stroke="#3c3c3c"/>
+          <text x="15" y="25" fill="#e2e8f0">Item #1042 · Reconhecimento ao Caio (Code Review)</text>
+          
+          <rect y="46" width="420" height="40" rx="4" fill="#252526" stroke="#3c3c3c"/>
+          <text x="15" y="71" fill="#e2e8f0">Item #1043 · Elogio à Marina (Acessibilidade A11y)</text>
+          
+          <rect y="92" width="420" height="40" rx="4" fill="#1e3a8a" stroke="#3b82f6"/>
+          <text x="15" y="117" fill="#ffffff" font-weight="bold">Item #1044 · CdkDrag Sendo Arrastado ◄ [Segurando]</text>
+          
+          <rect y="138" width="420" height="40" rx="4" fill="#252526" stroke="#3c3c3c"/>
+          <text x="15" y="163" fill="#e2e8f0">Item #1045 · Reconhecimento ao Lucas (Schematics)</text>
+          
+          <rect y="184" width="420" height="40" rx="4" fill="#252526" stroke="#3c3c3c"/>
+          <text x="15" y="209" fill="#e2e8f0">Item #1046 · Agradecimento à Beatriz (Documentação)</text>
+          
+          <rect y="230" width="420" height="40" rx="4" fill="#252526" stroke="#3c3c3c"/>
+          <text x="15" y="255" fill="#e2e8f0">Item #1047 · Elogio ao Thiago (Performance 60fps)</text>
+          
+          <!-- Barra de Status do DevTools -->
+          <rect y="285" width="420" height="45" rx="4" fill="#0d1117"/>
+          <text x="12" y="305" fill="#4ade80">● DOM Elements: 7 de 10.000 | Heap: 4.2 MB</text>
+          <text x="12" y="322" fill="#38bdf8">● FPS durante Scroll: 60.0 fps estável</text>
+        </g>
+        
+        <!-- Lado Direito: A Válvula de Segurança das Queixas -->
+        <g transform="translate(470, 0)">
+          <rect width="330" height="390" rx="8" fill="#1e293b" stroke="#3b82f6"/>
+          <text x="15" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#60a5fa">DRAG &amp; DROP REATIVO</text>
+          
+          <g transform="translate(15, 50)" font-family="Consolas, monospace" font-size="10">
+            <rect width="300" height="110" rx="4" fill="#0f172a" stroke="#1e293b"/>
+            <text x="10" y="20" fill="#9cdcfe">&lt;div cdkDropList</text>
+            <text x="10" y="38" fill="#9cdcfe">     (cdkDropListDropped)=</text>
+            <text x="20" y="56" fill="#ce9178">     "reordenar($event)"&gt;</text>
+            <text x="10" y="76" fill="#9cdcfe">  &lt;div *cdkVirtualFor=</text>
+            <text x="20" y="94" fill="#ce9178">       "let item of itens()" cdkDrag&gt;</text>
+          </g>
+          
+          <g transform="translate(15, 180)">
+            <rect width="300" height="180" rx="6" fill="#020617"/>
+            <text x="12" y="25" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#fbbf24">DALE CARNEGIE · CAPÍTULO 15:</text>
+            <text x="12" y="45" font-family="system-ui, sans-serif" font-size="10" fill="#e2e8f0">"Deixe a outra pessoa falar e</text>
+            <text x="12" y="63" font-family="system-ui, sans-serif" font-size="10" fill="#e2e8f0">sentir-se no controle."</text>
+            <text x="12" y="90" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Uma interface que trava ou</text>
+            <text x="12" y="108" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">engasga frustra quem a opera.</text>
+            <text x="12" y="126" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Com CDK Scrolling, o usuário</text>
+            <text x="12" y="144" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">navega por 10.000 itens com</text>
+            <text x="12" y="162" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">absoluta leveza e soberania.</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    
+</svg>

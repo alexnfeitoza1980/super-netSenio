@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/SuperNetSenior.BuildingBlocks/SuperNetSenior.BuildingBlocks.csproj" />
+    <Project Path="src/BuildingBlocks/SuperNetSenior.BuildingBlocks.Infrastructure/SuperNetSenior.BuildingBlocks.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Banking/">
+    <Project Path="src/Banking/SuperNetSenior.Banking.Domain/SuperNetSenior.Banking.Domain.csproj" />
+    <Project Path="src/Banking/SuperNetSenior.Banking.Application/SuperNetSenior.Banking.Application.csproj" />
+    <Project Path="src/Banking/SuperNetSenior.Banking.Infrastructure/SuperNetSenior.Banking.Infrastructure.csproj" />
+    <Project Path="src/Banking/SuperNetSenior.Banking.Api/SuperNetSenior.Banking.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SuperNetSenior.BuildingBlocks.Tests/SuperNetSenior.BuildingBlocks.Tests.csproj" />
+    <Project Path="tests/SuperNetSenior.Banking.Tests/SuperNetSenior.Banking.Tests.csproj" />
+  </Folder>
+</Solution>

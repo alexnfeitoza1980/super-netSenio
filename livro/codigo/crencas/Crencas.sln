@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crencas.Core", "Crencas.Core\Crencas.Core.csproj", "{D79CE7EB-7C71-44D5-A7CE-91D16A844001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crencas.Console", "Crencas.Console\Crencas.Console.csproj", "{D79CE7EB-7C71-44D5-A7CE-91D16A844002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crencas.Testes", "Crencas.Testes\Crencas.Testes.csproj", "{D79CE7EB-7C71-44D5-A7CE-91D16A844003}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79CE7EB-7C71-44D5-A7CE-91D16A844003}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

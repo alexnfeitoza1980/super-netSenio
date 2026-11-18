@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo do Canvas -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid Sutil de Engenharia -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="90" x2="960" y2="90"/>
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+    <line x1="160" y1="0" x2="160" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="640" y1="0" x2="640" y2="540"/>
+    <line x1="800" y1="0" x2="800" y2="540"/>
+  </g>
+
+  
+    <g filter="url(#winShadow)">
+      <rect x="40" y="30" width="880" height="480" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 40,40 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#1e293b"/>
+    <circle cx="58" cy="48" r="6" fill="#ff5f56"/>
+    <circle cx="78" cy="48" r="6" fill="#ffbd2e"/>
+    <circle cx="98" cy="48" r="6" fill="#27c93f"/>
+    <rect x="340" y="38" width="280" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="480" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">Chrome DevTools — Accessibility Tree &amp; FocusMonitor Inspector</text>
+    
+      
+      <g transform="translate(60, 80)">
+        <!-- Árvore de Acessibilidade no DevTools -->
+        <rect width="420" height="390" rx="8" fill="#1e1e1e" stroke="#333333"/>
+        <rect width="420" height="32" rx="8" fill="#2d2d2d"/>
+        <text x="15" y="21" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#e0e0e0">ACCESSIBILITY TREE (ARIA VIRTUAL NODE)</text>
+        
+        <g transform="translate(15, 50)" font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">
+          <text x="0" y="15" fill="#4ec9b0">▼ role="dialog" [aria-modal="true"]</text>
+          <text x="15" y="35" fill="#9cdcfe">aria-labelledby: "amg-dialog-title-1"</text>
+          <text x="15" y="55" fill="#9cdcfe">aria-describedby: "amg-dialog-desc-1"</text>
+          <text x="15" y="80" fill="#4ec9b0">  ▼ role="heading" level="2" id="amg-dialog-title-1"</text>
+          <text x="35" y="100" fill="#ce9178">"Confirmar Envio"</text>
+          <text x="15" y="125" fill="#4ec9b0">  ▼ role="group" (Focus Trap Active)</text>
+          <text x="35" y="145" fill="#4ade80">● [FocusMonitor]: Keyboard User Detected</text>
+          <text x="35" y="165" fill="#d4d4d4">  &lt;button&gt; "Cancelar"</text>
+          <text x="35" y="185" fill="#60a5fa">  &lt;button focused&gt; "Confirmar" ◄ [Foco Preso]</text>
+        </g>
+        
+        <!-- Lado Direito: LiveAnnouncer &amp; Código CDK -->
+        <g transform="translate(440, 0)">
+          <rect width="360" height="390" rx="8" fill="#1e293b" stroke="#3b82f6"/>
+          <text x="16" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#60a5fa">ANGULAR CDK: ESCUTA ATIVA</text>
+          
+          <g transform="translate(16, 50)" font-family="Consolas, monospace" font-size="11">
+            <rect width="328" height="120" rx="4" fill="#0f172a" stroke="#1e293b"/>
+            <text x="10" y="20" fill="#c586c0">private</text>
+            <text x="65" y="20" fill="#9cdcfe">live = inject(LiveAnnouncer);</text>
+            <text x="10" y="45" fill="#c586c0">private</text>
+            <text x="65" y="45" fill="#9cdcfe">focus = inject(FocusMonitor);</text>
+            <text x="10" y="75" fill="#6a9955">// Notifica leitores de tela com polidez</text>
+            <text x="10" y="95" fill="#9cdcfe">this.live.announce(</text>
+            <text x="25" y="112" fill="#ce9178">'Elogio enviado com sucesso!', 'polite'</text>
+            
+            <rect x="0" y="140" width="328" height="180" rx="6" fill="#020617"/>
+            <text x="14" y="165" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#fbbf24">DALE CARNEGIE · CAPÍTULO 4:</text>
+            <text x="14" y="185" font-family="system-ui, sans-serif" font-size="10" fill="#e2e8f0">"Seja um bom ouvinte: incentive os outros</text>
+            <text x="14" y="203" font-family="system-ui, sans-serif" font-size="10" fill="#e2e8f0">a falar sobre si mesmos."</text>
+            <text x="14" y="230" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">No frontend, escutar significa capturar eventos</text>
+            <text x="14" y="248" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">de teclado, gerenciar foco sem saltos e anunciar</text>
+            <text x="14" y="266" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">mudanças de forma gentil para leitores de tela.</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    
+</svg>

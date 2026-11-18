@@ -1,0 +1,445 @@
+---
+id: glossario
+order: 374
+kind: glossario
+group: Referência
+title: Glossário geral
+subtitle: Os termos de todos os livros — C#, arquitetura e Angular — em um só lugar.
+minutes: 15
+hue: 200
+origem: glossários de todos os livros
+---
+
+- **Abstração** (7) — Modelar só o essencial de algo, ignorando detalhes; no C#, classes abstratas e interfaces.
+- **Action / Func** (11) — Delegados genéricos prontos: `Action` não retorna valor; `Func` retorna.
+- **Array (matriz)** (4) — Coleção de tamanho fixo de itens do mesmo tipo, indexada a partir de 0.
+- **as** (7) — Converte para um tipo ou devolve `null` se não for possível, sem lançar exceção.
+- **Atribuição** (2) — Dar um valor a uma variável com `=`.
+- **base** (6) — Palavra-chave que se refere à classe base: `base.Metodo()` ou `: base(args)`.
+- **Bitmap** (13) — Imagem em memória, manipulável com `Graphics`.
+- **Boxing** (14) — Embrulhar um tipo de valor em um objeto no heap.
+- **Breakpoint** (10) — Ponto de interrupção onde o depurador pausa o programa.
+- **Buffer duplo** (13) — Desenhar fora da tela e copiar o quadro pronto, para evitar tremulação.
+- **Callback** (11) — Delegado passado a um objeto para ser chamado de volta.
+- **Cast (coerção)** (4) — Conversão explícita de tipo, como `(int) 3.9`.
+- **catch** (10) — Bloco que trata uma exceção lançada no `try`.
+- **Chave primária** (1) — Coluna cujo valor identifica unicamente cada linha de uma tabela.
+- **Classe** (3) — Planta que define campos e métodos de um tipo de objeto.
+- **Classe abstrata** (7) — Classe que não pode ser instanciada e pode ter métodos abstratos.
+- **Coesão** (3) — Uma classe deve tratar de um único assunto.
+- **Coleção** (8) — Estrutura que guarda vários itens (`List`, `Dictionary`, `Queue`, `Stack`).
+- **Coleta de lixo (GC)** (4) — Recolhimento automático de objetos sem referências.
+- **Compilar** (1) — Transformar o código C# em um executável.
+- **Construtor** (5) — Método especial que inicializa o objeto ao usar `new`.
+- **Controle** (1) — Elemento visual do formulário (botão, caixa de texto…).
+- **Controle vinculado (bound)** (1) — Controle ligado a uma coluna de dados; mudanças fluem nos dois sentidos.
+- **const** (5) — Valor fixo, definido em tempo de compilação.
+- **Delegado** (11) — Tipo que referencia métodos de determinada assinatura.
+- **Depurador** (10) — Ferramenta que pausa e examina o programa passo a passo.
+- **Dictionary** (8) — Coleção de pares chave → valor, com chaves únicas.
+- **Dispose** (9) — Método de `IDisposable` que libera recursos de forma determinística.
+- **Downcast** (7) — Tratar um objeto de tipo geral como um tipo mais específico (exige cast).
+- **Encapsulamento** (5) — Esconder dados internos e expor só o necessário.
+- **enum** (8) — Tipo com um conjunto fixo de valores nomeados.
+- **Evento** (11) — Sinal publicado por um objeto para avisar que algo aconteceu.
+- **Exceção** (10) — Objeto que descreve um problema em tempo de execução.
+- **Execução adiada** (15) — Consulta LINQ que só roda quando o resultado é percorrido.
+- **Extensão (método de)** (14) — Método estático com `this` no primeiro parâmetro que "estende" um tipo existente.
+- **Campo** (3) — Variável declarada dentro da classe; guarda o que o objeto sabe.
+- **Finalizador** (14) — Método `~Classe` chamado pelo GC antes de liberar o objeto.
+- **finally** (10) — Bloco que sempre executa após o `try`, com ou sem exceção.
+- **for / foreach / while** (2) — Laços de repetição.
+- **Graphics** (13) — Superfície de desenho do GDI+.
+- **Heap** (3) — Área da memória onde os objetos criados com `new` ficam.
+- **Herança** (6) — Uma subclasse reutiliza e estende os membros de uma classe base.
+- **Hexadecimal** (9) — Base 16; dois dígitos representam um byte.
+- **IComparable / IComparer** (8) — Interfaces para definir a ordem de objetos.
+- **IDE** (1) — Ambiente Integrado de Desenvolvimento (Visual Studio).
+- **IDisposable** (9) — Interface com `Dispose()` para liberar recursos.
+- **if / else** (2) — Estrutura de decisão.
+- **Instância** (3) — Objeto concreto criado a partir de uma classe.
+- **Interface** (7) — Contrato com métodos/propriedades que uma classe se compromete a implementar.
+- **IntelliSense** (2) — Sugestões automáticas da IDE enquanto você digita.
+- **internal** (7) — Acessível em todo o mesmo projeto.
+- **is** (7) — Testa se um objeto é de determinado tipo ou implementa uma interface.
+- **join** (15) — Cláusula LINQ que une duas coleções por um campo em comum.
+- **Lambda** (11) — Método anônimo escrito inline: `x => x * 2`.
+- **LINQ** (15) — Linguagem integrada de consulta a coleções, bancos e XML.
+- **List<T>** (8) — Lista genérica redimensionável.
+- **Main** (2) — Ponto de entrada do programa.
+- **Método** (2) — Bloco de comandos nomeado que pode receber parâmetros e retornar valor.
+- **Namespace** (2) — Agrupador de classes.
+- **new** (3) — Operador que cria uma instância.
+- **null** (4) — Referência que não aponta para nenhum objeto.
+- **NullReferenceException** (4) — Erro ao usar um membro de uma referência nula.
+- **Objeto** (3) — Instância de uma classe.
+- **override** (6) — Substitui na subclasse um método `virtual` da base.
+- **Paint** (13) — Evento disparado quando um controle precisa ser repintado.
+- **Parâmetro** (2) — Valor de entrada de um método.
+- **partial** (2) — Permite dividir uma classe em vários arquivos.
+- **Polimorfismo** (7) — Um mesmo código funcionando com tipos diferentes, cada um respondendo à sua maneira.
+- **private** (5) — Acessível só dentro da classe.
+- **Propriedade** (5) — Membro que parece um campo mas usa `get`/`set`.
+- **protected** (7) — Acessível na classe e nas subclasses.
+- **public** (5) — Acessível por qualquer código.
+- **Queue<T>** (8) — Fila: primeiro a entrar, primeiro a sair.
+- **Random** (4) — Classe geradora de números aleatórios.
+- **Recurso (resource)** (1) — Arquivo embutido no aplicativo (imagem, ícone, som).
+- **Referência** (4) — Variável que aponta para um objeto no heap.
+- **Refatoração** (A) — Melhorar o código sem mudar seu comportamento.
+- **Serialização** (9) — Converter um objeto em bytes/texto para salvar ou transmitir.
+- **Sobrecarga** (8) — Vários métodos com o mesmo nome e assinaturas diferentes.
+- **Stack (pilha)** (14) — Área rápida de memória para valores locais e referências.
+- **Stack<T>** (8) — Pilha: último a entrar, primeiro a sair.
+- **static** (3) — Membro que pertence à classe, não a uma instância.
+- **Stream** (9) — Canal sequencial de dados (arquivo, memória, rede).
+- **struct** (14) — Tipo de valor, copiado na atribuição.
+- **switch** (9) — Escolhe um caminho conforme o valor de uma expressão.
+- **this** (3) — Referência ao próprio objeto.
+- **throw** (10) — Lança uma exceção.
+- **Timer** (12) — Componente que dispara `Tick` em intervalos regulares.
+- **Tipo anônimo** (15) — Objeto criado com `new { }` sem classe declarada.
+- **Tipo de valor** (4) — Tipo cujas variáveis guardam o próprio valor (int, struct, enum).
+- **try** (10) — Bloco com código que pode lançar exceção.
+- **Upcast** (7) — Tratar um objeto como um tipo mais geral (automático).
+- **using** (9) — Diretiva para importar namespaces; instrução que chama `Dispose()` ao fim do bloco.
+- **Variável** (2) — Nome associado a um tipo e a um valor.
+- **var** (15) — Tipo inferido pelo compilador.
+- **virtual** (6) — Marca um método como substituível nas subclasses.
+- **void** (2) — Tipo de retorno de um método que não devolve valor.
+- **Acoplamento** (22) — Grau de dependência entre módulos; quanto menor, mais fácil mudar.
+- **Active Object** (29) — Objeto com seu próprio fio de execução que recebe comandos numa fila e os executa em ordem.
+- **ADP** (33) — Princípio das Dependências Acíclicas: o grafo de pacotes não pode ter ciclos.
+- **Adapter** (36) — Converte a interface de uma classe na que o cliente espera.
+- **Ágil** (16) — Abordagem baseada em iterações curtas, feedback, colaboração e adaptação a mudanças.
+- **Abstract Server** (36) — Interface entre cliente e servidor que inverte a dependência e atende ao DIP.
+- **Bridge** (36) — Separa abstração e implementação em duas hierarquias que evoluem independentemente.
+- **CCP** (33) — Fechamento Comum: classes que mudam juntas ficam no mesmo pacote.
+- **Command** (29) — Encapsula um pedido como objeto (`Execute`), permitindo filas, desfazer e registro.
+- **Composite** (34) — Trata objetos individuais e composições deles de modo uniforme (árvore).
+- **Contrato (Design by Contract)** (22) — Pré-condições, pós-condições e invariantes que uma classe garante (base do LSP).
+- **Decorator** (38) — Embrulha um objeto de mesma interface para acrescentar comportamento.
+- **DIP** (23) — Inversão de Dependência: dependa de abstrações, não de detalhes concretos.
+- **Distância (D′)** (33) — |A + I − 1|: afastamento de um pacote da sequência principal.
+- **Double dispatch** (38) — Escolha da função por dois tipos em tempo de execução (base do Visitor).
+- **Extension Object** (38) — Objetos de extensão pesquisáveis que acrescentam capacidades a uma hierarquia.
+- **Façade** (31) — Interface simplificada para um subsistema complexo.
+- **Factory** (34) — Encapsula a criação de objetos, ocultando a classe concreta.
+- **FSM** (39) — Máquina de estados finitos: estados, eventos, transições e ações.
+- **Gateway (Table Data Gateway/Repository)** (37) — Interface que encapsula o acesso a dados de um tipo de objeto.
+- **História de usuário** (17) — Descrição curta de uma funcionalidade na perspectiva do usuário; lembrete de uma conversa.
+- **Humble Dialog** (40) — Janela reduzida ao mínimo; a lógica vai para um objeto testável (presenter).
+- **Integração contínua** (16) — Integrar e testar o código várias vezes ao dia.
+- **Iteração** (17) — Período curto de trabalho com planejamento, desenvolvimento e demonstração.
+- **ISP** (24) — Segregação de Interfaces: não obrigue clientes a depender do que não usam.
+- **LSP** (22) — Substituição de Liskov: subtipos devem poder substituir seus tipos base sem quebrar o comportamento.
+- **Mediator** (31) — Centraliza a comunicação entre objetos para que não se conheçam diretamente.
+- **Monostate** (32) — Todas as instâncias compartilham o mesmo estado (campos estáticos), sem impor instância única.
+- **MVP** (40) — Model–View–Presenter: lógica da tela no presenter; a view é passiva e fina.
+- **Null Object** (31) — Objeto que implementa a interface sem fazer nada, evitando verificações de `null`.
+- **Observer** (35) — Notifica automaticamente dependentes quando o estado do sujeito muda.
+- **OCP** (21) — Aberto/Fechado: aberto à extensão, fechado à modificação.
+- **Pair programming** (16) — Dois desenvolvedores trabalhando juntos em um único computador.
+- **Padrão de projeto** (29) — Solução reutilizável e nomeada para um problema recorrente de projeto.
+- **Proxy** (37) — Substituto com a mesma interface que controla o acesso ao objeto real.
+- **REP / CRP** (33) — Equivalência Reutilização/Entrega; Reutilização Comum: o grão de reuso é o pacote.
+- **Refatoração** (18) — Melhorar a estrutura do código sem mudar seu comportamento externo, sob testes.
+- **SAP** (33) — Abstrações Estáveis: pacotes estáveis devem ser abstratos.
+- **SDP** (33) — Dependências Estáveis: dependa na direção da estabilidade.
+- **Singleton** (32) — Garante uma única instância com ponto de acesso global.
+- **SOLID** (20–24) — SRP, OCP, LSP, ISP e DIP: cinco princípios de projeto orientado a objetos.
+- **SRP** (20) — Responsabilidade Única: uma classe deve ter um único motivo para mudar.
+- **State (padrão)** (39) — Cada estado é uma classe; o contexto delega os eventos ao estado atual.
+- **Strategy** (30) — Família de algoritmos intercambiáveis atrás de uma interface.
+- **Teste de aceitação** (17) — Verificação de que uma história atende ao que o cliente espera.
+- **TDD** (17) — Desenvolvimento guiado por testes: teste que falha, código mínimo, refatorar.
+- **Template Method** (30) — Esqueleto de algoritmo na base; as subclasses preenchem os passos.
+- **UML** (25–27) — Linguagem de modelagem gráfica (classes, sequência, estados, casos de uso, objetos).
+- **Velocidade** (17) — Quanto de trabalho a equipe conclui por iteração; base do planejamento.
+- **Visitor** (38) — Adiciona operações a uma hierarquia sem alterá-la, via `Aceitar`/`Visitar`.
+- **XP (Extreme Programming)** (16) — Metodologia ágil com TDD, programação em pares, integração contínua e entregas pequenas.
+- **Autoconfiança** (44) — Confiança baseada em evidência (testes, tipos, histórico de conquistas), não em otimismo vazio.
+- **Cache LRU** (45) — Cache de capacidade fixa que descarta o item menos usado recentemente.
+- **Cancelamento cooperativo** (54) — O código verifica o `CancellationToken` e para em um ponto seguro; ninguém "mata" a tarefa.
+- **Contrapressão (backpressure)** (53) — O consumidor "segura" o produtor quando não dá conta do ritmo (`Channel<T>` limitado).
+- **Dívida técnica** (45) — Atalho no código que cobra "juros" em horas perdidas até ser quitado.
+- **Definição de pronto** (50) — Lista acordada do que "concluído" significa para a equipe.
+- **Extra de escopo (gold plating)** (50) — Acrescentar o que ninguém pediu; muda o "o quê" e deve ser negociado.
+- **Extra de qualidade** (50) — Melhoria do "quão bem" algo é feito (validação, docs, testes de borda), sem mudar o escopo.
+- **Fluent API** (47) — API que se lê como uma frase, encadeando chamadas.
+- **Graceful shutdown** (54) — Encerramento em que o serviço termina o que faz e salva o estado.
+- **Guard clause** (49) — Verificação no início do método que recusa entradas inválidas.
+- **Idempotência** (Lab 7) — Repetir a operação não altera o resultado além da primeira vez.
+- **IProgress<T>** (46, 48) — Contrato para reportar progresso de operações longas.
+- **Leitor tolerante** (56) — Parser que aceita variações de formato e ignora o desconhecido, mas produz saída canônica.
+- **Meta SMART** (42) — Específica, mensurável, atingível, relevante e com prazo.
+- **Meter / Counter** (55) — API de métricas do .NET (`System.Diagnostics.Metrics`).
+- **Middleware** (54) — Etapa de um pipeline que age e decide se chama a próxima.
+- **Mente Mestra** (43) — Aliança harmoniosa de pessoas (ou componentes) em torno de um propósito comum.
+- **Parse, don't validate** (52) — Transformar a entrada em um tipo que só existe se for válido, na fronteira.
+- **Post-mortem sem culpa** (55) — Análise de incidente focada no sistema, com cinco porquês e ações com responsável e prazo.
+- **Propósito definido** (42) — Objetivo claro (o quê, por quê, como medir, até quando) que organiza o esforço.
+- **Regra de Ouro** (57) — Tratar os outros como gostaria de ser tratado: honestidade, respeito e cuidado com quem vem depois.
+- **Resultado<T>** (55) — Tipo que representa sucesso ou falha (com erros) sem usar exceções.
+- **Retentativa com recuo exponencial** (49) — Tentar de novo com esperas crescentes, só para falhas passageiras.
+- **Segredo (wrapper)** (57) — Tipo cujo `ToString` mascara um valor sensível.
+- **SQL parametrizado** (57) — Consulta em que os valores viajam separados do comando, evitando injeção de SQL.
+- **Teste de borda** (50) — Teste de limites e casos extremos (vazio, nulo, máximo).
+- **Teste de caracterização** (44) — Teste que registra o comportamento atual de código legado para refatorá-lo com segurança.
+- **Teste de contrato** (57) — Testes escritos contra a interface, herdados por todas as implementações.
+- **Tolerância** (56) — Lidar com o diferente com calma, sem abrir mão do essencial (princípio da robustez).
+- **Troca atômica** (Lab 7) — Gravar em arquivo temporário e substituir o final de uma vez.
+- **Value object** (52) — Tipo imutável definido pelo valor que carrega suas regras (`Dinheiro`, `Email`).
+- **WIP (trabalho em andamento)** (53) — Itens iniciados e não concluídos; limitá-lo melhora foco e fluxo.
+- **YAGNI** (47) — "Você não vai precisar disso": não construa o que ninguém pediu.
+- **Alavanca** (68) — Ponto do sistema onde uma ação pequena rende efeito grande.
+- **Análise de impacto** (68) — Descobrir quem é afetado, direta e indiretamente, por uma mudança (grafo de dependências).
+- **Armadilha do curto prazo** (73) — Decisão boa em semanas e ruim em anos.
+- **Atenção aberta** (61, 71) — Percepção ampla, sem alvo único; complementa a atenção focada.
+- **Atenção plena (mindfulness)** (71) — Treino de perceber que a mente divagou e voltar ao alvo, sem julgamento.
+- **Atenção seletiva** (59) — Mirar um alvo e inibir os demais estímulos.
+- **Autoconsciência** (63) — Capacidade de monitorar pensamentos, emoções e sinais do corpo.
+- **Avaliação 360** (63) — Feedback de várias pessoas sobre as mesmas competências; revela pontos cegos.
+- **Calibração** (63) — Concordância entre a confiança declarada e a taxa real de acertos.
+- **Casulo criativo** (61) — Período protegido para abertura de ideias, sem pressão de entrega.
+- **Chunk** (69) — Estrutura que o especialista reconhece de uma vez, em vez de peça por peça.
+- **Cognição quente × fria** (64) — Modo emocional e impulsivo × modo deliberado e de longo prazo.
+- **Comissão / Omissão** (70) — No Go/No-Go: responder a um No-Go (falha de inibição) / não responder a um Go.
+- **Compaixão** (65) — Empatia acrescida de vontade de agir para ajudar.
+- **Custo de troca de contexto** (59) — Tempo de retomada depois de uma interrupção.
+- **Custo externo** (73) — Consequência que recai sobre quem não participou da decisão.
+- **Desconto hiperbólico** (64) — Modelo em que o valor percebido cai rápido com o atraso: `valor / (1 + k × atraso)`.
+- **Desvio** (71, Lab 8) — Saída da tarefa atual por algo não planejado, com duração.
+- **Distração sensorial × emocional** (59) — Estímulo físico do ambiente × sinal carregado de significado (seu nome).
+- **Empatia cognitiva / emocional** (65) — Entender o ponto de vista do outro / sentir junto o que o outro sente.
+- **Fadiga de atenção** (62) — Queda de desempenho após esforço prolongado de inibir distrações.
+- **Funções executivas** (64) — Memória de trabalho, flexibilidade e inibição, base do autocontrole.
+- **Go/No-Go** (70) — Teste em que se responde a alguns estímulos e se inibe a resposta a outros.
+- **Guardião do Foco** (Lab 8) — Aplicativo do laboratório que protege um bloco de trabalho concentrado.
+- **Hábito (piloto automático)** (60) — Rotina automatizada pela repetição; eficiente, mas cega a mudanças.
+- **Handprint (pegada de mão)** (68) — Medir também o bem que as ações produzem, além do dano evitado.
+- **Ilusão de profundidade explicativa** (67) — Achar que entende algo até ter de explicá-lo passo a passo.
+- **Incubação** (61) — Fase de soltar o problema, depois de ter trabalhado nele com foco.
+- **Inibição** (70) — Capacidade de frear uma resposta automática.
+- **Laço de reforço / de equilíbrio** (67) — Ciclo que amplifica o que já acontece / que tende a estabilizar.
+- **Latência de review** (66) — Tempo até a primeira resposta a um pull request.
+- **Modo foco** (59) — Estado em que só o que é essencial interrompe.
+- **Pareto (80/20)** (68) — Poucas causas costumam explicar a maioria dos efeitos; regra de bolso, não lei.
+- **Pensamento sistêmico** (67) — Olhar o conjunto e suas interações, não só as peças.
+- **Plano "se–então"** (64) — Intenção de implementação: gatilho concreto mais ação já decidida.
+- **Prática deliberada** (69) — Prática focada, com feedback imediato, no limite da habilidade.
+- **Pré-compromisso** (64) — Decisão presente que dificulta a escolha impulsiva futura.
+- **Pré-mortem** (73) — Imaginar que a decisão falhou e listar por quê, antes de decidir.
+- **Relógio simulado** (Lab 8) — Tempo controlado pelo código, para testes exatos.
+- **Resumo periódico** (59) — Entrega das mensagens não urgentes em horários combinados.
+- **Restauração da atenção** (62) — Teoria de que ambientes naturais e fascinação sem esforço recuperam o foco.
+- **Sensibilidade social** (66) — Perceber o outro e o contexto e agir de forma adequada.
+- **Sequestro emocional** (60) — Metáfora para quando a emoção forte domina o raciocínio; imagem útil, não diagnóstico.
+- **Transferência** (70) — Ganho na tarefa treinada que aparece também em outras tarefas.
+- **Triplo foco** (58) — Foco interno, foco no outro e foco externo.
+- **Zona de desafio** (69) — Nível em que a tarefa não é fácil demais nem difícil demais.
+- **Acordo** — Registro de uma regra percebida e de sua origem declarada. Não é toda a experiência humana descrita por Ruiz.
+- **Composição** — Relacionar objetos com responsabilidades diferentes: o Caderno contém promessas e perguntas.
+- **Construtor** — Código executado na criação de um objeto; aqui valida os dados exigidos.
+- **DTO** — Objeto de transferência de dados. O Retrato transporta os dados sem prometer restaurar comportamentos.
+- **Encapsulamento** — Restringir alterações diretas e oferecer operações que preservam regras.
+- **Estado** — Situação explícita de uma entidade, como Aberta ou Cumprida.
+- **Evidência** — Resposta e fonte registradas por uma pessoa; o software não autentica sua veracidade.
+- **Identidade** — Identificador que distingue um registro de outros mesmo quando dados são semelhantes.
+- **Imutabilidade** — Não modificar os valores de um objeto já criado. with cria outra versão de um record.
+- **Interface** — Contrato de operações; não contém uma implementação automática de armazenamento.
+- **Interpretação** — Sentido atribuído pela pessoa ao que percebeu, separado da observação registrada.
+- **JSON** — Formato textual de dados. Não contém os métodos C# nem oferece criptografia por si.
+- **LINQ** — Operações para consultar e transformar sequências, como Where, Select e OrderBy.
+- **Materialização** — Produzir os resultados de uma consulta em uma coleção, aqui com ToArray.
+- **Nullability** — Declaração de que uma referência pode estar ausente, como Evidencia?.
+- **Observação** — Relato que o usuário registra como observado; não equivale a certificação de um fato.
+- **Persistência** — Conservar os dados fora do processo para recuperá-los depois.
+- **Pré-condição** — Exigência verificada antes de uma operação, como uma promessa ainda estar aberta.
+- **Retrato** — Cópia dos dados exportados do caderno em determinado momento.
+- **Serialização** — Converter dados de objetos para um formato de armazenamento ou transmissão.
+- **Transição** — Mudança de estado realizada por uma operação definida.
+- **Validação** — Verificação de uma regra explícita; não comprova tudo sobre os dados.
+- **Volatilidade** — Propriedade do armazenamento que não preserva dados após o fim de seu contexto, como o processo.
+- **Acolhimento** (cap. 95) — Dar lugar ao que a pessoa sente, sem pressionar, julgar ou resolver por ela.
+- **Apoio** (cap. 93) — Ajuda, presença ou orientação oferecida por pessoas e serviços, respeitando a autonomia de quem recebe.
+- **async / await** (cap. 96) — Palavras-chave para esperar operações demoradas sem travar o programa.
+- **Autoeficácia** (cap. 92) — Crença de que podemos participar da solução de um desafio específico, usando recursos e aprendendo.
+- **Backoff** (cap. 96) — Esperar mais a cada nova tentativa: 1 s, 2 s, 4 s...
+- **CancellationToken** (cap. 96) — Sinal para pedir a uma operação em andamento que pare.
+- **Delegate** (cap. 94) — Tipo que representa uma função; permite passar comportamento como dado (`Func<T, TResult>`).
+- **Disjuntor de circuito** (cap. 96) — Para de chamar um serviço depois de falhas seguidas, dando-lhe tempo para se recuperar.
+- **Empatia** (cap. 93) — Esforço de compreender a perspectiva de outra pessoa e perguntar do que ela precisa, sem presumir.
+- **Encapsulamento** (cap. 92) — Esconder detalhes e expor só o necessário, por uma interface segura.
+- **enum** (cap. 88) — Tipo que nomeia um conjunto fechado de opções.
+- **Evidência** (cap. 91) — Algo conferível que sustenta uma possibilidade ou um obstáculo.
+- **Fato** (cap. 90) — Informação observável sobre uma situação, separada da explicação que imaginamos para ela.
+- **Genérico** (cap. 94) — Tipo ou método com parâmetro de tipo (`<T>`), válido para vários tipos.
+- **História** (cap. 90) — Interpretação que atribuímos ao que aconteceu; é uma hipótese que merece checagem.
+- **Injeção de dependência** (cap. 89) — Receber de fora o que a classe precisa (como um relógio), em vez de criá-lo lá dentro.
+- **interface** (cap. 93) — Contrato que lista o que um tipo promete saber fazer.
+- **Invariante** (cap. 89) — Regra que um objeto garante durante toda a sua vida (ex.: intensidade de 0 a 10).
+- **Iterador** (cap. 92) — Método com `yield return` que entrega itens um a um.
+- **Lambda** (cap. 90) — Função curta escrita como `x => expressão`.
+- **Lente** (cap. 94) — Ângulo de observação de uma situação (eu, relações, lugar, momento...).
+- **LINQ** (cap. 90) — Conjunto de métodos para consultar e transformar coleções.
+- **Limite pessoal** (cap. 95) — Fronteira dita com clareza: o que acontece, como afeta e o que se pede.
+- **Otimismo realista** (cap. 91) — Reconhecer obstáculos e incertezas sem fechar a porta para possibilidades.
+- **Plano B (fallback)** (cap. 96) — Resposta simples usada quando a principal falha.
+- **Polimorfismo** (cap. 93) — Mesma chamada, comportamentos diferentes conforme o tipo real do objeto.
+- **Rede de apoio** (cap. 93) — Pessoas e serviços que podem oferecer diferentes formas de ajuda, conforme necessidade e disponibilidade.
+- **Regulação emocional** (cap. 89) — Perceber e lidar com emoções sem exigir que desapareçam nem agir no automático.
+- **Resiliência** (cap. 88) — Possibilidade de responder a dificuldades com os recursos disponíveis, recuperando, adaptando ou buscando apoio; não é ausência de sofrimento.
+- **`Resultado<T>`** (cap. 95) — Tipo que representa sucesso (com valor) ou falha (com motivo), sem exceção.
+- **TimeProvider** (cap. 89) — Abstração de relógio do .NET 8; permite um relógio falso nos testes.
+- **Tipo anulável** (cap. 91) — Tipo marcado com `?` (como `string?`) que aceita `null`.
+- **try / catch / finally** (cap. 88) — Tenta, trata a falha por tipo e executa o `finally` sempre.
+- **TryParse** (cap. 88) — Converte sem lançar exceção: devolve `bool` e entrega o valor por `out`.
+- **Apoio** (cap. 100) — Recurso, pessoa ou condição que pode ajudar em um próximo passo.
+- **Caderno de Hipóteses** (Lab 11) — Exemplo de software em memória que organiza hipóteses e observações fictícias.
+- **Contexto** (cap. 99) — Condições, recursos e circunstâncias relevantes para interpretar uma observação.
+- **Evidência** (cap. 99) — Observação relacionada a uma hipótese; pode apoiar, contrariar ou contextualizar.
+- **Experimento pequeno** (cap. 103) — Ação delimitada para aprender algo, sem medir o valor de alguém.
+- **Fato** (cap. 98) — Descrição específica de algo verificável no contexto informado.
+- **Generalização** (cap. 98) — Conclusão aplicada a muitos casos a partir de uma quantidade limitada de observações.
+- **Hipótese** (cap. 97) — Ideia que pode ser investigada, sem ser tratada como verdade automática.
+- **Interpretação** (cap. 98) — Explicação que atribuímos ao que observamos.
+- **LINQ** (cap. 99) — Recursos de consulta e transformação de coleções em C#.
+- **`enum`** (cap. 97) — Tipo que nomeia um conjunto definido de opções.
+- **`record`** (cap. 97) — Tipo de referência conciso para agrupar dados relacionados.
+- **Síntese** (cap. 104) — Resumo das observações registradas, não prova final.
+- **Viés de confirmação** (cap. 99) — Tendência possível de buscar ou notar mais exemplos compatíveis com uma expectativa.
+- **Aprender de cor** (cap. 113) — Conhecer de modo incorporado, adquirido por viver e praticar, e não só por estudar.
+- **Automatismo** (cap. 108) — Modo aprendido de perceber e agir que opera sem pensarmos nele; alguns se escolhem, outros se infiltram.
+- **Bússola do coração** (cap. 106) — Imagem do autor: o desejo orienta para uma visão de vida boa.
+- **Closure** (cap. 115) — Função que carrega consigo as variáveis do contexto em que foi criada.
+- **Delegate** (cap. 110) — Tipo que representa uma função; permite passar comportamento como dado.
+- **Éthos** (cap. 112) — Caráter ou "energia" implícita de um lugar, formada por suas rotinas.
+- **Evento** (cap. 111) — Membro (`event`) que permite a objetos se inscreverem para serem avisados.
+- **Flags** (cap. 105) — `enum` cujos valores são bits, combináveis com `|`, `&` e `~`.
+- **Formação × informação** (cap. 113) — Formar alcança hábitos e imaginação; informar só deposita dados.
+- **GroupJoin** (cap. 108) — LINQ que liga cada item da esquerda ao grupo (talvez vazio) de pares da direita.
+- **Hábito** (cap. 107) — Disposição gravada por prática e imitação; para o autor, o amor é um hábito.
+- **Hiato entre saber e fazer** (cap. 105) — Distância entre conhecer o certo e praticá-lo.
+- **`IComparable<T>`** (cap. 112) — Interface que ensina o C# a ordenar objetos de um tipo.
+- **`IParsable<T>`** (cap. 114) — Interface do .NET para tipos que se leem de texto (`Parse`, `TryParse`).
+- **Imutabilidade** (cap. 107) — Valor que não muda por dentro: "mudar" gera outro valor (`with`).
+- **Liturgia** (cap. 109) — Prática repetida que carrega uma visão de vida boa; para o autor, formadora do desejo.
+- **Liturgia secular** (cap. 109) — Prática do dia a dia (shopping, feed, estádio) que ensina, pela forma, o que desejar.
+- **Máquina de estados** (cap. 111) — Modelo em que algo está sempre em um estado, com transições permitidas.
+- **Objeto de valor** (cap. 114) — Tipo pequeno que representa um valor do domínio e garante suas regras.
+- **Operador implícito** (cap. 114) — Conversão automática de um tipo para outro.
+- **Pipeline (middleware)** (cap. 115) — Cadeia de etapas, cada uma decidindo se chama a próxima.
+- **Prática estruturante** (cap. 112) — Ritual de orientação ou repetição que organiza a vida de uma comunidade.
+- **Repetição espaçada** (cap. 113) — Rever em intervalos crescentes: logo o frágil, tarde o firme.
+- **required / init** (cap. 109) — Propriedade obrigatória na criação e só atribuível na criação.
+- **Restrição libertadora** (cap. 114) — Limite bem escolhido que libera criatividade e tira peso da cabeça.
+- **Telos** (cap. 106) — Fim ou meta para o qual algo ou alguém é orientado.
+- **readonly record struct** (cap. 106) — Tipo de valor, imutável, com igualdade por valor.
+- **Zip** (cap. 110) — LINQ que combina duas sequências posição a posição.
+- **Acordo de processo** — Combinado sobre como uma equipe organiza e revê seu trabalho.
+- **Acusação ampla** — Frase com "sempre" ou "nunca" que atribui intenção sem descrever um fato.
+- **Barreira de processo** — Dificuldade que vem de tarefa, ferramenta ou prazo, e não da pessoa.
+- **Canal** — Meio escolhido para conversar: pessoalmente, mensagem ou reunião.
+- **Composição** — Montar um tipo maior a partir de campos menores.
+- **Consentimento** — Permissão para iniciar ou continuar uma conversa sobre determinado assunto.
+- **Contexto** — Condições da tarefa, ambiente e acontecimentos relacionados a uma situação.
+- **`DateTimeOffset`** — Tipo .NET que representa uma data e hora com deslocamento UTC.
+- **Emoção nomeada** — Palavra escolhida para descrever uma experiência num momento.
+- **Empatia** — Atenção à perspectiva compartilhada, sem presumir que conhecemos tudo.
+- **`enum`** — Tipo que define um conjunto nomeado de opções.
+- **`Enum.IsDefined`** — Verifica se um valor numérico corresponde a uma opção declarada da enumeração.
+- **Expressão `switch`** — Forma explícita de escolher um resultado conforme o valor.
+- **Fato observado** — Descrição específica do que foi percebido ou ocorreu.
+- **Impacto** — Efeito relatado por uma pessoa ou observado no trabalho.
+- **Imutabilidade** — O objeto não muda depois de criado; para alterar, cria-se outro.
+- **Interpretação** — Explicação possível para um fato, que pode precisar de contexto.
+- **`IReadOnlyList<T>`** — Interface que permite ler uma lista sem alterá-la.
+- **Limite** — Condição que protege tempo, segurança ou respeito numa interação.
+- **Observação** — Descrição específica de algo que ocorreu, sem atribuir intenção.
+- **Pedido concreto** — Ação clara que pode ser aceita, negociada ou recusada.
+- **Perfil (risco)** — Conjunto de dados que descreve uma pessoa e pode ser usado para comparar ou vigiar.
+- **Pergunta aberta** — Convite que permite respostas variadas, inclusive não responder.
+- **Placar (risco)** — Pontuação ou ranking que transforma uma reflexão em comparação entre pessoas.
+- **`record`** — Tipo C# adequado para representar dados com igualdade por valor.
+- **Regulação** — Escolha de como responder a uma experiência, sem exigir que ela desapareça.
+- **Rótulo** — Palavra ampla que pode resumir demais uma situação ou identidade.
+- **Validação** — Verificação de regras técnicas aplicadas aos dados de entrada.
+- **Validar na fronteira** — Recusar dados inválidos no momento em que o objeto é criado.
+- **Valor opcional** — Campo que pode ficar sem valor, sem que isso seja um erro.
+- **Aggregate** (cap. 131) — LINQ que dobra uma sequência em um único valor, aplicando um passo de cada vez.
+- **Anōthen** (cap. 127) — "Do alto" ou "de novo"; palavra de dois sentidos que aparece 5 vezes em João.
+- **Atributo** (cap. 125) — Etiqueta colocada em um tipo ou membro, lida por outros programas em tempo de execução.
+- **Busca em largura (BFS)** (Lab 14) — Explora um grafo camada por camada com uma fila; acha o caminho com menos paradas.
+- **Cache** (cap. 128) — Cópia à mão de um dado caro de buscar, com prazo de validade.
+- **Channel&lt;T&gt;** (cap. 129) — Fila para comunicação entre tarefas, com ou sem limite de capacidade.
+- **Concordância** (Lab 14) — Índice de palavras: onde cada termo aparece em um texto.
+- **Contrapressão** (cap. 129) — O produtor espera quando o consumidor não dá conta.
+- **Decorator** (cap. 132) — Objeto que implementa a mesma interface do que embrulha e acrescenta um comportamento.
+- **Densidade** (Lab 14) — Ocorrências por mil palavras; permite comparar capítulos de tamanhos diferentes.
+- **Dijkstra** (Lab 14) — Algoritmo do caminho de menor custo, com custos não negativos, usando fila de prioridade.
+- **Event sourcing** (cap. 131) — Guardar os fatos (imutáveis, em ordem) e calcular o estado a partir deles.
+- **Execução adiada** (cap. 126) — Trabalho que só acontece quando alguém consome o resultado (`yield`, LINQ).
+- **FixedTimeEquals** (cap. 130) — Comparação em tempo constante, que evita ataques de temporização.
+- **Genérico** (cap. 126) — Tipo com parâmetros de tipo, como `Transformacao<TEntrada, TSaida>`.
+- **HMAC-SHA256** (cap. 130) — Selo calculado com um segredo; prova origem e integridade, sem esconder o conteúdo.
+- **IAsyncEnumerable&lt;T&gt;** (cap. 129) — Sequência produzida de forma assíncrona e consumida com `await foreach`.
+- **IDisposable** (cap. 124) — Contrato "o que abri, eu fecho"; `Dispose()` roda ao fim do `using`.
+- **Injeção de dependência** (cap. 133) — A classe declara o que precisa no construtor e recebe de fora.
+- **Invariante** (cap. 129) — Regra que precisa valer sempre; por exemplo, servidos + sobras = total.
+- **Lema** (Lab 14) — Forma de dicionário de uma palavra; todas as formas conjugadas contam como o mesmo lema.
+- **Lazy&lt;T&gt;** (cap. 128) — Executa uma função só no primeiro uso e guarda o resultado.
+- **Lupa no grego** (todos) — Seção de cada capítulo com palavras do original e contagens verificadas no texto grego.
+- **Menō** (cap. 133) — "Permanecer, ficar": 40 vezes em João, 11 no capítulo 15.
+- **Objeto nulo** (cap. 124) — Objeto que cumpre o contrato e não faz nada, no lugar de `null`.
+- **Observador** (cap. 127) — Padrão em que emissor e ouvintes se ignoram e falam só pelo contrato.
+- **Pneuma** (cap. 127) — "Vento" e "espírito": a mesma palavra no grego.
+- **Reflexão** (cap. 125) — Capacidade de um programa examinar seus próprios tipos, atributos e membros.
+- **Sēmeion** (cap. 126) — "Sinal": 17 vezes em João; só dois são numerados (2,11 e 4,54).
+- **TimeProvider** (cap. 128) — Fonte de hora injetável, que permite controlar o tempo nos testes.
+- **Transiente / Permanente** (cap. 133) — Ciclos de vida: nova instância a cada pedido, ou uma só que permanece.
+- **yield return** (cap. 126) — Devolve um item e pausa o método até o próximo ser pedido.
+- **Acessibilidade** (cap. 230) — Fazer a interface funcionar para todas as pessoas, inclusive quem usa teclado, leitor de tela ou ampliação.
+- **Aceitação** (cap. 233) — Reconhecer o que já está acontecendo para então escolher como agir; não é resignação.
+- **Atenção plena** (cap. 225) — Prestar atenção ao que acontece agora, de propósito e sem julgar.
+- **Backoff exponencial** (cap. 233) — Esperar o dobro a cada nova tentativa de uma operação que falhou.
+- **Binding** (cap. 225) — Ligação entre a classe e o template: interpolação, propriedade, classe, atributo ou evento.
+- **Componente standalone** (cap. 225) — Classe com `@Component` que declara no `imports` o que usa, sem precisar de módulo.
+- **computed** (cap. 227) — Signal somente leitura derivado de outros; preguiçoso e com memória.
+- **@defer** (cap. 235) — Bloco do template carregado depois, num gatilho, em um arquivo separado.
+- **Detecção de mudanças** (cap. 229) — Passada em que o Angular reavalia os templates e atualiza o DOM.
+- **DestroyRef** (Lab 47) — Serviço que registra limpezas para quando o componente ou serviço for destruído.
+- **effect** (cap. 227) — Função que roda quando os signals que ela lê mudam; para efeitos fora da tela.
+- **Eager** (cap. 229) — Estratégia de detecção que confere o componente em toda passada (o antigo `Default`).
+- **ErrorHandler** (cap. 233) — Recebe os erros que nenhum código tratou.
+- **Espaço de respiração** (cap. 231) — Prática curta em três passos: perceber, estreitar a atenção na respiração, ampliar.
+- **Exploração do corpo** (cap. 230) — Prática de levar a atenção a cada região do corpo, notando sem tentar mudar.
+- **form / Signal Forms** (cap. 234) — Formulários em que o modelo é um signal e o formulário é uma árvore de campos derivada.
+- **Funil da exaustão** (cap. 235) — Cortar o que nutre para dar conta do resto, até sobrar só o que desgasta.
+- **Guarda** (cap. 231) — Função que decide se uma rota abre, barra ou redireciona.
+- **httpResource** (cap. 233) — Requisição HTTP derivada de signals, com estados e `reload()`.
+- **inject** (cap. 232) — Função que pede uma dependência ao Angular.
+- **InjectionToken** (cap. 232) — Token para injetar o que não é classe, com uma fábrica padrão.
+- **input / output / model** (cap. 228) — Entrada, evento e valor de duas vias de um componente.
+- **Interceptor** (cap. 233) — Função que vê toda requisição HTTP que sai e toda resposta que chega.
+- **Liberador de hábitos** (cap. 228) — No programa do livro, uma pequena mudança de rotina que quebra o automático.
+- **linkedSignal** (cap. 227) — Signal gravável que se recalcula quando a fonte muda, considerando o valor anterior.
+- **Modo Atuante** (cap. 227) — Modo da mente que resolve, compara e cobra.
+- **Modo Existente** (cap. 227) — Modo da mente que percebe a experiência como ela é.
+- **never** (cap. 226) — Tipo de nenhum valor possível; garante que todos os casos de uma união foram tratados.
+- **Observable** (cap. 232) — Fluxo de valores ao longo do tempo, da biblioteca RxJS.
+- **OnPush** (cap. 229) — Estratégia padrão no Angular 22: o componente só é conferido quando é marcado.
+- **Pipe puro** (cap. 235) — Transformação no template que só roda de novo quando a entrada muda.
+- **Piloto automático** (cap. 229) — Fazer as coisas sem perceber que as está fazendo.
+- **Predicado de tipo** (cap. 226) — Função que devolve `x is T` e ensina o compilador a estreitar o tipo.
+- **resource** (cap. 231) — Carregamento assíncrono derivado de signals, com estados.
+- **RxJS** (cap. 232) — Biblioteca de fluxos de eventos (Observables) e operadores.
+- **signal** (cap. 225) — Caixinha de valor que avisa quem depende dela quando muda.
+- **Store** (Lab 48) — Serviço que guarda o estado compartilhado: uma fonte privada, consequências públicas.
+- **strict** (cap. 226) — Conjunto de checagens rigorosas do TypeScript; com `strictTemplates`, vale para os templates.
+- **switchMap** (cap. 232) — Operador que inicia uma operação nova para cada valor e cancela a anterior.
+- **TestBed** (cap. 225) — Ambiente de testes do Angular, que cria componentes e serviços com dependências configuradas.
+- **track** (cap. 230) — Identificador que o `@for` usa para reconhecer cada item entre atualizações.
+- **União discriminada** (cap. 226) — União de tipos em que cada caso tem um campo literal diferente.
+- **Vitest** (cap. 236) — Executor de testes padrão do Angular desde a versão 21.
+- **Zoneless** (cap. 229) — App sem zone.js; a detecção só acontece quando algo avisa o Angular.

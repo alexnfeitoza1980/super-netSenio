@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#d96b27" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140803"/>
+      <stop offset="60%" stop-color="#2d1307"/>
+      <stop offset="100%" stop-color="#180a04"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#13141f"/>
+    </linearGradient>
+    <linearGradient id="browserGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fffaf5"/>
+    </linearGradient>
+    <linearGradient id="orangeBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#d96b27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo de Studio da Ilustração -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid tático refinado -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.03">
+    <line x1="0" y1="0" x2="0" y2="540"/><line x1="80" y1="0" x2="80" y2="540"/><line x1="160" y1="0" x2="160" y2="540"/><line x1="240" y1="0" x2="240" y2="540"/><line x1="320" y1="0" x2="320" y2="540"/><line x1="400" y1="0" x2="400" y2="540"/><line x1="480" y1="0" x2="480" y2="540"/><line x1="560" y1="0" x2="560" y2="540"/><line x1="640" y1="0" x2="640" y2="540"/><line x1="720" y1="0" x2="720" y2="540"/><line x1="800" y1="0" x2="800" y2="540"/><line x1="880" y1="0" x2="880" y2="540"/><line x1="960" y1="0" x2="960" y2="540"/>
+    <line x1="0" y1="0" x2="960" y2="0"/><line x1="0" y1="60" x2="960" y2="60"/><line x1="0" y1="120" x2="960" y2="120"/><line x1="0" y1="180" x2="960" y2="180"/><line x1="0" y1="240" x2="960" y2="240"/><line x1="0" y1="300" x2="960" y2="300"/><line x1="0" y1="360" x2="960" y2="360"/><line x1="0" y1="420" x2="960" y2="420"/><line x1="0" y1="480" x2="960" y2="480"/><line x1="0" y1="540" x2="960" y2="540"/>
+  </g>
+
+  <!-- Halo de luz quente -->
+  <circle cx="480" cy="270" r="320" fill="#f59e0b" opacity="0.06" filter="blur(60px)"/>
+
+  
+  <!-- Aplicação Completa do Tradutor de Empatia em Alta Resolução -->
+  <g transform="translate(40, 20)" filter="url(#winShadow)">
+    <rect width="880" height="500" rx="12" fill="#1e1e2e"/>
+    
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 0,10 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#181825"/>
+    <circle cx="18" cy="18" r="6" fill="#ff5f56"/>
+    <circle cx="38" cy="18" r="6" fill="#ffbd2e"/>
+    <circle cx="58" cy="18" r="6" fill="#27c93f"/>
+    <rect x="310" y="8" width="260" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="440" y="22" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">localhost:4200 — O Tradutor de Empatia (Laboratório 2 Completo)</text>
+    
+
+    <!-- Topbar da Aplicação -->
+    <rect x="0" y="36" width="880" height="46" fill="#252538"/>
+    <circle cx="36" cy="59" r="14" fill="#d96b27"/>
+    <text x="36" y="64" font-family="system-ui" font-weight="900" font-size="14" fill="#fff" text-anchor="middle">♥</text>
+    <text x="60" y="64" font-family="system-ui" font-weight="700" font-size="14" fill="#ffffff">O Tradutor de Empatia</text>
+    <text x="240" y="64" font-family="system-ui" font-size="11" fill="#fde68a">Transformando agressões em pontes de cooperação</text>
+
+    <!-- Área de Entrada de Texto -->
+    <g transform="translate(24, 96)">
+      <rect width="832" height="110" rx="8" fill="#181825" stroke="#f5dfd0" stroke-width="1"/>
+      <text x="16" y="24" font-family="system-ui" font-weight="600" font-size="11" fill="#fde68a">Mensagem Tensa Recebida no Slack / PR Review:</text>
+      
+      <rect x="16" y="34" width="800" height="60" rx="6" fill="#11111b" stroke="#ef4444" stroke-width="1"/>
+      <text x="28" y="56" font-family="system-ui" font-size="12" fill="#fca5a5">
+        "Você NUNCA me ouve, seu código atrasou todo o sprint e o cliente está furioso por sua culpa!"
+      </text>
+
+      <rect x="660" y="60" width="144" height="26" rx="4" fill="#d96b27"/>
+      <text x="732" y="77" font-family="system-ui" font-weight="bold" font-size="10" fill="#fff" text-anchor="middle">Decompor com CNV ✨</text>
+    </g>
+
+    <!-- Os 4 Pilares Decompostos em Tempo Real -->
+    <g transform="translate(24, 220)">
+      <!-- 1. Observação Factual -->
+      <g transform="translate(0, 0)">
+        <rect width="200" height="150" rx="8" fill="#181825" stroke="#f59e0b" stroke-width="1.5"/>
+        <rect width="200" height="26" rx="8" fill="rgba(245, 158, 11, 0.15)"/>
+        <text x="12" y="18" font-family="system-ui" font-weight="bold" font-size="11" fill="#f9e2af">1. OBSERVAÇÃO</text>
+        <text x="12" y="50" font-family="system-ui" font-size="10" fill="#fff">"Houve divergência em</text>
+        <text x="12" y="66" font-family="system-ui" font-size="10" fill="#fff">relação ao prazo da tarefa."</text>
+        <text x="12" y="100" font-family="system-ui" font-size="9" fill="#9ca3af">• Eliminou "NUNCA"</text>
+        <text x="12" y="118" font-family="system-ui" font-size="9" fill="#9ca3af">• Fato limpo e neutro</text>
+      </g>
+
+      <!-- 2. Sentimento Subjacente -->
+      <g transform="translate(210, 0)">
+        <rect width="200" height="150" rx="8" fill="#181825" stroke="#ec4899" stroke-width="1.5"/>
+        <rect width="200" height="26" rx="8" fill="rgba(236, 72, 153, 0.15)"/>
+        <text x="12" y="18" font-family="system-ui" font-weight="bold" font-size="11" fill="#fbcfe8">2. SENTIMENTO</text>
+        <text x="12" y="50" font-family="system-ui" font-size="10" fill="#fff">"Insegurança e alta</text>
+        <text x="12" y="66" font-family="system-ui" font-size="10" fill="#fff">preocupação com cliente."</text>
+        <text x="12" y="100" font-family="system-ui" font-size="9" fill="#9ca3af">• Vulnerabilidade real</text>
+        <text x="12" y="118" font-family="system-ui" font-size="9" fill="#9ca3af">• Dor por trás da raiva</text>
+      </g>
+
+      <!-- 3. Necessidade Atendida -->
+      <g transform="translate(420, 0)">
+        <rect width="200" height="150" rx="8" fill="#181825" stroke="#10b981" stroke-width="1.5"/>
+        <rect width="200" height="26" rx="8" fill="rgba(16, 185, 129, 0.15)"/>
+        <text x="12" y="18" font-family="system-ui" font-weight="bold" font-size="11" fill="#a7f3d0">3. NECESSIDADE</text>
+        <text x="12" y="50" font-family="system-ui" font-size="10" fill="#fff">"Previsibilidade de entrega</text>
+        <text x="12" y="66" font-family="system-ui" font-size="10" fill="#fff">e alinhamento transparente."</text>
+        <text x="12" y="100" font-family="system-ui" font-size="9" fill="#9ca3af">• Valor universal ferido</text>
+        <text x="12" y="118" font-family="system-ui" font-size="9" fill="#9ca3af">• Busca de tranquilidade</text>
+      </g>
+
+      <!-- 4. Pedido Compassivo -->
+      <g transform="translate(630, 0)">
+        <rect width="202" height="150" rx="8" fill="#181825" stroke="#38bdf8" stroke-width="1.5"/>
+        <rect width="202" height="26" rx="8" fill="rgba(56, 189, 248, 0.15)"/>
+        <text x="12" y="18" font-family="system-ui" font-weight="bold" font-size="11" fill="#bae6fd">4. PEDIDO CONCRETO</text>
+        <text x="12" y="50" font-family="system-ui" font-size="10" fill="#fff">"Alinhamento de 15min</text>
+        <text x="12" y="66" font-family="system-ui" font-size="10" fill="#fff">amanhã às 10h para rever."</text>
+        <text x="12" y="100" font-family="system-ui" font-size="9" fill="#9ca3af">• Ação positiva e clara</text>
+        <text x="12" y="118" font-family="system-ui" font-size="9" fill="#9ca3af">• Aberto à cooperação</text>
+      </g>
+    </g>
+
+    <!-- Resposta Compassiva Pronta para Envio -->
+    <g transform="translate(24, 390)">
+      <rect width="832" height="85" rx="8" fill="#181825" stroke="#10b981" stroke-width="1"/>
+      <rect width="6" height="85" rx="3" fill="#10b981"/>
+      <text x="24" y="24" font-family="system-ui" font-weight="bold" font-size="11" fill="#a7f3d0">Resposta Compassiva Pronta para Copiar e Enviar:</text>
+      <text x="24" y="46" font-family="system-ui" font-size="11" fill="#ffffff">
+        "Quando o cronograma de entrega atrasou, compreendo que você tenha se sentido inseguro e preocupado com o cliente,
+      </text>
+      <text x="24" y="64" font-family="system-ui" font-size="11" fill="#ffffff">
+        pois todos precisamos de previsibilidade. Você estaria disposto a fazermos um alinhamento de 15 min amanhã às 10h?"
+      </text>
+      <rect x="700" y="46" width="118" height="26" rx="4" fill="#10b981"/>
+      <text x="759" y="63" font-family="system-ui" font-weight="bold" font-size="10" fill="#fff" text-anchor="middle">✓ Copiar Resposta</text>
+    </g>
+  </g>
+
+</svg>

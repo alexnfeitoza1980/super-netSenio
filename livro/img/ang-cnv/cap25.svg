@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#d96b27" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140803"/>
+      <stop offset="60%" stop-color="#2d1307"/>
+      <stop offset="100%" stop-color="#180a04"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#13141f"/>
+    </linearGradient>
+    <linearGradient id="browserGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fffaf5"/>
+    </linearGradient>
+    <linearGradient id="orangeBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#d96b27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo de Studio da Ilustração -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid tático refinado -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.03">
+    <line x1="0" y1="0" x2="0" y2="540"/><line x1="80" y1="0" x2="80" y2="540"/><line x1="160" y1="0" x2="160" y2="540"/><line x1="240" y1="0" x2="240" y2="540"/><line x1="320" y1="0" x2="320" y2="540"/><line x1="400" y1="0" x2="400" y2="540"/><line x1="480" y1="0" x2="480" y2="540"/><line x1="560" y1="0" x2="560" y2="540"/><line x1="640" y1="0" x2="640" y2="540"/><line x1="720" y1="0" x2="720" y2="540"/><line x1="800" y1="0" x2="800" y2="540"/><line x1="880" y1="0" x2="880" y2="540"/><line x1="960" y1="0" x2="960" y2="540"/>
+    <line x1="0" y1="0" x2="960" y2="0"/><line x1="0" y1="60" x2="960" y2="60"/><line x1="0" y1="120" x2="960" y2="120"/><line x1="0" y1="180" x2="960" y2="180"/><line x1="0" y1="240" x2="960" y2="240"/><line x1="0" y1="300" x2="960" y2="300"/><line x1="0" y1="360" x2="960" y2="360"/><line x1="0" y1="420" x2="960" y2="420"/><line x1="0" y1="480" x2="960" y2="480"/><line x1="0" y1="540" x2="960" y2="540"/>
+  </g>
+
+  <!-- Halo de luz quente -->
+  <circle cx="480" cy="270" r="320" fill="#f59e0b" opacity="0.06" filter="blur(60px)"/>
+
+  
+  <!-- Postman / Thunder Client e VS Code demonstrando Pedido Claro -->
+  <g transform="translate(40, 30)" filter="url(#winShadow)">
+    <rect width="880" height="480" rx="10" fill="#1e1e2e"/>
+    
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 0,10 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#181825"/>
+    <circle cx="18" cy="18" r="6" fill="#ff5f56"/>
+    <circle cx="38" cy="18" r="6" fill="#ffbd2e"/>
+    <circle cx="58" cy="18" r="6" fill="#27c93f"/>
+    <rect x="310" y="8" width="260" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="440" y="22" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">HttpClient &amp; DTOs Tipados — Pedidos Afirmativos da CNV</text>
+    
+
+    <!-- Lado Esquerdo: VS Code com DTO Tipado -->
+    <g transform="translate(24, 50)">
+      <rect width="400" height="400" rx="8" fill="#181825" stroke="#313244" stroke-width="1"/>
+      <rect width="400" height="30" rx="8" fill="#11111b"/>
+      <text x="14" y="20" font-family="monospace" font-size="11" fill="#89dceb">TS</text>
+      <text x="36" y="20" font-family="system-ui" font-size="11" fill="#cdd6f4">solicitar-dialogo.dto.ts</text>
+
+      <g transform="translate(16, 50)" font-family="monospace" font-size="11" fill="#cdd6f4">
+        <text y="16"><tspan fill="#6c7086">// O Pedido Claro: Linguagem de ação positiva</tspan></text>
+        <text y="36"><tspan fill="#cba6f7">export interface</tspan> <tspan fill="#f9e2af">SolicitarDialogoDTO</tspan> &#123;</text>
+        <text y="60">  <tspan fill="#89b4fa">readonly</tspan> observacaoFactual: <tspan fill="#f9e2af">string</tspan>;</text>
+        <text y="84">  <tspan fill="#89b4fa">readonly</tspan> sentimento: <tspan fill="#f9e2af">string</tspan>;</text>
+        <text y="108">  <tspan fill="#89b4fa">readonly</tspan> necessidadeAtendida: <tspan fill="#f9e2af">string</tspan>;</text>
+        <text y="132">  <tspan fill="#89b4fa">readonly</tspan> pedidoConcreto: <tspan fill="#f9e2af">string</tspan>;</text>
+        <text y="156">  <tspan fill="#89b4fa">readonly</tspan> dataSugerida: <tspan fill="#f9e2af">string</tspan>;</text>
+        <text y="180">&#125;</text>
+        <text y="210"><tspan fill="#6c7086">// Consumo seguro via HttpClient</tspan></text>
+        <text y="230"><tspan fill="#89b4fa">this</tspan>.http.<tspan fill="#89dceb">post</tspan>&lt;<tspan fill="#f9e2af">ConfirmacaoDTO</tspan>&gt;(</text>
+        <text y="250">  <tspan fill="#a6e3a1">'/api/v1/dialogos'</tspan>, dto</text>
+        <text y="270">);</text>
+        <text y="300" fill="#10b981">✓ Contrato sem ambiguidades</text>
+        <text y="320" fill="#10b981">✓ Sem exigências ou punições ocultas</text>
+      </g>
+    </g>
+
+    <!-- Lado Direito: Preview da Resposta da API RESTful -->
+    <g transform="translate(450, 50)">
+      <rect width="406" height="400" rx="8" fill="#11111b" stroke="#313244" stroke-width="1"/>
+      <rect width="406" height="30" rx="8" fill="#181825"/>
+      <circle cx="20" cy="15" r="4" fill="#a6e3a1"/>
+      <text x="32" y="19" font-family="system-ui" font-size="11" font-weight="bold" fill="#a6e3a1">POST /api/v1/dialogos — 201 Created</text>
+      <text x="320" y="19" font-family="system-ui" font-size="10" fill="#a6adc8">128 ms • 640 B</text>
+
+      <g transform="translate(16, 50)" font-family="monospace" font-size="11" fill="#cdd6f4">
+        <text y="16" fill="#89b4fa">&#123;</text>
+        <text y="36">  <tspan fill="#f38ba8">"protocolo"</tspan>: <tspan fill="#a6e3a1">"DLG-2026-8812"</tspan>,</text>
+        <text y="56">  <tspan fill="#f38ba8">"status"</tspan>: <tspan fill="#a6e3a1">"acolhido_com_sucesso"</tspan>,</text>
+        <text y="76">  <tspan fill="#f38ba8">"mensagem"</tspan>: <tspan fill="#a6e3a1">"Seu pedido foi entregue."</tspan>,</text>
+        <text y="96">  <tspan fill="#f38ba8">"colegasNotificados"</tspan>: <tspan fill="#fab387">3</tspan>,</text>
+        <text y="116">  <tspan fill="#f38ba8">"liberdadeAceite"</tspan>: <tspan fill="#fab387">true</tspan></text>
+        <text y="136" fill="#89b4fa">&#125;</text>
+      </g>
+
+      <!-- Painel explicativo CNV vs Exigência -->
+      <g transform="translate(16, 210)">
+        <rect width="374" height="160" rx="6" fill="#181825" stroke="#f59e0b" stroke-width="1"/>
+        <text x="14" y="24" font-family="system-ui" font-weight="bold" font-size="11" fill="#f9e2af">O Teste do Pedido na CNV (Marshall Rosenberg):</text>
+        
+        <g transform="translate(14, 46)" font-family="system-ui" font-size="10" fill="#bac2de">
+          <text y="0">• Se a resposta for "Não", como o sistema reage?</text>
+          <text y="20" fill="#f38ba8">❌ Exigência: culpa, depreciação, punição.</text>
+          <text y="40" fill="#a6e3a1">✓ Pedido Genuíno: escuta com empatia o motivo</text>
+          <text y="56" fill="#a6e3a1">  da recusa e negocia uma alternativa sustentável.</text>
+          <text y="84" fill="#f9e2af">• No Frontend: CTAs afirmativos informam o usuário</text>
+          <text y="100" fill="#f9e2af">  com precisão o que cada clique realizará.</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+</svg>

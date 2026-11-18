@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>12</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Os dados do texto grego viajam dentro do próprio programa. -->
+    <EmbeddedResource Include="Dados\lemas.json" LogicalName="lemas.json" />
+  </ItemGroup>
+
+</Project>

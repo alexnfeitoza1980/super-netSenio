@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#d96b27" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140803"/>
+      <stop offset="60%" stop-color="#2d1307"/>
+      <stop offset="100%" stop-color="#180a04"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#13141f"/>
+    </linearGradient>
+    <linearGradient id="browserGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fffaf5"/>
+    </linearGradient>
+    <linearGradient id="orangeBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#d96b27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo de Studio da Ilustração -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid tático refinado -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.03">
+    <line x1="0" y1="0" x2="0" y2="540"/><line x1="80" y1="0" x2="80" y2="540"/><line x1="160" y1="0" x2="160" y2="540"/><line x1="240" y1="0" x2="240" y2="540"/><line x1="320" y1="0" x2="320" y2="540"/><line x1="400" y1="0" x2="400" y2="540"/><line x1="480" y1="0" x2="480" y2="540"/><line x1="560" y1="0" x2="560" y2="540"/><line x1="640" y1="0" x2="640" y2="540"/><line x1="720" y1="0" x2="720" y2="540"/><line x1="800" y1="0" x2="800" y2="540"/><line x1="880" y1="0" x2="880" y2="540"/><line x1="960" y1="0" x2="960" y2="540"/>
+    <line x1="0" y1="0" x2="960" y2="0"/><line x1="0" y1="60" x2="960" y2="60"/><line x1="0" y1="120" x2="960" y2="120"/><line x1="0" y1="180" x2="960" y2="180"/><line x1="0" y1="240" x2="960" y2="240"/><line x1="0" y1="300" x2="960" y2="300"/><line x1="0" y1="360" x2="960" y2="360"/><line x1="0" y1="420" x2="960" y2="420"/><line x1="0" y1="480" x2="960" y2="480"/><line x1="0" y1="540" x2="960" y2="540"/>
+  </g>
+
+  <!-- Halo de luz quente -->
+  <circle cx="480" cy="270" r="320" fill="#f59e0b" opacity="0.06" filter="blur(60px)"/>
+
+  
+  <!-- Pipeline de Interceptação HTTP em Tempo Real -->
+  <g transform="translate(40, 30)" filter="url(#winShadow)">
+    <rect width="880" height="480" rx="10" fill="#181825"/>
+    
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 0,10 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#11111b"/>
+    <circle cx="18" cy="18" r="6" fill="#ff5f56"/>
+    <circle cx="38" cy="18" r="6" fill="#ffbd2e"/>
+    <circle cx="58" cy="18" r="6" fill="#27c93f"/>
+    <rect x="310" y="8" width="260" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="440" y="22" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">Pipeline de Rede — HttpInterceptorFn &amp; Tradução Compassiva</text>
+    
+
+    <!-- Diagrama de Trânsito do Pacote HTTP -->
+    <g transform="translate(30, 60)">
+      <!-- 1. Servidor Remoto Cai (500) -->
+      <g transform="translate(0, 40)">
+        <rect width="210" height="160" rx="8" fill="#1e1e2e" stroke="#ef4444" stroke-width="1.5"/>
+        <rect width="210" height="30" rx="8" fill="rgba(239, 68, 68, 0.2)"/>
+        <text x="14" y="20" font-family="system-ui" font-weight="bold" font-size="11" fill="#f38ba8">ESTÍMULO EXTERNO (API)</text>
+        <text x="14" y="56" font-family="monospace" font-size="11" fill="#f38ba8">HTTP 500 Server Error</text>
+        <text x="14" y="80" font-family="system-ui" font-size="10" fill="#a6adc8">• Banco oscilou</text>
+        <text x="14" y="100" font-family="system-ui" font-size="10" fill="#a6adc8">• Queda de infraestrutura</text>
+        <text x="14" y="125" font-family="system-ui" font-size="10" fill="#f38ba8">"O estímulo não é a causa!"</text>
+        <text x="14" y="142" font-family="system-ui" font-size="9" fill="#6c7086">(Epicteto / Marshall Rosenberg)</text>
+      </g>
+
+      <!-- Seta de Pacote Bruto -->
+      <path d="M 215, 120 L 295, 120" stroke="#f59e0b" stroke-width="3" stroke-dasharray="6,4"/>
+      <circle cx="255" cy="120" r="14" fill="#f59e0b"/>
+      <text x="255" y="125" font-family="system-ui" font-size="12" fill="#111" font-weight="bold" text-anchor="middle">500</text>
+
+      <!-- 2. HttpInterceptorFn (O Filtro Compassivo) -->
+      <g transform="translate(300, 20)">
+        <rect width="270" height="200" rx="10" fill="#1e1e2e" stroke="#f59e0b" stroke-width="2"/>
+        <rect width="270" height="34" rx="10" fill="rgba(245, 158, 11, 0.2)"/>
+        <text x="16" y="22" font-family="system-ui" font-weight="bold" font-size="12" fill="#f9e2af">HttpInterceptorFn (Autorresponsabilidade)</text>
+        
+        <g transform="translate(14, 50)" font-family="monospace" font-size="10" fill="#cdd6f4">
+          <text y="16"><tspan fill="#cba6f7">return</tspan> next(req).<tspan fill="#89dceb">pipe</tspan>(</text>
+          <text y="36">  <tspan fill="#89dceb">catchError</tspan>((erro) =&gt; &#123;</text>
+          <text y="56">    <tspan fill="#6c7086">// Traduz hostilidade em cuidado</tspan></text>
+          <text y="76">    <tspan fill="#f9e2af">const</tspan> msg = <tspan fill="#a6e3a1">'Servidores sob alta'</tspan></text>
+          <text y="96">      + <tspan fill="#a6e3a1">' demanda. Equipe atuando.'</tspan>;</text>
+          <text y="116">    <tspan fill="#cba6f7">return</tspan> <tspan fill="#89dceb">throwError</tspan>(() =&gt; msg);</text>
+          <text y="136">  &#125;)</text>
+          <text y="152">);</text>
+        </g>
+      </g>
+
+      <!-- Seta Traduzida -->
+      <path d="M 575, 120 L 655, 120" stroke="#10b981" stroke-width="3"/>
+      <circle cx="615" cy="120" r="14" fill="#10b981"/>
+      <text x="615" y="125" font-family="system-ui" font-size="12" fill="#fff" text-anchor="middle">✓</text>
+
+      <!-- 3. Acolhimento Humano na Interface -->
+      <g transform="translate(660, 40)">
+        <rect width="190" height="160" rx="8" fill="#1e1e2e" stroke="#10b981" stroke-width="1.5"/>
+        <rect width="190" height="30" rx="8" fill="rgba(16, 185, 129, 0.2)"/>
+        <text x="14" y="20" font-family="system-ui" font-weight="bold" font-size="11" fill="#a6e3a1">ACOLHIMENTO NA UI</text>
+        <text x="14" y="56" font-family="system-ui" font-size="11" fill="#fff" font-weight="bold">Banner de Cuidado</text>
+        <text x="14" y="80" font-family="system-ui" font-size="10" fill="#a6adc8">• Dados preservados</text>
+        <text x="14" y="100" font-family="system-ui" font-size="10" fill="#a6adc8">• Retry com backoff</text>
+        <text x="14" y="120" font-family="system-ui" font-size="10" fill="#a6adc8">• Telemetria enviada</text>
+        <text x="14" y="142" font-family="system-ui" font-size="9" fill="#a6e3a1">Nenhuma culpa no usuário!</text>
+      </g>
+
+      <!-- Banner de Interface Real Renderizado Abaixo -->
+      <g transform="translate(40, 260)">
+        <rect width="770" height="110" rx="8" fill="#ffffff" filter="url(#winShadow)"/>
+        <rect width="8" height="110" rx="4" fill="#d96b27"/>
+        <text x="32" y="36" font-family="system-ui" font-size="22">🛡️</text>
+        <text x="68" y="32" font-family="system-ui" font-weight="bold" font-size="13" fill="#2a1508">
+          Estamos cuidando de uma instabilidade temporária no servidor
+        </text>
+        <text x="68" y="54" font-family="system-ui" font-size="11" fill="#6c3c1e">
+          Nossa equipe já foi notificada. Todas as suas alterações foram preservadas com segurança em rascunho local.
+        </text>
+        <rect x="68" y="68" width="160" height="30" rx="6" fill="#d96b27"/>
+        <text x="148" y="87" font-family="system-ui" font-weight="bold" font-size="11" fill="#ffffff" text-anchor="middle">Tentar Reconectar Agora</text>
+        <text x="246" y="87" font-family="system-ui" font-size="11" fill="#6c3c1e">ou continue editando offline</text>
+      </g>
+    </g>
+  </g>
+
+</svg>

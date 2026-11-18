@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Mapa de rotas da Biblioteca Viva</title>
+  <desc id="descricao">A rota de catálogo leva a detalhes por identificador ou à lista de favoritos; rotas inválidas chegam à recuperação.</desc>
+  <defs><marker id="seta" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#ee6c4d"/></marker></defs>
+  <rect width="1000" height="400" rx="28" fill="#f6f9fc"/>
+  <g font-family="ui-monospace,monospace" text-anchor="middle">
+    <rect x="360" y="35" width="280" height="74" rx="16" fill="#142536"/>
+    <text x="500" y="81" fill="white" font-size="20">/ · catálogo</text>
+    <rect x="85" y="235" width="240" height="78" rx="16" fill="#3d5a80"/>
+    <text x="205" y="282" fill="white" font-size="18">/livros/:id</text>
+    <rect x="380" y="235" width="240" height="78" rx="16" fill="#386641"/>
+    <text x="500" y="282" fill="white" font-size="18">/favoritos</text>
+    <rect x="675" y="235" width="240" height="78" rx="16" fill="#6d597a"/>
+    <text x="795" y="282" fill="white" font-size="18">/** · recuperação</text>
+    <path d="M410 114 260 226m330-112 130 112m-220-110 75 110m-265-100 400 0 125 100" fill="none" stroke="#ee6c4d" stroke-width="4" marker-end="url(#seta)"/>
+    <text x="500" y="360" fill="#45596c" style="font: 16px system-ui,sans-serif">URL direta permite compartilhar e restaurar a navegação</text>
+  </g>
+</svg>

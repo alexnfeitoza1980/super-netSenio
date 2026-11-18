@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#d96b27" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140803"/>
+      <stop offset="60%" stop-color="#2d1307"/>
+      <stop offset="100%" stop-color="#180a04"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#13141f"/>
+    </linearGradient>
+    <linearGradient id="browserGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fffaf5"/>
+    </linearGradient>
+    <linearGradient id="orangeBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#d96b27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo de Studio da Ilustração -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid tático refinado -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.03">
+    <line x1="0" y1="0" x2="0" y2="540"/><line x1="80" y1="0" x2="80" y2="540"/><line x1="160" y1="0" x2="160" y2="540"/><line x1="240" y1="0" x2="240" y2="540"/><line x1="320" y1="0" x2="320" y2="540"/><line x1="400" y1="0" x2="400" y2="540"/><line x1="480" y1="0" x2="480" y2="540"/><line x1="560" y1="0" x2="560" y2="540"/><line x1="640" y1="0" x2="640" y2="540"/><line x1="720" y1="0" x2="720" y2="540"/><line x1="800" y1="0" x2="800" y2="540"/><line x1="880" y1="0" x2="880" y2="540"/><line x1="960" y1="0" x2="960" y2="540"/>
+    <line x1="0" y1="0" x2="960" y2="0"/><line x1="0" y1="60" x2="960" y2="60"/><line x1="0" y1="120" x2="960" y2="120"/><line x1="0" y1="180" x2="960" y2="180"/><line x1="0" y1="240" x2="960" y2="240"/><line x1="0" y1="300" x2="960" y2="300"/><line x1="0" y1="360" x2="960" y2="360"/><line x1="0" y1="420" x2="960" y2="420"/><line x1="0" y1="480" x2="960" y2="480"/><line x1="0" y1="540" x2="960" y2="540"/>
+  </g>
+
+  <!-- Halo de luz quente -->
+  <circle cx="480" cy="270" r="320" fill="#f59e0b" opacity="0.06" filter="blur(60px)"/>
+
+  
+  <!-- Split Screen: VS Code à esquerda, Browser à direita -->
+  <!-- 1. VS Code Window -->
+  <g transform="translate(30, 30)" filter="url(#winShadow)">
+    <rect width="460" height="480" rx="10" fill="#1e1e2e"/>
+    
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 0,10 a 10,10 0 0 1 10,-10 h 440 a 10,10 0 0 1 10,10 v 26 h -460 z" fill="#181825"/>
+    <circle cx="18" cy="18" r="6" fill="#ff5f56"/>
+    <circle cx="38" cy="18" r="6" fill="#ffbd2e"/>
+    <circle cx="58" cy="18" r="6" fill="#27c93f"/>
+    <rect x="100" y="8" width="260" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="230" y="22" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">cartao-dialogo.component.ts — VS Code</text>
+    
+    
+    <!-- Tab do Editor -->
+    <rect x="0" y="36" width="190" height="30" fill="#1e1e2e"/>
+    <text x="14" y="55" font-family="monospace" font-size="11" fill="#89dceb">TS</text>
+    <text x="36" y="55" font-family="system-ui" font-size="11" fill="#cdd6f4">cartao-dialogo.ts</text>
+    <line x1="0" y1="66" x2="460" y2="66" stroke="#313244" stroke-width="1"/>
+
+    <!-- Código com Line Numbers -->
+    <g transform="translate(10, 85)" font-family="'Cascadia Code', Consolas, monospace" font-size="11">
+      <!-- Line Numbers -->
+      <g fill="#45475a" text-anchor="end">
+        <text x="24" y="20">1</text><text x="24" y="40">2</text><text x="24" y="60">3</text><text x="24" y="80">4</text><text x="24" y="100">5</text><text x="24" y="120">6</text><text x="24" y="140">7</text><text x="24" y="160">8</text><text x="24" y="180">9</text><text x="24" y="200">10</text><text x="24" y="220">11</text><text x="24" y="240">12</text><text x="24" y="260">13</text><text x="24" y="280">14</text><text x="24" y="300">15</text><text x="24" y="320">16</text><text x="24" y="340">17</text><text x="24" y="360">18</text><text x="24" y="380">19</text>
+      </g>
+      <line x1="32" y1="-8" x2="32" y2="390" stroke="#313244" stroke-width="1"/>
+
+      <!-- Tokens coloridos -->
+      <g transform="translate(42, 0)">
+        <text y="20"><tspan fill="#cba6f7">@Component</tspan><tspan fill="#9399b2">(&#123;</tspan></text>
+        <text y="40"><tspan fill="#f38ba8">  selector</tspan><tspan fill="#9399b2">:</tspan> <tspan fill="#a6e3a1">'app-cartao-dialogo'</tspan><tspan fill="#9399b2">,</tspan></text>
+        <text y="60"><tspan fill="#f38ba8">  standalone</tspan><tspan fill="#9399b2">:</tspan> <tspan fill="#fab387">true</tspan><tspan fill="#9399b2">,</tspan></text>
+        <text y="80"><tspan fill="#f38ba8">  template</tspan><tspan fill="#9399b2">:</tspan> <tspan fill="#a6e3a1">`...`</tspan></text>
+        <text y="100"><tspan fill="#9399b2">&#125;)</tspan></text>
+        <text y="120"><tspan fill="#cba6f7">export class</tspan> <tspan fill="#f9e2af">CartaoDialogoComponent</tspan> <tspan fill="#9399b2">&#123;</tspan></text>
+        <text y="145"><tspan fill="#6c7086">  // 1. Entrada de dados imutável</tspan></text>
+        <text y="165"><tspan fill="#89b4fa">  readonly</tspan> usuario = <tspan fill="#89dceb">input.required</tspan>&lt;<tspan fill="#f9e2af">Perfil</tspan>&gt;();</text>
+        <text y="190"><tspan fill="#6c7086">  // 2. Notificação respeitosa de intenção</tspan></text>
+        <text y="210"><tspan fill="#89b4fa">  readonly</tspan> acolher = <tspan fill="#89dceb">output</tspan>&lt;<tspan fill="#fab387">string</tspan>&gt;();</text>
+        <text y="235"><tspan fill="#6c7086">  // 3. Ligação bidirecional com Model</tspan></text>
+        <text y="255"><tspan fill="#89b4fa">  readonly</tspan> modoEscuta = <tspan fill="#89dceb">model</tspan>(<tspan fill="#fab387">false</tspan>);</text>
+        <text y="285"><tspan fill="#89dceb">  aoSalvar</tspan>() &#123;</text>
+        <text y="305">    <tspan fill="#89b4fa">this</tspan>.acolher.<tspan fill="#f9e2af">emit</tspan>(<tspan fill="#89b4fa">this</tspan>.<tspan fill="#89dceb">usuario</tspan>().id);</text>
+        <text y="325">  &#125;</text>
+        <text y="345"><tspan fill="#9399b2">&#125;</tspan></text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 2. Browser Window Preview -->
+  <g transform="translate(510, 30)" filter="url(#winShadow)">
+    <rect width="420" height="480" rx="10" fill="#ffffff"/>
+    
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 0,10 a 10,10 0 0 1 10,-10 h 400 a 10,10 0 0 1 10,10 v 26 h -420 z" fill="#e2e8f0"/>
+    <circle cx="18" cy="18" r="6" fill="#ff5f56"/>
+    <circle cx="38" cy="18" r="6" fill="#ffbd2e"/>
+    <circle cx="58" cy="18" r="6" fill="#27c93f"/>
+    <rect x="80" y="8" width="260" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="210" y="22" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">localhost:4200/sala-escuta</text>
+    
+
+    <!-- Conteúdo do Browser Renderizado -->
+    <rect x="0" y="36" width="420" height="444" fill="#fffaf5"/>
+    
+    <!-- Cartão Renderizado no Browser -->
+    <g transform="translate(24, 60)">
+      <rect width="372" height="240" rx="12" fill="#ffffff" stroke="#f5dfd0" stroke-width="1.5" filter="url(#winShadow)"/>
+      <rect width="372" height="6" rx="3" fill="#d96b27"/>
+      
+      <!-- Cabeçalho do Card -->
+      <circle cx="40" cy="46" r="20" fill="#fde8dc"/>
+      <text x="40" y="53" font-family="system-ui" font-size="20" text-anchor="middle">👩‍💻</text>
+      
+      <text x="70" y="42" font-family="system-ui" font-weight="700" font-size="14" fill="#2a1508">Mariana Silva</text>
+      <text x="70" y="58" font-family="system-ui" font-size="11" fill="#6c3c1e">Engenheira Frontend • Squad Empatia</text>
+
+      <rect x="270" y="34" width="86" height="22" rx="11" fill="#fef3c7"/>
+      <text x="313" y="49" font-family="system-ui" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">Tensão: 3/10</text>
+
+      <!-- Mensagem -->
+      <rect x="20" y="84" width="332" height="74" rx="8" fill="#fffaf5" stroke="#f5dfd0" stroke-width="1"/>
+      <text x="32" y="108" font-family="system-ui" font-size="11" fill="#2a1508">"A documentação da API foi atualizada com</text>
+      <text x="32" y="126" font-family="system-ui" font-size="11" fill="#2a1508">sucesso. Obrigada pelo alinhamento sereno!"</text>
+      <text x="32" y="146" font-family="system-ui" font-size="10" fill="#10b981">✓ Contrato puro cumprido via input()</text>
+
+      <!-- Botão Acolher -->
+      <rect x="20" y="174" width="160" height="38" rx="8" fill="url(#orangeBtn)"/>
+      <text x="100" y="198" font-family="system-ui" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle">Acolher com Empatia</text>
+
+      <rect x="190" y="174" width="162" height="38" rx="8" fill="#fdf4eb" stroke="#f5dfd0" stroke-width="1"/>
+      <text x="271" y="198" font-family="system-ui" font-weight="600" font-size="11" fill="#6c3c1e" text-anchor="middle">Modo Escuta: Ativo</text>
+    </g>
+
+    <!-- Visual Indicador de Fluxo de Dados -->
+    <g transform="translate(24, 325)">
+      <rect width="372" height="135" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="16" y="24" font-family="system-ui" font-weight="700" font-size="12" fill="#0f172a">Fluxo Contratual Unidirecional (CNV)</text>
+      
+      <g transform="translate(16, 44)">
+        <rect width="160" height="32" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1"/>
+        <text x="80" y="20" font-family="monospace" font-size="11" fill="#047857" text-anchor="middle">input() ➔ Doação Pura</text>
+      </g>
+      <path d="M 186, 60 L 220, 60" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="203" y="52" font-family="system-ui" font-size="9" fill="#047857" text-anchor="middle">Desce</text>
+
+      <g transform="translate(16, 88)">
+        <rect width="160" height="32" rx="6" fill="#fff7ed" stroke="#ea580c" stroke-width="1"/>
+        <text x="80" y="20" font-family="monospace" font-size="11" fill="#c2410c" text-anchor="middle">output() ➔ Pedido Puro</text>
+      </g>
+      <path d="M 220, 104 L 186, 104" stroke="#ea580c" stroke-width="2"/>
+      <text x="203" y="120" font-family="system-ui" font-size="9" fill="#c2410c" text-anchor="middle">Sobe</text>
+
+      <rect x="236" y="44" width="120" height="76" rx="6" fill="#f1f5f9"/>
+      <text x="296" y="70" font-family="system-ui" font-size="10" font-weight="bold" fill="#334155" text-anchor="middle">Sem Mutações</text>
+      <text x="296" y="86" font-family="system-ui" font-size="10" font-weight="bold" fill="#334155" text-anchor="middle">Laterais Ocultas</text>
+      <text x="296" y="104" font-family="system-ui" font-size="9" fill="#64748b" text-anchor="middle">Respeito Mútuo</text>
+    </g>
+  </g>
+
+</svg>

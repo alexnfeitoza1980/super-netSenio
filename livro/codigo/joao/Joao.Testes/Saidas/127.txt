@@ -1,0 +1,10 @@
+o vento sopra 1
+  ouvinte B viu 1
+o vento sopra 2
+  ouvinte A ouviu: par 2
+  ouvinte B viu 2
+o vento sopra 3
+o vento sopra 4
+  ouvinte A ouviu: par 4
+quem nasceu de novo recebeu: b
+quem nasceu de novo recebeu: c

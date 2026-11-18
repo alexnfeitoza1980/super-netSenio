@@ -1,0 +1,4 @@
+depois de sair: Vivo; ataduras: atadura nas mãos + atadura nos pés + lenço no rosto; livre? False
+depois de desatado: livre? True
+como estava aos 15 minutos? Morto; sepulcro aberto? True; já saiu? False
+7 eventos guardados; nenhum foi apagado

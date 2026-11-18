@@ -1,0 +1,6 @@
+Pelos tipos, o Verbo era Deus? True
+O Verbo estava junto de Deus (referência)? True
+O objeto verbo é do tipo Deus (teste `is`)? True
+São a mesma referência na memória (outra pergunta)? False
+A luz brilha nas trevas: True
+As trevas a compreenderam? False (declarado pelo texto, não calculado)

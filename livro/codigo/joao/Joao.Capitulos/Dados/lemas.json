@@ -1,0 +1,1066 @@
+{
+ "obra": "Evangelho segundo João (texto grego)",
+ "fonte": "MorphGNT/SBLGNT (SBL Greek New Testament, CC BY-SA 3.0)",
+ "palavrasPorCapitulo": {
+  "1": 826,
+  "2": 430,
+  "3": 657,
+  "4": 936,
+  "5": 790,
+  "6": 1238,
+  "7": 850,
+  "8": 905,
+  "9": 689,
+  "10": 697,
+  "11": 944,
+  "12": 890,
+  "13": 660,
+  "14": 577,
+  "15": 500,
+  "16": 580,
+  "17": 498,
+  "18": 790,
+  "19": 818,
+  "20": 614,
+  "21": 549
+ },
+ "lemas": [
+  {
+   "grego": "λόγος",
+   "translit": "logos",
+   "sentido": "palavra, razão",
+   "total": 40,
+   "porCapitulo": {
+    "1": 4,
+    "2": 1,
+    "4": 4,
+    "5": 2,
+    "6": 1,
+    "7": 2,
+    "8": 6,
+    "10": 2,
+    "12": 2,
+    "14": 3,
+    "15": 4,
+    "17": 4,
+    "18": 2,
+    "19": 2,
+    "21": 1
+   }
+  },
+  {
+   "grego": "σημεῖον",
+   "translit": "sēmeion",
+   "sentido": "sinal",
+   "total": 17,
+   "porCapitulo": {
+    "2": 3,
+    "3": 1,
+    "4": 2,
+    "6": 4,
+    "7": 1,
+    "9": 1,
+    "10": 1,
+    "11": 1,
+    "12": 2,
+    "20": 1
+   }
+  },
+  {
+   "grego": "ἔργον",
+   "translit": "ergon",
+   "sentido": "obra, trabalho",
+   "total": 27,
+   "porCapitulo": {
+    "3": 3,
+    "4": 1,
+    "5": 3,
+    "6": 2,
+    "7": 3,
+    "8": 2,
+    "9": 2,
+    "10": 6,
+    "14": 3,
+    "15": 1,
+    "17": 1
+   }
+  },
+  {
+   "grego": "πιστεύω",
+   "translit": "pisteuō",
+   "sentido": "crer, confiar",
+   "total": 98,
+   "porCapitulo": {
+    "1": 3,
+    "2": 4,
+    "3": 8,
+    "4": 7,
+    "5": 7,
+    "6": 9,
+    "7": 5,
+    "8": 5,
+    "9": 4,
+    "10": 6,
+    "11": 9,
+    "12": 9,
+    "13": 1,
+    "14": 7,
+    "16": 4,
+    "17": 3,
+    "19": 1,
+    "20": 6
+   }
+  },
+  {
+   "grego": "μένω",
+   "translit": "menō",
+   "sentido": "permanecer, ficar",
+   "total": 40,
+   "porCapitulo": {
+    "1": 5,
+    "2": 1,
+    "3": 1,
+    "4": 2,
+    "5": 1,
+    "6": 2,
+    "7": 1,
+    "8": 3,
+    "9": 1,
+    "10": 1,
+    "11": 2,
+    "12": 3,
+    "14": 3,
+    "15": 11,
+    "19": 1,
+    "21": 2
+   }
+  },
+  {
+   "grego": "μαρτυρέω",
+   "translit": "martyreō",
+   "sentido": "dar testemunho",
+   "total": 33,
+   "porCapitulo": {
+    "1": 5,
+    "2": 1,
+    "3": 4,
+    "4": 2,
+    "5": 7,
+    "7": 1,
+    "8": 4,
+    "10": 1,
+    "12": 1,
+    "13": 1,
+    "15": 2,
+    "18": 2,
+    "19": 1,
+    "21": 1
+   }
+  },
+  {
+   "grego": "μαρτυρία",
+   "translit": "martyria",
+   "sentido": "testemunho",
+   "total": 14,
+   "porCapitulo": {
+    "1": 2,
+    "3": 3,
+    "5": 4,
+    "8": 3,
+    "19": 1,
+    "21": 1
+   }
+  },
+  {
+   "grego": "ἀγαπάω",
+   "translit": "agapaō",
+   "sentido": "amar (ágape)",
+   "total": 37,
+   "porCapitulo": {
+    "3": 3,
+    "8": 1,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "13": 6,
+    "14": 10,
+    "15": 5,
+    "17": 4,
+    "19": 1,
+    "21": 4
+   }
+  },
+  {
+   "grego": "ἀγάπη",
+   "translit": "agapē",
+   "sentido": "amor",
+   "total": 7,
+   "porCapitulo": {
+    "5": 1,
+    "13": 1,
+    "15": 4,
+    "17": 1
+   }
+  },
+  {
+   "grego": "φιλέω",
+   "translit": "phileō",
+   "sentido": "amar com afeto, ser amigo",
+   "total": 13,
+   "porCapitulo": {
+    "5": 1,
+    "11": 2,
+    "12": 1,
+    "15": 1,
+    "16": 2,
+    "20": 1,
+    "21": 5
+   }
+  },
+  {
+   "grego": "φῶς",
+   "translit": "phōs",
+   "sentido": "luz",
+   "total": 23,
+   "porCapitulo": {
+    "1": 6,
+    "3": 5,
+    "5": 1,
+    "8": 2,
+    "9": 1,
+    "11": 2,
+    "12": 6
+   }
+  },
+  {
+   "grego": "σκοτία",
+   "translit": "skotia",
+   "sentido": "trevas",
+   "total": 8,
+   "porCapitulo": {
+    "1": 2,
+    "6": 1,
+    "8": 1,
+    "12": 3,
+    "20": 1
+   }
+  },
+  {
+   "grego": "ζωή",
+   "translit": "zōē",
+   "sentido": "vida",
+   "total": 36,
+   "porCapitulo": {
+    "1": 2,
+    "3": 4,
+    "4": 2,
+    "5": 7,
+    "6": 11,
+    "8": 1,
+    "10": 2,
+    "11": 1,
+    "12": 2,
+    "14": 1,
+    "17": 2,
+    "20": 1
+   }
+  },
+  {
+   "grego": "ἀλήθεια",
+   "translit": "alētheia",
+   "sentido": "verdade",
+   "total": 25,
+   "porCapitulo": {
+    "1": 2,
+    "3": 1,
+    "4": 2,
+    "5": 1,
+    "8": 7,
+    "14": 2,
+    "15": 1,
+    "16": 3,
+    "17": 3,
+    "18": 3
+   }
+  },
+  {
+   "grego": "ὕδωρ",
+   "translit": "hydōr",
+   "sentido": "água",
+   "total": 21,
+   "porCapitulo": {
+    "1": 3,
+    "2": 3,
+    "3": 2,
+    "4": 9,
+    "5": 1,
+    "7": 1,
+    "13": 1,
+    "19": 1
+   }
+  },
+  {
+   "grego": "ἄρτος",
+   "translit": "artos",
+   "sentido": "pão",
+   "total": 24,
+   "porCapitulo": {
+    "6": 21,
+    "13": 1,
+    "21": 2
+   }
+  },
+  {
+   "grego": "ποιμήν",
+   "translit": "poimēn",
+   "sentido": "pastor",
+   "total": 6,
+   "porCapitulo": {
+    "10": 6
+   }
+  },
+  {
+   "grego": "θύρα",
+   "translit": "thyra",
+   "sentido": "porta",
+   "total": 7,
+   "porCapitulo": {
+    "10": 4,
+    "18": 1,
+    "20": 2
+   }
+  },
+  {
+   "grego": "ὁδός",
+   "translit": "hodos",
+   "sentido": "caminho",
+   "total": 4,
+   "porCapitulo": {
+    "1": 1,
+    "14": 3
+   }
+  },
+  {
+   "grego": "ἄμπελος",
+   "translit": "ampelos",
+   "sentido": "videira",
+   "total": 3,
+   "porCapitulo": {
+    "15": 3
+   }
+  },
+  {
+   "grego": "πνεῦμα",
+   "translit": "pneuma",
+   "sentido": "vento, sopro, espírito",
+   "total": 24,
+   "porCapitulo": {
+    "1": 3,
+    "3": 6,
+    "4": 3,
+    "6": 2,
+    "7": 2,
+    "11": 1,
+    "13": 1,
+    "14": 2,
+    "15": 1,
+    "16": 1,
+    "19": 1,
+    "20": 1
+   }
+  },
+  {
+   "grego": "κόσμος",
+   "translit": "kosmos",
+   "sentido": "mundo",
+   "total": 78,
+   "porCapitulo": {
+    "1": 5,
+    "3": 5,
+    "4": 1,
+    "6": 3,
+    "7": 2,
+    "8": 4,
+    "9": 3,
+    "10": 1,
+    "11": 2,
+    "12": 7,
+    "13": 2,
+    "14": 6,
+    "15": 6,
+    "16": 8,
+    "17": 18,
+    "18": 4,
+    "21": 1
+   }
+  },
+  {
+   "grego": "ὁράω",
+   "translit": "horaō",
+   "sentido": "ver",
+   "total": 72,
+   "porCapitulo": {
+    "1": 11,
+    "3": 4,
+    "4": 3,
+    "5": 2,
+    "6": 9,
+    "7": 1,
+    "8": 4,
+    "9": 2,
+    "11": 5,
+    "12": 4,
+    "13": 2,
+    "14": 3,
+    "15": 1,
+    "16": 4,
+    "18": 2,
+    "19": 6,
+    "20": 8,
+    "21": 1
+   }
+  },
+  {
+   "grego": "βλέπω",
+   "translit": "blepō",
+   "sentido": "olhar, ver",
+   "total": 17,
+   "porCapitulo": {
+    "1": 1,
+    "5": 1,
+    "9": 9,
+    "11": 1,
+    "13": 1,
+    "20": 2,
+    "21": 2
+   }
+  },
+  {
+   "grego": "γινώσκω",
+   "translit": "ginōskō",
+   "sentido": "conhecer",
+   "total": 56,
+   "porCapitulo": {
+    "1": 2,
+    "2": 2,
+    "3": 1,
+    "4": 2,
+    "5": 2,
+    "6": 2,
+    "7": 5,
+    "8": 6,
+    "10": 8,
+    "11": 1,
+    "12": 2,
+    "13": 4,
+    "14": 7,
+    "15": 1,
+    "16": 2,
+    "17": 7,
+    "19": 1,
+    "21": 1
+   }
+  },
+  {
+   "grego": "οἶδα",
+   "translit": "oida",
+   "sentido": "saber",
+   "total": 80,
+   "porCapitulo": {
+    "1": 3,
+    "2": 2,
+    "3": 3,
+    "4": 6,
+    "5": 2,
+    "6": 3,
+    "7": 6,
+    "8": 9,
+    "9": 11,
+    "10": 2,
+    "11": 4,
+    "12": 2,
+    "13": 4,
+    "14": 4,
+    "15": 2,
+    "16": 3,
+    "18": 2,
+    "19": 2,
+    "20": 4,
+    "21": 6
+   }
+  },
+  {
+   "grego": "πατήρ",
+   "translit": "patēr",
+   "sentido": "pai",
+   "total": 136,
+   "porCapitulo": {
+    "1": 2,
+    "2": 1,
+    "3": 1,
+    "4": 6,
+    "5": 14,
+    "6": 15,
+    "7": 1,
+    "8": 20,
+    "10": 13,
+    "11": 1,
+    "12": 5,
+    "13": 2,
+    "14": 23,
+    "15": 10,
+    "16": 11,
+    "17": 6,
+    "18": 1,
+    "20": 4
+   }
+  },
+  {
+   "grego": "καταλαμβάνω",
+   "translit": "katalambanō",
+   "sentido": "apanhar, alcançar, compreender",
+   "total": 2,
+   "porCapitulo": {
+    "1": 1,
+    "12": 1
+   }
+  },
+  {
+   "grego": "σκηνόω",
+   "translit": "skēnoō",
+   "sentido": "armar tenda, habitar",
+   "total": 1,
+   "porCapitulo": {
+    "1": 1
+   }
+  },
+  {
+   "grego": "ἄνωθεν",
+   "translit": "anōthen",
+   "sentido": "do alto, de novo",
+   "total": 5,
+   "porCapitulo": {
+    "3": 3,
+    "19": 2
+   }
+  },
+  {
+   "grego": "πνέω",
+   "translit": "pneō",
+   "sentido": "soprar",
+   "total": 2,
+   "porCapitulo": {
+    "3": 1,
+    "6": 1
+   }
+  },
+  {
+   "grego": "ὑδρία",
+   "translit": "hydria",
+   "sentido": "jarro de água",
+   "total": 3,
+   "porCapitulo": {
+    "2": 2,
+    "4": 1
+   }
+  },
+  {
+   "grego": "ἀντλέω",
+   "translit": "antleō",
+   "sentido": "tirar água",
+   "total": 4,
+   "porCapitulo": {
+    "2": 2,
+    "4": 2
+   }
+  },
+  {
+   "grego": "πηγή",
+   "translit": "pēgē",
+   "sentido": "fonte, nascente",
+   "total": 3,
+   "porCapitulo": {
+    "4": 3
+   }
+  },
+  {
+   "grego": "φρέαρ",
+   "translit": "phrear",
+   "sentido": "poço, cisterna",
+   "total": 2,
+   "porCapitulo": {
+    "4": 2
+   }
+  },
+  {
+   "grego": "παιδάριον",
+   "translit": "paidarion",
+   "sentido": "menino",
+   "total": 1,
+   "porCapitulo": {
+    "6": 1
+   }
+  },
+  {
+   "grego": "ὀψάριον",
+   "translit": "opsarion",
+   "sentido": "peixe",
+   "total": 5,
+   "porCapitulo": {
+    "6": 2,
+    "21": 3
+   }
+  },
+  {
+   "grego": "κλάσμα",
+   "translit": "klasma",
+   "sentido": "pedaço",
+   "total": 2,
+   "porCapitulo": {
+    "6": 2
+   }
+  },
+  {
+   "grego": "κόφινος",
+   "translit": "kophinos",
+   "sentido": "cesto",
+   "total": 1,
+   "porCapitulo": {
+    "6": 1
+   }
+  },
+  {
+   "grego": "συνάγω",
+   "translit": "synagō",
+   "sentido": "reunir, recolher",
+   "total": 7,
+   "porCapitulo": {
+    "4": 1,
+    "6": 2,
+    "11": 2,
+    "15": 1,
+    "18": 1
+   }
+  },
+  {
+   "grego": "ἀπόλλυμι",
+   "translit": "apollymi",
+   "sentido": "perder, destruir",
+   "total": 10,
+   "porCapitulo": {
+    "3": 1,
+    "6": 3,
+    "10": 2,
+    "11": 1,
+    "12": 1,
+    "17": 1,
+    "18": 1
+   }
+  },
+  {
+   "grego": "φωνή",
+   "translit": "phōnē",
+   "sentido": "voz, som",
+   "total": 15,
+   "porCapitulo": {
+    "1": 1,
+    "3": 2,
+    "5": 3,
+    "10": 5,
+    "11": 1,
+    "12": 2,
+    "18": 1
+   }
+  },
+  {
+   "grego": "ἀλλότριος",
+   "translit": "allotrios",
+   "sentido": "estranho",
+   "total": 2,
+   "porCapitulo": {
+    "10": 2
+   }
+  },
+  {
+   "grego": "μισθωτός",
+   "translit": "misthōtos",
+   "sentido": "assalariado",
+   "total": 2,
+   "porCapitulo": {
+    "10": 2
+   }
+  },
+  {
+   "grego": "λύω",
+   "translit": "lyō",
+   "sentido": "soltar, desatar",
+   "total": 6,
+   "porCapitulo": {
+    "1": 1,
+    "2": 1,
+    "5": 1,
+    "7": 1,
+    "10": 1,
+    "11": 1
+   }
+  },
+  {
+   "grego": "ἀφίημι",
+   "translit": "aphiēmi",
+   "sentido": "deixar, soltar, perdoar",
+   "total": 15,
+   "porCapitulo": {
+    "4": 3,
+    "8": 1,
+    "10": 1,
+    "11": 2,
+    "12": 1,
+    "14": 2,
+    "16": 2,
+    "18": 1,
+    "20": 2
+   }
+  },
+  {
+   "grego": "δακρύω",
+   "translit": "dakryō",
+   "sentido": "chorar",
+   "total": 1,
+   "porCapitulo": {
+    "11": 1
+   }
+  },
+  {
+   "grego": "κειρία",
+   "translit": "keiria",
+   "sentido": "atadura, faixa",
+   "total": 1,
+   "porCapitulo": {
+    "11": 1
+   }
+  },
+  {
+   "grego": "σουδάριον",
+   "translit": "soudarion",
+   "sentido": "lenço",
+   "total": 2,
+   "porCapitulo": {
+    "11": 1,
+    "20": 1
+   }
+  },
+  {
+   "grego": "λέντιον",
+   "translit": "lention",
+   "sentido": "toalha",
+   "total": 2,
+   "porCapitulo": {
+    "13": 2
+   }
+  },
+  {
+   "grego": "νιπτήρ",
+   "translit": "niptēr",
+   "sentido": "bacia",
+   "total": 1,
+   "porCapitulo": {
+    "13": 1
+   }
+  },
+  {
+   "grego": "νίπτω",
+   "translit": "niptō",
+   "sentido": "lavar",
+   "total": 13,
+   "porCapitulo": {
+    "9": 5,
+    "13": 8
+   }
+  },
+  {
+   "grego": "ὑπόδειγμα",
+   "translit": "hypodeigma",
+   "sentido": "exemplo",
+   "total": 1,
+   "porCapitulo": {
+    "13": 1
+   }
+  },
+  {
+   "grego": "δοῦλος",
+   "translit": "doulos",
+   "sentido": "servo",
+   "total": 11,
+   "porCapitulo": {
+    "4": 1,
+    "8": 2,
+    "13": 1,
+    "15": 3,
+    "18": 4
+   }
+  },
+  {
+   "grego": "κλῆμα",
+   "translit": "klēma",
+   "sentido": "ramo",
+   "total": 4,
+   "porCapitulo": {
+    "15": 4
+   }
+  },
+  {
+   "grego": "καρπός",
+   "translit": "karpos",
+   "sentido": "fruto",
+   "total": 10,
+   "porCapitulo": {
+    "4": 1,
+    "12": 1,
+    "15": 8
+   }
+  },
+  {
+   "grego": "καθαίρω",
+   "translit": "kathairō",
+   "sentido": "limpar, podar",
+   "total": 1,
+   "porCapitulo": {
+    "15": 1
+   }
+  },
+  {
+   "grego": "αἴρω",
+   "translit": "airō",
+   "sentido": "tirar, levantar",
+   "total": 26,
+   "porCapitulo": {
+    "1": 1,
+    "2": 1,
+    "5": 5,
+    "8": 1,
+    "10": 2,
+    "11": 4,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "19": 5,
+    "20": 4
+   }
+  },
+  {
+   "grego": "γεωργός",
+   "translit": "geōrgos",
+   "sentido": "lavrador",
+   "total": 1,
+   "porCapitulo": {
+    "15": 1
+   }
+  },
+  {
+   "grego": "ἀκολουθέω",
+   "translit": "akoloutheō",
+   "sentido": "seguir",
+   "total": 19,
+   "porCapitulo": {
+    "1": 4,
+    "6": 1,
+    "8": 1,
+    "10": 3,
+    "11": 1,
+    "12": 1,
+    "13": 3,
+    "18": 1,
+    "20": 1,
+    "21": 3
+   }
+  },
+  {
+   "grego": "Λάζαρος",
+   "translit": "Lazaros",
+   "sentido": "Lázaro",
+   "total": 11,
+   "porCapitulo": {
+    "11": 6,
+    "12": 5
+   }
+  },
+  {
+   "grego": "Νικόδημος",
+   "translit": "Nikodēmos",
+   "sentido": "Nicodemos",
+   "total": 5,
+   "porCapitulo": {
+    "3": 3,
+    "7": 1,
+    "19": 1
+   }
+  },
+  {
+   "grego": "οἶνος",
+   "translit": "oinos",
+   "sentido": "vinho",
+   "total": 6,
+   "porCapitulo": {
+    "2": 5,
+    "4": 1
+   }
+  },
+  {
+   "grego": "ἀρχιτρίκλινος",
+   "translit": "architriklinos",
+   "sentido": "mestre de cerimônia",
+   "total": 3,
+   "porCapitulo": {
+    "2": 3
+   }
+  },
+  {
+   "grego": "νύξ",
+   "translit": "nyx",
+   "sentido": "noite",
+   "total": 6,
+   "porCapitulo": {
+    "3": 1,
+    "9": 1,
+    "11": 1,
+    "13": 1,
+    "19": 1,
+    "21": 1
+   }
+  },
+  {
+   "grego": "διψάω",
+   "translit": "dipsaō",
+   "sentido": "ter sede",
+   "total": 6,
+   "porCapitulo": {
+    "4": 3,
+    "6": 1,
+    "7": 1,
+    "19": 1
+   }
+  }
+ ],
+ "euSou": [
+  {
+   "capitulo": 4,
+   "versiculo": 26,
+   "predicado": null
+  },
+  {
+   "capitulo": 6,
+   "versiculo": 20,
+   "predicado": null
+  },
+  {
+   "capitulo": 6,
+   "versiculo": 35,
+   "predicado": "o pão da vida"
+  },
+  {
+   "capitulo": 6,
+   "versiculo": 41,
+   "predicado": "o pão que desceu"
+  },
+  {
+   "capitulo": 6,
+   "versiculo": 48,
+   "predicado": "o pão da vida"
+  },
+  {
+   "capitulo": 6,
+   "versiculo": 51,
+   "predicado": "o pão vivo"
+  },
+  {
+   "capitulo": 8,
+   "versiculo": 12,
+   "predicado": "a luz do mundo"
+  },
+  {
+   "capitulo": 8,
+   "versiculo": 18,
+   "predicado": null
+  },
+  {
+   "capitulo": 8,
+   "versiculo": 24,
+   "predicado": null
+  },
+  {
+   "capitulo": 8,
+   "versiculo": 28,
+   "predicado": null
+  },
+  {
+   "capitulo": 8,
+   "versiculo": 58,
+   "predicado": null
+  },
+  {
+   "capitulo": 9,
+   "versiculo": 9,
+   "predicado": null
+  },
+  {
+   "capitulo": 10,
+   "versiculo": 7,
+   "predicado": "a porta das ovelhas"
+  },
+  {
+   "capitulo": 10,
+   "versiculo": 9,
+   "predicado": "a porta"
+  },
+  {
+   "capitulo": 10,
+   "versiculo": 11,
+   "predicado": "o bom pastor"
+  },
+  {
+   "capitulo": 10,
+   "versiculo": 14,
+   "predicado": "o bom pastor"
+  },
+  {
+   "capitulo": 11,
+   "versiculo": 25,
+   "predicado": "a ressurreição e a vida"
+  },
+  {
+   "capitulo": 13,
+   "versiculo": 19,
+   "predicado": null
+  },
+  {
+   "capitulo": 14,
+   "versiculo": 6,
+   "predicado": "o caminho, a verdade e a vida"
+  },
+  {
+   "capitulo": 15,
+   "versiculo": 1,
+   "predicado": "a videira verdadeira"
+  },
+  {
+   "capitulo": 15,
+   "versiculo": 5,
+   "predicado": "a videira"
+  },
+  {
+   "capitulo": 18,
+   "versiculo": 5,
+   "predicado": null
+  },
+  {
+   "capitulo": 18,
+   "versiculo": 6,
+   "predicado": null
+  },
+  {
+   "capitulo": 18,
+   "versiculo": 8,
+   "predicado": null
+  }
+ ]
+}

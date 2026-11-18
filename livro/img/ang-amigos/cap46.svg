@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo do Canvas -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid Sutil de Engenharia -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="90" x2="960" y2="90"/>
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+    <line x1="160" y1="0" x2="160" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="640" y1="0" x2="640" y2="540"/>
+    <line x1="800" y1="0" x2="800" y2="540"/>
+  </g>
+
+  
+    <g filter="url(#winShadow)">
+      <rect x="40" y="30" width="880" height="480" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 40,40 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#1e293b"/>
+    <circle cx="58" cy="48" r="6" fill="#ff5f56"/>
+    <circle cx="78" cy="48" r="6" fill="#ffbd2e"/>
+    <circle cx="98" cy="48" r="6" fill="#27c93f"/>
+    <rect x="340" y="38" width="280" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="480" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">Browser — Progressive Disclosure Wizard com Signals</text>
+    
+      
+      <g transform="translate(60, 80)">
+        <rect width="800" height="390" rx="8" fill="#1e293b" stroke="#334155"/>
+        
+        <!-- Indicador de Passos no Topo -->
+        <g transform="translate(100, 30)">
+          <!-- Passo 1 (Concluído) -->
+          <circle cx="50" cy="20" r="16" fill="#10b981"/>
+          <text x="50" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">✔</text>
+          <text x="50" y="52" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">1. Destinatário</text>
+          
+          <line x1="80" y1="20" x2="270" y2="20" stroke="#10b981" stroke-width="2"/>
+          
+          <!-- Passo 2 (Ativo) -->
+          <circle cx="300" cy="20" r="16" fill="#2563eb"/>
+          <text x="300" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+          <text x="300" y="52" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#60a5fa" text-anchor="middle">2. O Elogio Sincero</text>
+          
+          <line x1="330" y1="20" x2="520" y2="20" stroke="#475569" stroke-width="2"/>
+          
+          <!-- Passo 3 (Pendente) -->
+          <circle cx="550" cy="20" r="16" fill="#334155"/>
+          <text x="550" y="25" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">3</text>
+          <text x="550" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">3. Confirmação</text>
+        </g>
+        
+        <!-- Formulário do Passo Ativo -->
+        <g transform="translate(120, 110)">
+          <rect width="560" height="150" rx="8" fill="#0f172a" stroke="#3b82f6"/>
+          <text x="25" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#f8fafc">Qual contribuição você deseja reconhecer hoje?</text>
+          
+          <rect x="25" y="45" width="510" height="50" rx="4" fill="#1e293b" stroke="#475569"/>
+          <text x="35" y="70" font-family="system-ui, sans-serif" font-size="11" fill="#f1f5f9">"Parabéns pelo cuidado em criar testes com Component Harnesses na Amigos UI!"</text>
+          
+          <g transform="translate(25, 105)">
+            <rect width="110" height="30" rx="4" fill="#334155"/>
+            <text x="55" y="20" font-family="system-ui, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">Voltar</text>
+            
+            <rect x="390" width="120" height="30" rx="4" fill="#2563eb"/>
+            <text x="450" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Continuar (Sim)</text>
+          </g>
+        </g>
+        
+        <!-- Insight Socrático Dale Carnegie -->
+        <g transform="translate(60, 290)">
+          <rect width="680" height="75" rx="6" fill="#020617" stroke="#334155"/>
+          <text x="20" y="26" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#fbbf24">DALE CARNEGIE · CAPÍTULO 14: "O SEGREDO DE SÓCRATES: OBTENHA UM 'SIM' DESDE O COMEÇO"</text>
+          <text x="20" y="48" font-family="system-ui, sans-serif" font-size="10" fill="#cbd5e1">Um formulário com 40 campos assusta e gera rejeição imediata. Dividir em etapas lógicas e confortáveis (Progressive Disclosure) conduz o usuário em uma série de pequenos acordos afirmativos.</text>
+        </g>
+      </g>
+    </g>
+    
+</svg>

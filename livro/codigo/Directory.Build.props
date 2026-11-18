@@ -1,0 +1,10 @@
+<Project>
+
+  <!--
+    Isola o código que acompanha os livros do restante do super-netSenior.
+    Sem este arquivo, o Directory.Build.props da raiz seria aplicado a estes projetos e trocaria o
+    TargetFramework de cada um. O MSBuild usa o Directory.Build.props mais próximo; este fica vazio de propósito:
+    cada projeto de livro continua com as configurações e versões que o livro descreve.
+  -->
+
+</Project>

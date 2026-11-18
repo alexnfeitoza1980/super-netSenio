@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 370" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Pipeline de entrega do projeto Angular</title>
+  <desc id="descricao">A mudança passa por revisão, testes, build, publicação e observação do comportamento em produção.</desc>
+  <defs><marker id="seta" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#ee6c4d"/></marker></defs>
+  <rect width="1000" height="370" rx="28" fill="#f6f9fc"/>
+  <g font-family="system-ui,sans-serif" text-anchor="middle">
+    <g fill="#142536">
+      <rect x="40" y="105" width="170" height="120" rx="18"/><rect x="245" y="105" width="170" height="120" rx="18"/>
+      <rect x="450" y="105" width="170" height="120" rx="18"/><rect x="655" y="105" width="140" height="120" rx="18"/>
+      <rect x="830" y="105" width="130" height="120" rx="18"/>
+    </g>
+    <g fill="#fff" font-size="17" font-weight="700">
+      <text x="125" y="157">Revisão</text><text x="330" y="157">Testes</text><text x="535" y="157">Build</text><text x="725" y="157">Deploy</text><text x="895" y="157">Observar</text>
+    </g>
+    <g fill="#dbe7f2" font-size="13">
+      <text x="125" y="188">contexto e diff</text><text x="330" y="188">regras críticas</text><text x="535" y="188">artefato</text><text x="725" y="188">hosting</text><text x="895" y="188">saúde e privacidade</text>
+    </g>
+    <path d="M212 165h25m157 0h50m157 0h65m143 0h36" stroke="#ee6c4d" stroke-width="4" marker-end="url(#seta)"/>
+    <text x="500" y="300" fill="#45596c" font-size="16">Uma etapa falha? Feedback acionável antes de seguir</text>
+  </g>
+</svg>

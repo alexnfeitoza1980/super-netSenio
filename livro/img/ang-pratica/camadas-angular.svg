@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 390" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Camadas da Biblioteca Viva</title>
+  <desc id="descricao">As páginas apresentam a interface, a store aplica regras e o repositório separa a origem dos dados.</desc>
+  <defs><marker id="seta" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#ee6c4d"/></marker></defs>
+  <rect width="1000" height="390" rx="28" fill="#f6f9fc"/>
+  <g font-family="system-ui,sans-serif" text-anchor="middle">
+    <rect x="95" y="95" width="230" height="180" rx="22" fill="#142536"/>
+    <text x="210" y="150" fill="#fff" font-size="21" font-weight="700">Página Angular</text>
+    <text x="210" y="187" fill="#dbe7f2" font-size="15">catálogo · detalhe</text>
+    <text x="210" y="211" fill="#dbe7f2" font-size="15">apresenta o estado</text>
+    <rect x="385" y="95" width="230" height="180" rx="22" fill="#3d5a80"/>
+    <text x="500" y="150" fill="#fff" font-size="21" font-weight="700">Store / serviço</text>
+    <text x="500" y="187" fill="#e6eef7" font-size="15">regras · signals</text>
+    <text x="500" y="211" fill="#e6eef7" font-size="15">orquestra a ação</text>
+    <rect x="675" y="95" width="230" height="180" rx="22" fill="#386641"/>
+    <text x="790" y="150" fill="#fff" font-size="21" font-weight="700">Repositório</text>
+    <text x="790" y="187" fill="#e5f1e4" font-size="15">localStorage hoje</text>
+    <text x="790" y="211" fill="#e5f1e4" font-size="15">API quando existir</text>
+    <path d="M331 168h43m-47 35h43m246-35h43m-47 35h43" stroke="#ee6c4d" stroke-width="4" marker-end="url(#seta)"/>
+    <text x="500" y="330" fill="#45596c" font-size="16">Cada fronteira tem contrato, dono e forma de teste</text>
+  </g>
+</svg>

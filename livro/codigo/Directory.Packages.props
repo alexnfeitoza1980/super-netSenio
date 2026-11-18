@@ -1,0 +1,12 @@
+<Project>
+
+  <!--
+    O Directory.Packages.props da raiz do super-netSenior liga o gerenciamento CENTRAL de versões de pacotes.
+    Os projetos dos livros declaram a versão em cada PackageReference (como o livro ensina), então o gerenciamento
+    central fica DESLIGADO aqui. Sem isto o build falha com NU1008.
+  -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+</Project>

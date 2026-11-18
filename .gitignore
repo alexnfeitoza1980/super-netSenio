@@ -1,0 +1,22 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+.vs/
+.vscode/
+TestResults/
+*.log
+
+## Segredos e configuração local (nunca versionar)
+appsettings.Local.json
+appsettings.Production.json
+*.pfx
+.env
+.env.*
+secrets.json
+
+## IDEs
+.idea/
+*.swp

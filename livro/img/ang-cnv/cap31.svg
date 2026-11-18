@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" role="img">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#d96b27" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140803"/>
+      <stop offset="60%" stop-color="#2d1307"/>
+      <stop offset="100%" stop-color="#180a04"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#13141f"/>
+    </linearGradient>
+    <linearGradient id="browserGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fffaf5"/>
+    </linearGradient>
+    <linearGradient id="orangeBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#d96b27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo de Studio da Ilustração -->
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  
+  <!-- Grid tático refinado -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.03">
+    <line x1="0" y1="0" x2="0" y2="540"/><line x1="80" y1="0" x2="80" y2="540"/><line x1="160" y1="0" x2="160" y2="540"/><line x1="240" y1="0" x2="240" y2="540"/><line x1="320" y1="0" x2="320" y2="540"/><line x1="400" y1="0" x2="400" y2="540"/><line x1="480" y1="0" x2="480" y2="540"/><line x1="560" y1="0" x2="560" y2="540"/><line x1="640" y1="0" x2="640" y2="540"/><line x1="720" y1="0" x2="720" y2="540"/><line x1="800" y1="0" x2="800" y2="540"/><line x1="880" y1="0" x2="880" y2="540"/><line x1="960" y1="0" x2="960" y2="540"/>
+    <line x1="0" y1="0" x2="960" y2="0"/><line x1="0" y1="60" x2="960" y2="60"/><line x1="0" y1="120" x2="960" y2="120"/><line x1="0" y1="180" x2="960" y2="180"/><line x1="0" y1="240" x2="960" y2="240"/><line x1="0" y1="300" x2="960" y2="300"/><line x1="0" y1="360" x2="960" y2="360"/><line x1="0" y1="420" x2="960" y2="420"/><line x1="0" y1="480" x2="960" y2="480"/><line x1="0" y1="540" x2="960" y2="540"/>
+  </g>
+
+  <!-- Halo de luz quente -->
+  <circle cx="480" cy="270" r="320" fill="#f59e0b" opacity="0.06" filter="blur(60px)"/>
+
+  
+  <!-- Storybook / Design System UI Mockup com Componentes Agnósticos -->
+  <g transform="translate(40, 30)" filter="url(#winShadow)">
+    <rect width="880" height="480" rx="10" fill="#ffffff"/>
+    
+    <!-- Barra de janela macOS / Chrome -->
+    <path d="M 0,10 a 10,10 0 0 1 10,-10 h 860 a 10,10 0 0 1 10,10 v 26 h -880 z" fill="#f1f5f9"/>
+    <circle cx="18" cy="18" r="6" fill="#ff5f56"/>
+    <circle cx="38" cy="18" r="6" fill="#ffbd2e"/>
+    <circle cx="58" cy="18" r="6" fill="#27c93f"/>
+    <rect x="310" y="8" width="260" height="20" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <text x="440" y="22" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)" text-anchor="middle">Storybook — Design System de Empatia (Componentes Puros)</text>
+    
+
+    <!-- Sidebar do Storybook -->
+    <g transform="translate(0, 36)">
+      <rect width="220" height="444" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="20" y="32" font-family="system-ui" font-weight="bold" font-size="12" fill="#0f172a">DESIGN SYSTEM CNV</text>
+      
+      <g transform="translate(20, 56)" font-family="system-ui" font-size="11" fill="#475569">
+        <text y="16" font-weight="600" fill="#64748b">ÁTOMOS (PUROS)</text>
+        <text y="38" fill="#d96b27" font-weight="bold">▶ BotaoCompassivo</text>
+        <text y="60">  AvatarBadge</text>
+        <text y="82">  PillSentimento</text>
+        
+        <text y="120" font-weight="600" fill="#64748b">MOLÉCULAS</text>
+        <text y="142">  ToastCelebracao</text>
+        <text y="164">  CampoValidacao</text>
+
+        <text y="200" font-weight="600" fill="#64748b">ORGANISMOS</text>
+        <text y="222">  DialogoSeguro</text>
+        <text y="244">  TradutorCnvPanel</text>
+      </g>
+    </g>
+
+    <!-- Canvas Central do Componente -->
+    <g transform="translate(240, 56)">
+      <text x="0" y="20" font-family="system-ui" font-weight="bold" font-size="16" fill="#0f172a">&lt;app-botao-compassivo&gt;</text>
+      <text x="0" y="40" font-family="system-ui" font-size="11" fill="#64748b">Componente de apresentação puro, agnóstico a regras de negócio e testável isoladamente.</text>
+
+      <!-- Variantes Renderizadas -->
+      <g transform="translate(0, 65)">
+        <rect width="600" height="220" rx="8" fill="#fffaf5" stroke="#f5dfd0" stroke-width="1"/>
+        <text x="20" y="30" font-family="system-ui" font-weight="bold" font-size="12" fill="#2a1508">Variantes de Propósito (Tokens):</text>
+
+        <!-- Botão Primário Compassivo -->
+        <g transform="translate(20, 50)">
+          <rect width="160" height="40" rx="8" fill="#d96b27"/>
+          <text x="80" y="24" font-family="system-ui" font-weight="bold" font-size="11" fill="#fff" text-anchor="middle">variante="compassivo"</text>
+        </g>
+
+        <!-- Botão Neutro -->
+        <g transform="translate(200, 50)">
+          <rect width="160" height="40" rx="8" fill="#fdf4eb" stroke="#f5dfd0" stroke-width="1"/>
+          <text x="280" y="24" font-family="system-ui" font-weight="600" font-size="11" fill="#6c3c1e" text-anchor="middle">variante="neutro"</text>
+        </g>
+
+        <!-- Botão Alerta -->
+        <g transform="translate(380, 50)">
+          <rect width="160" height="40" rx="8" fill="#ef4444"/>
+          <text x="460" y="24" font-family="system-ui" font-weight="bold" font-size="11" fill="#fff" text-anchor="middle">variante="alerta"</text>
+        </g>
+
+        <!-- Tokens de Design aplicados -->
+        <g transform="translate(20, 120)" font-family="monospace" font-size="10" fill="#6c3c1e">
+          <text y="14">--cor-compassiva: #d96b27;  /* Terracota acolhedor */</text>
+          <text y="32">--cor-acento: #f59e0b;       /* Âmbar de atenção serena */</text>
+          <text y="50">--raio-borda: 8px;            /* Curvatura suave sem cantos agressivos */</text>
+          <text y="68">--fonte-padrao: "Segoe UI", system-ui; /* Legibilidade universal */</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+</svg>

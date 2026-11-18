@@ -1,0 +1,10 @@
+Vasos transformados até agora: 0
+vaso 1: vinho, qualidade 5 → vinho
+vaso 2: vinho, qualidade 6 → vinho
+vaso 3: vinho, qualidade 7 → vinho muito bom
+vaso 4: vinho, qualidade 8 → vinho muito bom
+vaso 5: vinho, qualidade 9 → o melhor ficou para o fim
+vaso 6: vinho, qualidade 10 → o melhor ficou para o fim
+Transformadas depois de provar tudo: 6
+Quem prova só duas taças causa 2 transformações
+dobro do tamanho: 8

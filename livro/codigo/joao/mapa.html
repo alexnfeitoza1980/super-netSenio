@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa vivo do Evangelho segundo João</title>
+<style>
+:root{--bg:#f3f7ff;--surface:#ffffff;--ink:#0f1b33;--ink2:#3d4f73;--ink3:#6e7f9f;--line:#cdd9f0;--pri:#1c3f7a;--soft:#e8effc;--acc:#d99a14;--acc-ink:#2a1c00;--good:#2e9e6b;--bad:#d8454f;color-scheme:light}
+html[data-theme=dark]{--bg:#0b1226;--surface:#131c38;--ink:#eaf0ff;--ink2:#b9c6e6;--ink3:#8697bf;--line:#26335c;--pri:#7fa6ff;--soft:#1a2750;--acc:#f2c14e;--acc-ink:#2a1c00;color-scheme:dark}
+@media (prefers-color-scheme:dark){html:not([data-theme=light]){--bg:#0b1226;--surface:#131c38;--ink:#eaf0ff;--ink2:#b9c6e6;--ink3:#8697bf;--line:#26335c;--pri:#7fa6ff;--soft:#1a2750;--acc:#f2c14e;--acc-ink:#2a1c00;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,Arial,sans-serif}
+body{padding:12px 14px 18px}
+h1{font:800 17px/1.2 Georgia,'Palatino Linotype',serif;margin:0 0 8px;color:var(--ink)}
+.abas{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+.aba{border:1px solid var(--line);background:var(--surface);color:var(--ink2);padding:8px 13px;border-radius:999px;font:700 13.5px inherit;font-family:inherit;cursor:pointer}
+.aba[aria-selected=true]{background:var(--pri);border-color:var(--pri);color:#fff}
+html[data-theme=dark] .aba[aria-selected=true]{color:#0b1226}
+@media (prefers-color-scheme:dark){html:not([data-theme=light]) .aba[aria-selected=true]{color:#0b1226}}
+button:focus-visible,a:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.painel[hidden]{display:none}
+.dica{color:var(--ink3);font-size:13px;margin:0 0 10px}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:8px;margin-bottom:12px}
+.cartao{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 6px;border:2px solid var(--line);background:var(--surface);border-radius:14px;cursor:pointer;color:var(--ink);font-family:inherit;transition:transform .15s,border-color .15s}
+.cartao:hover{transform:translateY(-2px)}
+.cartao[aria-pressed=true]{border-color:var(--acc);box-shadow:0 0 0 3px color-mix(in srgb,var(--acc) 30%,transparent)}
+.cartao svg{width:42px;height:42px}
+.cartao b{font-size:13px}
+.cartao small{color:var(--ink3);font-size:11.5px}
+.detalhe{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.grego{font:italic 700 21px/1.25 Georgia,'Palatino Linotype',serif;color:var(--pri);margin:0 0 2px}
+.translit{color:var(--ink3);font-size:13px;margin:0 0 8px}
+.detalhe p{margin:6px 0}
+.selo{display:inline-block;background:var(--soft);color:var(--ink2);border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:700;margin:2px 4px 2px 0}
+.irpara{display:inline-flex;gap:6px;align-items:center;margin-top:8px;padding:8px 13px;border-radius:12px;background:var(--pri);color:#fff;font-weight:800;text-decoration:none;font-size:13.5px}
+html[data-theme=dark] .irpara{color:#0b1226}
+@media (prefers-color-scheme:dark){html:not([data-theme=light]) .irpara{color:#0b1226}}
+.fichas{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.ficha{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 11px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.ficha[aria-pressed=true]{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
+.alt{display:inline-flex;gap:4px;margin-left:6px}
+.alt button{border:1px solid var(--line);background:var(--surface);color:var(--ink2);border-radius:8px;padding:3px 9px;font:700 12px inherit;font-family:inherit;cursor:pointer}
+.alt button[aria-pressed=true]{background:var(--pri);color:#fff;border-color:var(--pri)}
+html[data-theme=dark] .alt button[aria-pressed=true]{color:#0b1226}
+.grafico{width:100%;height:auto;display:block;margin:6px 0}
+.barra{fill:var(--pri);opacity:.75;transition:opacity .15s}
+.barra.pico{fill:var(--acc);opacity:1}
+.barra:hover{opacity:1}
+.eixo{stroke:var(--ink3);stroke-width:1.5}
+.num{fill:var(--ink3);font-size:9px;text-anchor:middle}
+code{font-family:Consolas,'Cascadia Mono','Courier New',monospace;background:var(--soft);padding:2px 6px;border-radius:6px;font-size:12.5px;word-break:break-all}
+.mapa{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.aresta{stroke:var(--line);stroke-width:3.5;stroke-linecap:round}
+.aresta.rota{stroke:var(--acc);stroke-width:7;stroke-dasharray:14 11;animation:marcha 1.6s linear infinite}
+@keyframes marcha{to{stroke-dashoffset:-50}}
+.peso{fill:var(--ink3);font-size:11px;font-weight:700;text-anchor:middle}
+.no{cursor:pointer}
+.no circle{fill:var(--pri);stroke:var(--surface);stroke-width:3}
+.no.na-rota circle{fill:var(--acc)}
+.no.ponta circle{stroke:var(--good);stroke-width:5}
+.no text.i{fill:#fff;font-size:13px;font-weight:800;text-anchor:middle;pointer-events:none}
+html[data-theme=dark] .no text.i{fill:#0b1226}
+.no.na-rota text.i{fill:var(--acc-ink)!important}
+.no text.r{fill:var(--ink);font-size:11.5px;font-weight:700;text-anchor:middle;pointer-events:none}
+.no:focus-visible circle{stroke:var(--acc)}
+.linhas{margin:8px 0 0;padding-left:20px}
+.linhas li{margin:3px 0}
+@media (prefers-reduced-motion:reduce){.aresta.rota{animation:none}.cartao{transition:none}}
+</style>
+</head>
+<body>
+<h1>Mapa vivo: imagens, palavras e lugares</h1>
+<div class="abas" role="tablist" aria-label="Seções do mapa">
+  <button class="aba" role="tab" id="t1" aria-selected="true" aria-controls="p1">As sete imagens</button>
+  <button class="aba" role="tab" id="t2" aria-selected="false" aria-controls="p2">Palavras do grego</button>
+  <button class="aba" role="tab" id="t3" aria-selected="false" aria-controls="p3">Lugares e rota</button>
+</div>
+
+<section class="painel" id="p1" role="tabpanel" aria-labelledby="t1">
+  <p class="dica">Clique em uma imagem de “Eu sou”. Cada uma leva ao capítulo do livro em que a cena vira código. A lista de “sete” não está no texto de João.</p>
+  <div class="cartoes" id="cartoes"></div>
+  <div class="detalhe" id="detalhe1" aria-live="polite"></div>
+</section>
+
+<section class="painel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+  <p class="dica">Escolha uma palavra. As barras mostram onde ela aparece, capítulo a capítulo, no texto grego (SBLGNT/MorphGNT).</p>
+  <div class="fichas" id="fichas"></div>
+  <div class="detalhe">
+    <div id="titulo2"></div>
+    <div><span class="alt" role="group" aria-label="Medida do gráfico"><button type="button" id="mCont" aria-pressed="true">contagem</button><button type="button" id="mDens" aria-pressed="false">por mil palavras</button></span></div>
+    <svg class="grafico" id="grafico" viewBox="0 0 440 170" role="img" aria-label="Gráfico de barras por capítulo"></svg>
+    <p id="info2" aria-live="polite"></p>
+    <p class="dica">No seu computador: <code id="cmd"></code></p>
+  </div>
+</section>
+
+<section class="painel" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+  <p class="dica">Clique em dois lugares para traçar a rota. Os “dias” são <b>ilustrativos</b>, criados para ensinar os algoritmos do Laboratório 14.</p>
+  <div class="alt" role="group" aria-label="Algoritmo" style="margin:0 0 8px"><button type="button" id="aTempo" aria-pressed="true">menor tempo (Dijkstra)</button><button type="button" id="aParadas" aria-pressed="false">menos paradas (largura)</button><button type="button" id="aLimpar">limpar</button></div>
+  <svg class="mapa" id="mapa" viewBox="0 0 560 400" role="group" aria-label="Mapa de lugares"></svg>
+  <div class="detalhe" id="detalhe3" style="margin-top:10px" aria-live="polite"></div>
+</section>
+
+<script>
+const DADOS = {"palavrasPorCapitulo":{"1":826,"2":430,"3":657,"4":936,"5":790,"6":1238,"7":850,"8":905,"9":689,"10":697,"11":944,"12":890,"13":660,"14":577,"15":500,"16":580,"17":498,"18":790,"19":818,"20":614,"21":549},"lemas":[{"grego":"λόγος","translit":"logos","sentido":"palavra, razão","total":40,"porCapitulo":{"1":4,"2":1,"4":4,"5":2,"6":1,"7":2,"8":6,"10":2,"12":2,"14":3,"15":4,"17":4,"18":2,"19":2,"21":1}},{"grego":"σημεῖον","translit":"sēmeion","sentido":"sinal","total":17,"porCapitulo":{"2":3,"3":1,"4":2,"6":4,"7":1,"9":1,"10":1,"11":1,"12":2,"20":1}},{"grego":"ἔργον","translit":"ergon","sentido":"obra, trabalho","total":27,"porCapitulo":{"3":3,"4":1,"5":3,"6":2,"7":3,"8":2,"9":2,"10":6,"14":3,"15":1,"17":1}},{"grego":"πιστεύω","translit":"pisteuō","sentido":"crer, confiar","total":98,"porCapitulo":{"1":3,"2":4,"3":8,"4":7,"5":7,"6":9,"7":5,"8":5,"9":4,"10":6,"11":9,"12":9,"13":1,"14":7,"16":4,"17":3,"19":1,"20":6}},{"grego":"μένω","translit":"menō","sentido":"permanecer, ficar","total":40,"porCapitulo":{"1":5,"2":1,"3":1,"4":2,"5":1,"6":2,"7":1,"8":3,"9":1,"10":1,"11":2,"12":3,"14":3,"15":11,"19":1,"21":2}},{"grego":"μαρτυρέω","translit":"martyreō","sentido":"dar testemunho","total":33,"porCapitulo":{"1":5,"2":1,"3":4,"4":2,"5":7,"7":1,"8":4,"10":1,"12":1,"13":1,"15":2,"18":2,"19":1,"21":1}},{"grego":"μαρτυρία","translit":"martyria","sentido":"testemunho","total":14,"porCapitulo":{"1":2,"3":3,"5":4,"8":3,"19":1,"21":1}},{"grego":"ἀγαπάω","translit":"agapaō","sentido":"amar (ágape)","total":37,"porCapitulo":{"3":3,"8":1,"10":1,"11":1,"12":1,"13":6,"14":10,"15":5,"17":4,"19":1,"21":4}},{"grego":"ἀγάπη","translit":"agapē","sentido":"amor","total":7,"porCapitulo":{"5":1,"13":1,"15":4,"17":1}},{"grego":"φιλέω","translit":"phileō","sentido":"amar com afeto, ser amigo","total":13,"porCapitulo":{"5":1,"11":2,"12":1,"15":1,"16":2,"20":1,"21":5}},{"grego":"φῶς","translit":"phōs","sentido":"luz","total":23,"porCapitulo":{"1":6,"3":5,"5":1,"8":2,"9":1,"11":2,"12":6}},{"grego":"σκοτία","translit":"skotia","sentido":"trevas","total":8,"porCapitulo":{"1":2,"6":1,"8":1,"12":3,"20":1}},{"grego":"ζωή","translit":"zōē","sentido":"vida","total":36,"porCapitulo":{"1":2,"3":4,"4":2,"5":7,"6":11,"8":1,"10":2,"11":1,"12":2,"14":1,"17":2,"20":1}},{"grego":"ἀλήθεια","translit":"alētheia","sentido":"verdade","total":25,"porCapitulo":{"1":2,"3":1,"4":2,"5":1,"8":7,"14":2,"15":1,"16":3,"17":3,"18":3}},{"grego":"ὕδωρ","translit":"hydōr","sentido":"água","total":21,"porCapitulo":{"1":3,"2":3,"3":2,"4":9,"5":1,"7":1,"13":1,"19":1}},{"grego":"ἄρτος","translit":"artos","sentido":"pão","total":24,"porCapitulo":{"6":21,"13":1,"21":2}},{"grego":"ποιμήν","translit":"poimēn","sentido":"pastor","total":6,"porCapitulo":{"10":6}},{"grego":"θύρα","translit":"thyra","sentido":"porta","total":7,"porCapitulo":{"10":4,"18":1,"20":2}},{"grego":"ὁδός","translit":"hodos","sentido":"caminho","total":4,"porCapitulo":{"1":1,"14":3}},{"grego":"ἄμπελος","translit":"ampelos","sentido":"videira","total":3,"porCapitulo":{"15":3}},{"grego":"πνεῦμα","translit":"pneuma","sentido":"vento, sopro, espírito","total":24,"porCapitulo":{"1":3,"3":6,"4":3,"6":2,"7":2,"11":1,"13":1,"14":2,"15":1,"16":1,"19":1,"20":1}},{"grego":"κόσμος","translit":"kosmos","sentido":"mundo","total":78,"porCapitulo":{"1":5,"3":5,"4":1,"6":3,"7":2,"8":4,"9":3,"10":1,"11":2,"12":7,"13":2,"14":6,"15":6,"16":8,"17":18,"18":4,"21":1}},{"grego":"ὁράω","translit":"horaō","sentido":"ver","total":72,"porCapitulo":{"1":11,"3":4,"4":3,"5":2,"6":9,"7":1,"8":4,"9":2,"11":5,"12":4,"13":2,"14":3,"15":1,"16":4,"18":2,"19":6,"20":8,"21":1}},{"grego":"βλέπω","translit":"blepō","sentido":"olhar, ver","total":17,"porCapitulo":{"1":1,"5":1,"9":9,"11":1,"13":1,"20":2,"21":2}},{"grego":"γινώσκω","translit":"ginōskō","sentido":"conhecer","total":56,"porCapitulo":{"1":2,"2":2,"3":1,"4":2,"5":2,"6":2,"7":5,"8":6,"10":8,"11":1,"12":2,"13":4,"14":7,"15":1,"16":2,"17":7,"19":1,"21":1}},{"grego":"οἶδα","translit":"oida","sentido":"saber","total":80,"porCapitulo":{"1":3,"2":2,"3":3,"4":6,"5":2,"6":3,"7":6,"8":9,"9":11,"10":2,"11":4,"12":2,"13":4,"14":4,"15":2,"16":3,"18":2,"19":2,"20":4,"21":6}},{"grego":"πατήρ","translit":"patēr","sentido":"pai","total":136,"porCapitulo":{"1":2,"2":1,"3":1,"4":6,"5":14,"6":15,"7":1,"8":20,"10":13,"11":1,"12":5,"13":2,"14":23,"15":10,"16":11,"17":6,"18":1,"20":4}}]};
+const $ = s => document.querySelector(s);
+const NS = 'http://www.w3.org/2000/svg';
+
+/* tema: acompanha o livro (mesma origem) e, na falta dele, o sistema */
+function temaDoLivro() {
+  try {
+    const t = window.parent !== window && window.parent.document.documentElement.getAttribute('data-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t); else document.documentElement.removeAttribute('data-theme');
+  } catch (e) { /* fora do livro: vale o sistema */ }
+}
+temaDoLivro();
+try { new MutationObserver(temaDoLivro).observe(window.parent.document.documentElement, { attributes: true, attributeFilter: ['data-theme'] }); } catch (e) { /* ok */ }
+
+/* abas */
+const abas = ['t1', 't2', 't3'];
+abas.forEach((id, i) => {
+  $('#' + id).addEventListener('click', () => mostrar(i));
+  $('#' + id).addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { const j = (i + (e.key === 'ArrowRight' ? 1 : 2)) % 3; mostrar(j); $('#' + abas[j]).focus(); }
+  });
+});
+function mostrar(i) {
+  abas.forEach((id, k) => { $('#' + id).setAttribute('aria-selected', k === i); $('#p' + (k + 1)).hidden = k !== i; });
+}
+
+/* ---------- 1. as sete imagens ---------- */
+const IMAGENS = [
+  { id: 'pao', nome: 'o pão', ref: 'Jo 6,35', gr: 'Ἐγώ εἰμι ὁ ἄρτος τῆς ζωῆς', tr: 'egō eimi ho artos tēs zōēs', nota: 'Quatro dos “Eu sou” estão no capítulo 6 (6,35; 6,41; 6,48; 6,51). A palavra “pão” (artos) aparece 24 vezes em João, 21 delas ali.', cap: 129, tit: 'Cinco pães, dois peixes e nada se perde', cs: 'Channel<T>, IAsyncEnumerable<T>',
+    icone: '<ellipse cx="21" cy="24" rx="17" ry="11" fill="#d9a35e" stroke="#7a5a1e" stroke-width="2.5"/><path d="M12 19l5 11M21 17l5 13M29 19l4 10" stroke="#a8702e" stroke-width="2.5" stroke-linecap="round"/>' },
+  { id: 'luz', nome: 'a luz', ref: 'Jo 8,12', gr: 'Ἐγώ εἰμι τὸ φῶς τοῦ κόσμου', tr: 'egō eimi to phōs tou kosmou', nota: 'A luz (phōs) aparece 23 vezes em João; a “luz do mundo” é dita em 8,12 (e em 9,5, em outra construção).', cap: 124, tit: 'A luz nas trevas', cs: 'logging, IDisposable, objeto nulo',
+    icone: '<circle cx="21" cy="21" r="9" fill="#f2c14e" stroke="#a8761a" stroke-width="2.5"/><g stroke="#e0a526" stroke-width="3" stroke-linecap="round"><path d="M21 4v5M21 33v5M4 21h5M33 21h5M9 9l3.5 3.5M29.5 29.5L33 33M33 9l-3.5 3.5M12.5 29.5L9 33"/></g>' },
+  { id: 'porta', nome: 'a porta', ref: 'Jo 10,9', gr: 'ἐγώ εἰμι ἡ θύρα', tr: 'egō eimi hē thyra', nota: 'Dita em 10,7 ("a porta das ovelhas") e em 10,9. A palavra “porta” (thyra) aparece 7 vezes, e a mesma palavra marca as portas fechadas de 20,19 e 20,26.', cap: 130, tit: 'A porta e a voz do pastor', cs: 'HMAC-SHA256, tempo constante',
+    icone: '<rect x="10" y="4" width="22" height="35" rx="3" fill="#b07b4a" stroke="#5b3d1c" stroke-width="2.5"/><circle cx="27" cy="22" r="2.4" fill="#f2c14e"/>' },
+  { id: 'pastor', nome: 'o bom pastor', ref: 'Jo 10,11', gr: 'Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός', tr: 'egō eimi ho poimēn ho kalos', nota: 'Dita em 10,11 e 10,14. A palavra “pastor” (poimēn) aparece 6 vezes, todas no capítulo 10; em 10,3 ele chama as ovelhas pelo nome.', cap: 130, tit: 'A porta e a voz do pastor', cs: 'autenticação pela “voz” assinada',
+    icone: '<path d="M16 38V14C16 3 34 3 32 15" fill="none" stroke="#8a5a2b" stroke-width="4.5" stroke-linecap="round"/>' },
+  { id: 'vida', nome: 'a ressurreição e a vida', ref: 'Jo 11,25', gr: 'Ἐγώ εἰμι ἡ ἀνάστασις καὶ ἡ ζωή', tr: 'egō eimi hē anastasis kai hē zōē', nota: 'Dita a Marta, em Betânia, antes do chamado a Lázaro. “Vida” (zōē) aparece 36 vezes em João.', cap: 131, tit: 'Lázaro, vem para fora', cs: 'event sourcing, Aggregate',
+    icone: '<path d="M7 38V20C7 4 35 4 35 20v18z" fill="#8892a6" stroke="#3a4054" stroke-width="2.5"/><circle cx="21" cy="26" r="7" fill="#f2c14e"/>' },
+  { id: 'caminho', nome: 'o caminho', ref: 'Jo 14,6', gr: 'Ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή', tr: 'egō eimi hē hodos kai hē alētheia kai hē zōē', nota: 'Uma só frase com três predicados. “Caminho” (hodos) aparece 4 vezes; “verdade” (alētheia), 25.', cap: 125, tit: '“Eu sou”: tipos que se descrevem', cs: 'atributos e reflexão',
+    icone: '<path d="M16 4h10l12 36H4z" fill="#59607a" stroke="#2a2d3a" stroke-width="2.5" stroke-linejoin="round"/><path d="M21 8v6M21 20v6M21 32v5" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>' },
+  { id: 'videira', nome: 'a videira verdadeira', ref: 'Jo 15,1', gr: 'Ἐγώ εἰμι ἡ ἄμπελος ἡ ἀληθινή', tr: 'egō eimi hē ampelos hē alēthinē', nota: 'Dita em 15,1 e 15,5. “Permanecer” (menō) aparece 11 vezes só no capítulo 15, a maior densidade do Evangelho.', cap: 133, tit: 'A videira e os ramos', cs: 'injeção de dependência, reflexão',
+    icone: '<path d="M21 40C17 28 25 20 21 6" fill="none" stroke="#2e7d4f" stroke-width="4" stroke-linecap="round"/><circle cx="12" cy="18" r="5" fill="#7a5bd6"/><circle cx="17" cy="26" r="5" fill="#7a5bd6"/><circle cx="29" cy="16" r="5" fill="#7a5bd6"/>' }
+];
+const cartoes = $('#cartoes');
+IMAGENS.forEach((im, i) => {
+  const b = document.createElement('button');
+  b.type = 'button'; b.className = 'cartao'; b.setAttribute('aria-pressed', i === 0);
+  b.innerHTML = '<svg viewBox="0 0 42 42" aria-hidden="true">' + im.icone + '</svg><b>' + im.nome + '</b><small>' + im.ref + '</small>';
+  b.addEventListener('click', () => escolherImagem(i));
+  cartoes.appendChild(b);
+});
+function escolherImagem(i) {
+  [...cartoes.children].forEach((b, k) => b.setAttribute('aria-pressed', k === i));
+  const im = IMAGENS[i];
+  $('#detalhe1').innerHTML =
+    '<p class="grego">' + im.gr + '</p><p class="translit">' + im.tr + ' · ' + im.ref + '</p>' +
+    '<p>' + im.nota + '</p>' +
+    '<p><span class="selo">capítulo ' + im.cap + '</span><span class="selo">' + im.cs + '</span></p>' +
+    '<a class="irpara" target="_top" href="index.html#/c/cap' + im.cap + '">Abrir o capítulo ' + im.cap + ': ' + im.tit + ' →</a>';
+}
+escolherImagem(0);
+
+/* ---------- 2. palavras do grego ---------- */
+const LEMAS = DADOS.lemas.slice().sort((a, b) => b.total - a.total);
+const PAL = DADOS.palavrasPorCapitulo;
+let lemaAtual = LEMAS.find(l => l.translit === 'menō') || LEMAS[0], medida = 'cont';
+const fichas = $('#fichas');
+LEMAS.forEach(l => {
+  const b = document.createElement('button');
+  b.type = 'button'; b.className = 'ficha'; b.setAttribute('aria-pressed', l === lemaAtual);
+  b.textContent = l.translit + ' · ' + l.total;
+  b.addEventListener('click', () => { lemaAtual = l; desenharPalavra(); });
+  fichas.appendChild(b);
+});
+$('#mCont').addEventListener('click', () => { medida = 'cont'; desenharPalavra(); });
+$('#mDens').addEventListener('click', () => { medida = 'dens'; desenharPalavra(); });
+function desenharPalavra() {
+  const l = lemaAtual;
+  [...fichas.children].forEach((b, k) => b.setAttribute('aria-pressed', LEMAS[k] === l));
+  $('#mCont').setAttribute('aria-pressed', medida === 'cont'); $('#mDens').setAttribute('aria-pressed', medida === 'dens');
+  $('#titulo2').innerHTML = '<p class="grego">' + l.grego + '</p><p class="translit">' + l.translit + ' · ' + l.sentido + ' · ' + l.total + ' vezes em ' + Object.values(PAL).reduce((a, b) => a + b, 0).toLocaleString('pt-BR') + ' palavras</p>';
+  const vals = [];
+  for (let c = 1; c <= 21; c++) { const n = l.porCapitulo[c] || 0; vals.push(medida === 'cont' ? n : n * 1000 / PAL[c]); }
+  const max = Math.max(...vals, 0.0001), pico = vals.indexOf(Math.max(...vals));
+  let svg = '<line class="eixo" x1="10" y1="140" x2="430" y2="140"/>';
+  vals.forEach((v, i) => {
+    const h = Math.round(v / max * 112), x = 14 + i * 20;
+    const n = l.porCapitulo[i + 1] || 0;
+    svg += '<g><title>capítulo ' + (i + 1) + ': ' + n + ' (' + (n * 1000 / PAL[i + 1]).toFixed(1).replace('.', ',') + ' por mil palavras)</title>' +
+      '<rect class="barra' + (i === pico && v > 0 ? ' pico' : '') + '" x="' + x + '" y="' + (140 - h) + '" width="14" height="' + h + '" rx="3"/>' +
+      '<text class="num" x="' + (x + 7) + '" y="156">' + (i + 1) + '</text></g>';
+  });
+  $('#grafico').innerHTML = svg;
+  const dens = (l.porCapitulo[pico + 1] || 0) * 1000 / PAL[pico + 1];
+  $('#info2').innerHTML = l.total === 0 ? 'Sem ocorrências.' : 'Pico em medida ' + (medida === 'cont' ? 'absoluta' : 'por mil palavras') + ': <b>capítulo ' + (pico + 1) + '</b> (' + (l.porCapitulo[pico + 1] || 0) + ' ocorrências, ' + dens.toFixed(1).replace('.', ',') + ' por mil palavras). Capítulos sem a palavra ficam sem barra.';
+  $('#cmd').textContent = 'dotnet run --project codigo/Joao.Console -- onde ' + l.translit;
+}
+desenharPalavra();
+
+/* ---------- 3. lugares e rota ---------- */
+const LUGARES = {
+  jordao:    { n: 'Além do Jordão', x: 60,  y: 270, cena: 'onde João batizava e deu testemunho (Jo 1)', cap: 124 },
+  cana:      { n: 'Caná da Galileia', x: 130, y: 130, cena: 'o casamento: água em vinho (Jo 2)', cap: 126 },
+  cafarnaum: { n: 'Cafarnaum', x: 240, y: 70,  cena: 'o discurso sobre o pão da vida (Jo 6)', cap: 129 },
+  mar:       { n: 'Mar da Galileia', x: 380, y: 100, cena: 'os pães e os peixes; a travessia à noite (Jo 6)', cap: 129 },
+  samaria:   { n: 'Sicar, em Samaria', x: 190, y: 345, cena: 'o poço de Jacó (Jo 4)', cap: 128 },
+  jerusalem: { n: 'Jerusalém', x: 340, y: 300, cena: 'o templo, Nicodemos, o cego de nascença (Jo 2 a 5, 7 a 9)', cap: 127 },
+  betania:   { n: 'Betânia', x: 460, y: 350, cena: 'a casa de Marta, Maria e Lázaro (Jo 11)', cap: 131 },
+  efraim:    { n: 'Éfraim', x: 500, y: 240, cena: 'um retiro antes da última Páscoa (Jo 11)', cap: null }
+};
+const TRECHOS = [['jordao','cana',3],['jordao','jerusalem',2],['cana','cafarnaum',1],['cafarnaum','mar',1],['cana','samaria',3],['samaria','jerusalem',3],['cafarnaum','jerusalem',5],['jerusalem','betania',1],['jerusalem','efraim',1],['betania','efraim',1]];
+const viz = {};
+Object.keys(LUGARES).forEach(k => viz[k] = []);
+TRECHOS.forEach(([a, b, d]) => { viz[a].push([b, d]); viz[b].push([a, d]); });
+
+function menorTempo(o, d) {                     // Dijkstra
+  const dist = { [o]: 0 }, de = { [o]: null }, feito = new Set();
+  while (true) {
+    let atual = null;
+    for (const k in dist) if (!feito.has(k) && (atual === null || dist[k] < dist[atual])) atual = k;
+    if (atual === null || atual === d) break;
+    feito.add(atual);
+    for (const [p, dias] of viz[atual]) if (dist[atual] + dias < (dist[p] ?? Infinity)) { dist[p] = dist[atual] + dias; de[p] = atual; }
+  }
+  return d in de ? montar(de, d) : null;
+}
+function menosParadas(o, d) {                   // busca em largura
+  const de = { [o]: null }, fila = [o];
+  while (fila.length) {
+    const a = fila.shift(); if (a === d) break;
+    for (const [p] of viz[a]) if (!(p in de)) { de[p] = a; fila.push(p); }
+  }
+  return d in de ? montar(de, d) : null;
+}
+function montar(de, d) {
+  const ids = []; for (let k = d; k !== null; k = de[k]) ids.unshift(k);
+  let dias = 0; for (let i = 1; i < ids.length; i++) dias += viz[ids[i - 1]].find(v => v[0] === ids[i])[1];
+  return { ids, dias };
+}
+
+let origem = 'jordao', destino = 'betania', algoritmo = 'tempo', esperandoSegundo = false;
+const mapa = $('#mapa');
+function desenharMapa(rota) {
+  const noRota = new Set(rota ? rota.ids : []);
+  const arestaRota = new Set();
+  if (rota) for (let i = 1; i < rota.ids.length; i++) arestaRota.add([rota.ids[i - 1], rota.ids[i]].sort().join('|'));
+  let s = '';
+  TRECHOS.forEach(([a, b, d]) => {
+    const A = LUGARES[a], B = LUGARES[b], na = arestaRota.has([a, b].sort().join('|'));
+    s += '<line class="aresta' + (na ? ' rota' : '') + '" x1="' + A.x + '" y1="' + A.y + '" x2="' + B.x + '" y2="' + B.y + '"/>' +
+         '<text class="peso" x="' + ((A.x + B.x) / 2) + '" y="' + ((A.y + B.y) / 2 - 7) + '">' + d + '</text>';
+  });
+  Object.entries(LUGARES).forEach(([k, L]) => {
+    const cls = 'no' + (noRota.has(k) ? ' na-rota' : '') + (k === origem || k === destino ? ' ponta' : '');
+    s += '<g class="' + cls + '" data-k="' + k + '" tabindex="0" role="button" aria-label="' + L.n + '"><circle cx="' + L.x + '" cy="' + L.y + '" r="19"/>' +
+         '<text class="i" x="' + L.x + '" y="' + (L.y + 5) + '">' + L.n[0] + '</text><text class="r" x="' + L.x + '" y="' + (L.y + 38) + '">' + L.n + '</text></g>';
+  });
+  mapa.innerHTML = s;
+  mapa.querySelectorAll('.no').forEach(g => {
+    const f = () => clicarLugar(g.dataset.k);
+    g.addEventListener('click', f);
+    g.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); f(); } });
+  });
+}
+function clicarLugar(k) {
+  if (!esperandoSegundo) { origem = k; destino = k; esperandoSegundo = true; }
+  else { destino = k; esperandoSegundo = false; }
+  atualizarRota();
+}
+function atualizarRota() {
+  const rota = origem === destino ? { ids: [origem], dias: 0 } : (algoritmo === 'tempo' ? menorTempo(origem, destino) : menosParadas(origem, destino));
+  desenharMapa(rota);
+  const d = $('#detalhe3');
+  if (esperandoSegundo) { d.innerHTML = '<p><b>' + LUGARES[origem].n + '</b> escolhido como origem. Agora clique no destino.</p>'; return; }
+  if (!rota) { d.innerHTML = '<p>Sem caminho.</p>'; return; }
+  d.innerHTML = '<p><b>' + (rota.ids.length - 1) + ' trecho(s)</b>, cerca de <b>' + rota.dias + ' dia(s)</b> <span class="selo">ilustrativo</span><span class="selo">' + (algoritmo === 'tempo' ? 'Dijkstra' : 'busca em largura') + '</span></p><ol class="linhas">' +
+    rota.ids.map(id => { const L = LUGARES[id]; return '<li><b>' + L.n + '</b>: ' + L.cena + (L.cap ? ' · <a target="_top" href="index.html#/c/cap' + L.cap + '">cap. ' + L.cap + '</a>' : '') + '</li>'; }).join('') + '</ol>';
+}
+$('#aTempo').addEventListener('click', () => { algoritmo = 'tempo'; $('#aTempo').setAttribute('aria-pressed', true); $('#aParadas').setAttribute('aria-pressed', false); atualizarRota(); });
+$('#aParadas').addEventListener('click', () => { algoritmo = 'paradas'; $('#aTempo').setAttribute('aria-pressed', false); $('#aParadas').setAttribute('aria-pressed', true); atualizarRota(); });
+$('#aLimpar').addEventListener('click', () => { origem = 'jordao'; destino = 'betania'; esperandoSegundo = false; atualizarRota(); });
+atualizarRota();
+</script>
+</body>
+</html>

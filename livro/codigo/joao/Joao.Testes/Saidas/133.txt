@@ -1,0 +1,4 @@
+o fruto recebeu o ramo e a seiva 'da terra'
+ramo e fruto bebem da mesma seiva? True
+dois pedidos de ramo dão o mesmo ramo? False
+sem seiva registrada: Não sei criar Ramo: nenhum construtor tem todas as peças registradas.
